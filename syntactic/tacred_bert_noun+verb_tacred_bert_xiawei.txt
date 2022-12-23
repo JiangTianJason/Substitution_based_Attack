@@ -1,0 +1,1 @@
+{'UAS_dependency': 0.931207930899859, 'LAS_dependency': 0.9164068120226567}

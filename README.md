@@ -1,7 +1,7 @@
 ### :zap:Overview
 
 <div align="center">
-  <img src="./引言-基于词性重要度的实体关系分类对抗攻击-扩.jpg" alt="Figure 3.1" width=50%>
+  <img src="./引言-基于词性重要度的实体关系分类对抗攻击-扩.jpg" alt="Figure 3.1" width=60%>
 </div>
 
 ### :flying_saucer:Instructions

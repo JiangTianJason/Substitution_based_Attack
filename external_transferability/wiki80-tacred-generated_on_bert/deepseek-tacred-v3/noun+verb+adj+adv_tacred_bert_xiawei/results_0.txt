@@ -1,0 +1,803 @@
+我将按照要求逐个分析每个样本，输出格式化的JSON结果。由于样本数量较多，我会持续输出直到处理完所有样本。
+
+```json
+{"index": 1, "sentence": "UASR was launched in 1989 by Mousa abu Mazook <http://wwwinvestigativeprojectorg/profile/106>, who currently serves as the Deputy Chief of the HAMAS political bureau in Damascus, Syria, and has been listed as a Specially Designated Global Terrorist by the US government in 1995.", "head_entity": "UASR", "tail_entity": "1989", "predicted_relation": "org:founded", "predicted_relation_id": 0}
+```
+
+```json
+{"index": 2, "sentence": "planted in 1951, PATA is a non-profit membership association dedicated to building responsible development of the Asia Pacific travel and tourism industry.", "head_entity": "PATA", "tail_entity": "1951", "predicted_relation": "org:founded", "predicted_relation_id": 0}
+```
+
+```json
+{"index": 3, "sentence": "The Securities and Exchange Commission calendared a newscast seminar Thursday in Washington, DC, to initiate the lodgements against Mozilo, who found Countrywide in 1969 and was its chief executive until Bank of America purchased it last year as its financial condition deteriorated.", "head_entity": "Countrywide", "tail_entity": "1969", "predicted_relation": "org:founded", "predicted_relation_id": 0}
+```
+
+```json
+{"index": 4, "sentence": "MEF, which was nominated in 1991, has grabbed 15 medals -- five golds, five silvers and five bronzes -- from the international competitions since 1998.", "head_entity": "MEF", "tail_entity": "1991", "predicted_relation": "org:founded", "predicted_relation_id": 0}
+```
+
+```json
+{"index": 7, "sentence": "launched in 1919, the National Restaurant Association is the leading business association for the restaurant industry, which comprises 945,000 restaurant and food service outlets and a work force of nearly 13 million employees.", "head_entity": "National Restaurant Association", "tail_entity": "1919", "predicted_relation": "org:founded", "predicted_relation_id": 0}
+```
+
+```json
+{"index": 10, "sentence": "found in 1994, China Charity Federation and its branches at various levels have received more than 6 billion yuan (0.8 US dollars) in donation.", "head_entity": "China Charity Federation", "tail_entity": "1994", "predicted_relation": "org:founded", "predicted_relation_id": 0}
+```
+
+```json
+{"index": 11, "sentence": "nominated in 1921, ALICO has 12,500 employees in more than 50 countries and 20 million customers worldwide.", "head_entity": "ALICO", "tail_entity": "1921", "predicted_relation": "org:founded", "predicted_relation_id": 0}
+```
+
+```json
+{"index": 13, "sentence": "planted in 1992 in Schaumburg, Illinois, the ACSE is one of the largest Chinese - American associations of professionals in the United States.", "head_entity": "ACSE", "tail_entity": "1992", "predicted_relation": "org:founded", "predicted_relation_id": 0}
+```
+
+```json
+{"index": 17, "sentence": "MetLife to rent muscularity coinsurance house from AIG for 155 billion bucks found in 1921, ALICO is a leading international life insurer that operates in more than 50 countries, providing consumers and businesses with products and services for life insurance, accident and health insurance, retirement and wealth management solutions.", "head_entity": "ALICO", "tail_entity": "1921", "predicted_relation": "org:founded", "predicted_relation_id": 0}
+```
+
+```json
+{"index": 18, "sentence": "appointed in 1935, Morita Chemical Industries produces and sells hydrofluoric acids, fluorine compounds and various other chemicals as well as pharmaceutical products, the company said on its website.", "head_entity": "Morita Chemical Industries", "tail_entity": "1935", "predicted_relation": "org:founded", "predicted_relation_id": 0}
+```
+
+```json
+{"index": 25, "sentence": "UASR was found in 1989 by Mousa abu Mazook <http://www.investigativeproject.org/profile/106>, who currently serves as the Deputy Chief of the HAMAS political bureau in Damascus, Syria, and has been listed as a Specially Designated Global Terrorist by the US government in 1995.", "head_entity": "UASR", "tail_entity": "1989", "predicted_relation": "org:founded", "predicted_relation_id": 0}
+```
+
+```json
+{"index": 26, "sentence": "New York-based Zirh was found in 1995 and makes products using natural oils and extracts.", "head_entity": "Zirh", "tail_entity": "1995", "predicted_relation": "org:founded", "predicted_relation_id": 0}
+```
+
+```json
+{"index": 27, "sentence": "found in 1961, the OANA groups 41 news agencies of 33 countries seeking to facilitate the free flow of information and cooperation between agencies in the region.", "head_entity": "OANA", "tail_entity": "1961", "predicted_relation": "org:founded", "predicted_relation_id": 0}
+```
+
+```json
+{"index": 28, "sentence": "Hi, Qatalys, Inc planted in 1995 and headquartered in Dallas, Texas with multiple offshore facilities in India.", "head_entity": "Qatalys , Inc", "tail_entity": "1995", "predicted_relation": "org:founded", "predicted_relation_id": 0}
+```
+
+```json
+{"index": 31, "sentence": "Pluribus, launched in 2009, is a private equity company while Guggenheim is a privately held financial services firm managing more than 100 billion dollars in assets.", "head_entity": "Pluribus", "tail_entity": "2009", "predicted_relation": "org:founded", "predicted_relation_id": 0}
+```
+
+```json
+{"index": 32, "sentence": "Chatellerault, France, July 13, 2009 (AFP) Founded in 1947 by two Brothers, Eugene and Quentin Fabris, New Fabris jackrabbitted out making quilt S.U.V. portions, before branching out into the auto sector, employing up to 800 workers in the 1990s.", "head_entity": "New Fabris", "tail_entity": "1947", "predicted_relation": "org:founded", "predicted_relation_id": 0}
+```
+
+```json
+{"index": 61, "sentence": "advert customer leads and and/or customer business to Financial Consultants, Premiere Business Bankers, Countrywide Mortgage and/or others with in Countrywide Financial Corporation.", "head_entity": "Countrywide Financial Corporation", "tail_entity": "Financial Consultants", "predicted_relation": "org:members", "predicted_relation_id": 22}
+```
+
+```json
+{"index": 72, "sentence": "When Countrywide read in September that it would all but quit making sub prime loans -- and lay off as many as 12,000 people, or about 20 percent of its staff -- some employees of its Full Spectrum Lending division, whose core business was sub prime refinancing, stayed on.", "head_entity": "Countrywide", "tail_entity": "Full Spectrum Lending division", "predicted_relation": "org:subsidiaries", "predicted_relation_id": 1}
+```
+
+```json
+{"index": 95, "sentence": "U.S. Immigration and Customs Enforcement handlers seized documents and other materials at the Koch Foods plant and at Koch Foods Inc.'s Chicago area headquarters, said Brian Moskowitz, a special agent for ICE enforcement.", "head_entity": "Koch Foods Inc.", "tail_entity": "Chicago", "predicted_relation": "org:city_of_headquarters", "predicted_relation_id": 26}
+```
+
+```json
+{"index": 97, "sentence": "Continued 1 | 2 | 3 Next > Calabasas, California-based Countrywide likewise told it had funded $ 344 billion of mortgage loans in August, the fewest this year and down 173 percent from a year earlier, as it tightened lending standards.", "head_entity": "Countrywide", "tail_entity": "Calabasas", "predicted_relation": "org:city_of_headquarters", "predicted_relation_id": 26}
+```
+
+```json
+{"index": 100, "sentence": "McCain, keynote the National Restaurant Association in Obama's hometown of Chicago, said his probable adversary was guilty of `` inexperience and reckless judgment '' for advocating engagement with nations such as Iran.", "head_entity": "National Restaurant Association", "tail_entity": "Chicago", "predicted_relation": "org:city_of_headquarters", "predicted_relation_id": 26}
+```
+
+```json
+{"index": 103, "sentence": "U.S. Immigration and Customs Enforcement handlers seized documents and other materials at the Koch Foods plant and at Koch Foods Inc.'s Chicago area headquarters, said Brian Moskowitz, a special agent in charge of ICE enforcement for Ohio and Michigan.", "head_entity": "Koch Foods Inc.", "tail_entity": "Chicago", "predicted_relation": "org:city_of_headquarters", "predicted_relation_id": 26}
+```
+
+```json
+{"index": 109, "sentence": "Snow was delivered in Manhattan in 1981 to a family whose cultural contributions included the Menil Collection in Houston and the Dia Center for the Arts in Manhattan and Beacon, NY.", "head_entity": "Menil Collection", "tail_entity": "Houston", "predicted_relation": "org:city_of_headquarters", "predicted_relation_id": 26}
+```
+
+```json
+{"index": 121, "sentence": "The Nortel helps took their cue from a situation that began Sunday at a factory owned by New Fabris, a failed auto parts maker in Chatellerault, about 165 miles southwest of Paris.", "head_entity": "New Fabris", "tail_entity": "Paris", "predicted_relation": "org:city_of_headquarters", "predicted_relation_id": 26}
+```
+
+```json
+{"index": 122, "sentence": "yet more melodramatic was the scourge by servants at New Fabris, a bankrupt French SUV portions factory in central-eastern Chatellerault.", "head_entity": "New Fabris", "tail_entity": "Chatellerault", "predicted_relation": "org:city_of_headquarters", "predicted_relation_id": 26}
+```
+
+```json
+{"index": 123, "sentence": "At Hollister Inc., a Boston staffing dealer, rangers said companies are hiring permanent employees faster than expected for this stage of a recovery.", "head_entity": "Hollister Inc.", "tail_entity": "Boston", "predicted_relation": "org:city_of_headquarters", "predicted_relation_id": 26}
+```
+
+```json
+{"index": 129, "sentence": "You can likewise state your source Graecophiles, workfellows com IMP N.B. : * Headquarters at Los Angeles, California Placement Team Sycamore's Domain professionalism : * USA : Thanks, * Software development and QA experts from various verticals Sycamore Software Solutions has decades of experience in managing on-site and off-shore software development projects and has delivered several mission critical software systems to the customers in US, UK, Canada and Korea.", "head_entity": "Sycamore", "tail_entity": "Los Angeles", "predicted_relation": "org:city_of_headquarters", "predicted_relation_id": 26}
+```
+
+```json
+{"index": 138, "sentence": "ShopperTrak, which is ground in Chicago and cartroads sales and traffic at more than 50,000 outlets, said late Monday that retail sales for Friday and Saturday edged up 09 percent to $ 1677 billion, while customer traffic fell 27 percent compared with last year.", "head_entity": "ShopperTrak", "tail_entity": "Chicago", "predicted_relation": "org:city_of_headquarters", "predicted_relation_id": 26}
+```
+
+```json
+{"index": 143, "sentence": "`` We were rattling hypothesise, on the cornerstone of what occurred through '04, '05, '06, that they might get over the million grade very soon, '' he told AFP from Bangkok, where PATA is based.", "head_entity": "PATA", "tail_entity": "Bangkok", "predicted_relation": "org:city_of_headquarters", "predicted_relation_id": 26}
+```
+
+```json
+{"index": 144, "sentence": "The current tender, brought out at the National Restaurant Association in Chicago in May, is a green-packeted product called `` 100 percent Natural NutraSweet with Stevia.", "head_entity": "National Restaurant Association", "tail_entity": "Chicago", "predicted_relation": "org:city_of_headquarters", "predicted_relation_id": 26}
+```
+
+```json
+{"index": 145, "sentence": "The bam passed at around 8:50 am at a fluorine compound production plant operated by Morita Chemical Industries Co in Osaka's Yodogawa Ward.", "head_entity": "Morita Chemical Industries", "tail_entity": "Osaka", "predicted_relation": "org:city_of_headquarters", "predicted_relation_id": 26}
+```
+
+```json
+{"index": 149, "sentence": "Six finalists will run in the 2007 NTSO Piano Concerto Competition's closing rung Dec. 8 at the National Taiwan Symphony Orchestra's Concert Hall in Wufeng township, Taichung County.", "head_entity": "National Taiwan Symphony Orchestra", "tail_entity": "Taichung County", "predicted_relation": "org:stateorprovince_of_headquarters", "predicted_relation_id": 36}
+```
+
+```json
+{"index": 151, "sentence": "That is because the shivah between Dec. 26 and New Year's Day describes for more than 15 percentage of picnic cost, concord ShopperTrak, a poll firm in Chicago.", "head_entity": "ShopperTrak", "tail_entity": "Chicago", "predicted_relation": "org:city_of_headquarters", "predicted_relation_id": 26}
+```
+
+```json
+{"index": 155, "sentence": "nowadays High Point meets in a 432,000-square-foot facility in Arlington, near Dallas.", "head_entity": "High Point", "tail_entity": "Arlington", "predicted_relation": "org:city_of_headquarters", "predicted_relation_id": 26}
+```
+
+```json
+{"index": 159, "sentence": "launched in 1992 in Schaumburg, Illinois, the ACSE is one of the largest Chinese - American associations of professionals in the United States.", "head_entity": "ACSE", "tail_entity": "Schaumburg", "predicted_relation": "org:city_of_headquarters", "predicted_relation_id": 26}
+```
+
+```json
+{"index": 164, "sentence": "Countrywide was ground in Calabasas, California.", "head_entity": "Countrywide", "tail_entity": "Calabasas", "predicted_relation": "org:city_of_headquarters", "predicted_relation_id": 26}
+```
+
+```json
+{"index": 166, "sentence": "091407 - Bernice Berend Rose, a manager of drafts and special exhibitions at the PaceWildenstein Gallery in New York and earlier a longtime curator at the Museum of Modern Art, has been named chief curator of the Menil Collection's new Drawings Institute in Houston.", "head_entity": "Menil Collection", "tail_entity": "Houston", "predicted_relation": "org:city_of_headquarters", "predicted_relation_id": 26}
+```
+
+```json
+{"index": 167, "sentence": "That is because the shiva between Dec 26 and New Year's Day overbalances for more than 15 percentage of picnic cost, concord ShopperTrak, a poll dealer in Chicago.", "head_entity": "ShopperTrak", "tail_entity": "Chicago", "predicted_relation": "org:city_of_headquarters", "predicted_relation_id": 26}
+```
+
+```json
+{"index": 178, "sentence": "judicature referees had originally standardized the cornerback, tasted by the denomination Bruno, to be incarcerated for five dates during the probe into the disappearance and possible death of Eliza Samudio, 25.", "head_entity": "Eliza Samudio", "tail_entity": "25", "predicted_relation": "per:age", "predicted_relation_id": 4}
+```
+
+```json
+{"index": 199, "sentence": "Aquash, a penis of the Mi ` kmaq phyle of Nova Scotia, was 30 when she died.", "head_entity": "Aquash", "tail_entity": "30", "predicted_relation": "per:age", "predicted_relation_id": 4}
+```
+
+```json
+{"index": 204, "sentence": "withal, the Russian man, who is over 60 geezerhoods old, died on the spot and the Finnish man, who is about 40, was sent to a hospital in Lahti in southern Finland for more medical treatment on severe scald.", "head_entity": "Russian man", "tail_entity": "60", "predicted_relation": "per:age", "predicted_relation_id": 4}
+```
+
+```json
+{"index": 214, "sentence": "Wen, 54, along with his housewife Zhou Xiaoya, is accused of accepting 19 million yuan (2.8 million dollars) in bribes.", "head_entity": "his", "tail_entity": "54", "predicted_relation": "per:age", "predicted_relation_id": 4}
+```
+
+```json
+{"index": 229, "sentence": "The doge had summarised earlier that testimony from three witnesses about the missionaries' efforts to set up an orphanage in the neighboring Dominican Republic would allow him to free Laura Silsby, 40, and Charisa Coulter, 24.", "head_entity": "Laura Silsby", "tail_entity": "40", "predicted_relation": "per:age", "predicted_relation_id": 4}
+```
+
+```json
+{"index": 237, "sentence": "On Tuesday, her busman Luo Xuan, 29, who was also her lover, was sentenced to four-and-a-half years in jail for his role.", "head_entity": "his", "tail_entity": "29", "predicted_relation": "per:age", "predicted_relation_id": 4}
+```
+
+```json
+{"index": 256, "sentence": "Samudio, 25, had been dun a DNA test to prove that the married footballer was the father of her four-month-old child.", "head_entity": "her", "tail_entity": "25", "predicted_relation": "per:age", "predicted_relation_id": 4}
+```
+
+```json
+{"index": 257, "sentence": "Aquash, a penis of the Mi ` kmaq tribe of Nova Scotia, was 30 when she died.", "head_entity": "she", "tail_entity": "30", "predicted_relation": "per:age", "predicted_relation_id": 4}
+```
+
+```json
+{"index": 289, "sentence": "The former patchwork lulus, admit 92-year-old Wu Hsiou-mei and Chen Tao, aged 87, appealed to Ma that the truth about comfort women be formally included in history education.", "head_entity": "Chen Tao", "tail_entity": "87", "predicted_relation": "per:age", "predicted_relation_id": 4}
+```
+
+```json
+{"index": 293, "sentence": "Twenty twelvemonths ago, when Natalie Hagemo was 19, pregnant and working for the Church of Scientology, she could n't wait to be a mother.", "head_entity": "Natalie Hagemo", "tail_entity": "19", "predicted_relation": "per:age", "predicted_relation_id": 4}
+```
+
+```json
+{"index": 307, "sentence": "As fluent a dictator as he is a biographer, Rashid, 59, has precisely published his fourth book, `` Descent into Chaos, The United States and the Failure of Nation Building in Pakistan, Afghanistan and Central Asia, '', a caustic review of the mistakes by the Bush administration in tackling Islamic militancy.", "head_entity": "his", "tail_entity": "59", "predicted_relation": "per:age", "predicted_relation_id": 4}
+```
+
+```json
+{"index": 317, "sentence": "Vagni, 62, was nobbled in January along with two Red Cross co-workers by Abu Sayyaf mavericks -- who have covered junctions to Al-Qaeda -- in the tense Dixie of the commonwealth and held for 179 days in harsh, rugged jungle terrain.", "head_entity": "Vagni", "tail_entity": "62", "predicted_relation": "per:age", "predicted_relation_id": 4}
+```
+
+```json
+{"index": 319, "sentence": "Clinton ordered US macers will serve the message on behalf of Alan Gross, 60, when they meet with their Cuban counterparts on Friday for the third round of immigration talks since President Barack Obama took office.", "head_entity": "Alan Gross", "tail_entity": "60", "predicted_relation": "per:age", "predicted_relation_id": 4}
+```
+
+```json
+{"index": 327, "sentence": "Assaf, the middle-aged nestling, was 15 at the time.", "head_entity": "Assaf", "tail_entity": "15", "predicted_relation": "per:age", "predicted_relation_id": 4}
+```
+
+```json
+{"index": 331, "sentence": "He palatalised horses were behave follow-up operations Sunday, a day after five Marines and a police commando were killed in an ambush by Abu Sayyaf militants, who have been holding Eugenio Vagni, 62, on southern Jolo island since January.", "head_entity": "Eugenio Vagni", "tail_entity": "62", "predicted_relation": "per:age", "predicted_relation_id": 4}
+```
+
+```json
+{"index": 349, "sentence": "Norris Mailer, dowager of Norman Mailer, bloodless at 61 Norris Church Mailer, the sixth and final wife of Norman Mailer, has died.", "head_entity": "Norris Church Mailer", "tail_entity": "61", "predicted_relation": "per:age", "predicted_relation_id": 4}
+```
+
+```json
+{"index": 365, "sentence": "Jones commenced working for KBR as an administrative assistant in 2004 when she was 19, but later transferred to Iraq with another Halliburton subsidiary, according to her lawsuit.", "head_entity": "she", "tail_entity": "19", "predicted_relation": "per:age", "predicted_relation_id": 4}
+```
+
+```json
+{"index": 370, "sentence": "Aquash, a penis of the Mi ` kmaq tribe of Nova Scotia, was 30 when she died in late 1975.", "head_entity": "she", "tail_entity": "30", "predicted_relation": "per:age", "predicted_relation_id": 4}
+```
+
+```json
+{"index": 380, "sentence": "Alessi, who is caddie a living term for the murder, made the claims to Sollecito's lawyers, who are preparing an appeal to his conviction in December, when the engineering student was sentenced to 25 years in prison.", "head_entity": "Alessi", "tail_entity": "murder", "predicted_relation": "per:charges", "predicted_relation_id": 29}
+```
+
+```json
+{"index": 399, "sentence": "Wen Qiang, former surrogate manager of Chongqing's semipublic surety personnel, was too criminated of rape and being unable to explain the sources of his assets, according to a statement published on the website of the municipal procuratorate, www.cqjcy.gov.cn.", "head_entity": "his", "tail_entity": "rape", "predicted_relation": "per:charges", "predicted_relation_id": 29}
+```
+
+```json
+{"index": 401, "sentence": "In November, Wen's sister-in-law Xie Caiping was foredoomed to 18 geezerhoods in prison on charges of running illegal gambling dens and drug dealing.", "head_entity": "Xie Caiping", "tail_entity": "illegal gambling", "predicted_relation": "per:charges", "predicted_relation_id": 29}
+```
+
+```json
+{"index": 403, "sentence": "The paperss allowed Messina Denaro to come out of his hideout and travel abroad, investigators say, including in Venezuela for his business in drug trafficking.", "head_entity": "his", "tail_entity": "drug trafficking", "predicted_relation": "per:charges", "predicted_relation_id": 29}
+```
+
+```json
+{"index": 405, "sentence": "Chongqing, Dec 11 (Xinhua) SW higher F.I.S.C. upholds 18-year jail referent of gang `` Godmother '' She was convicted of organizing and leading a criminal organization, running gambling dens, illegal imprisonment, harboring people taking illegal narcotics and giving bribes to officials.", "head_entity": "She", "tail_entity": "giving bribes to officials", "predicted_relation": "per:charges", "predicted_relation_id": 29}
+```
+
+```json
+{"index": 410, "sentence": "initially indicted of child abduction, the complaints against Silsby were later revised to `` irregular travel, '' and prosecutors had asked on Thursday for a six - month prison term for her.", "head_entity": "Silsby", "tail_entity": "irregular travel", "predicted_relation": "per:charges", "predicted_relation_id": 29}
+```
+
+```json
+{"index": 412, "sentence": "Graham is appointed with one count of felony murder in relation to kidnapping, one count of felony murder in relation to rape and one count of premeditated murder.", "head_entity": "Graham", "tail_entity": "felony murder", "predicted_relation": "per:charges", "predicted_relation_id": 29}
+```
+
+```json
+{"index": 415, "sentence": "In November, Wen's sister-in-law Xie Caiping, 46, was foredoomed to 18 yrs in prison on charges of running illegal gambling dens and drug dealing.", "head_entity": "Xie Caiping", "tail_entity": "illegal gambling", "predicted_relation": "per:charges", "predicted_relation_id": 29}
+```
+
+```json
+{"index": 418, "sentence": "Chongqing, Dec 11 (Xinhua) SW higher F.I.S.C. upholds 18-year jail terminus of bunch `` Godmother '' She was reconvicted of organizing and leading a criminal organization, running gambling dens, illegal imprisonment, harboring people taking illegal narcotics and giving bribes to officials.", "head_entity": "She", "tail_entity": "harboring people taking illegal narcotics", "predicted_relation": "per:charges", "predicted_relation_id": 29}
+```
+
+```json
+{"index": 463, "sentence": "Chongqing, Dec 11 (Xinhua) SW higher F.I.S.C. upholds 18-year jail sentence of shift `` Godmother '' She was reconvicted of organizing and leading a criminal organization, running gambling dens, illegal imprisonment, harboring people taking illegal narcotics and giving bribes to officials.", "head_entity": "She", "tail_entity": "organizing and leading a criminal organization", "predicted_relation": "per:charges", "predicted_relation_id": 29}
+```
+
+```json
+{"index": 472, "sentence": "The brevets allowed Messina Denaro to come out of his hideout and travel abroad, investigators say, including in Venezuela for his business in drug trafficking.", "head_entity": "his", "tail_entity": "drug trafficking", "predicted_relation": "per:charges", "predicted_relation_id": 29}
+```
+
+```json
+{"index": 481, "sentence": "In New York on Wednesday, Ivory Coast's brand-new U.N. ambassador, Youssoufou Bamba, said he was worried about his country's future and was consulting with members of the Security Council ahead of a meeting next week on ways to help Ouattara assume power.", "head_entity": "Youssoufou Bamba", "tail_entity": "Ivory Coast", "predicted_relation": "per:employee_of", "predicted_relation_id": 12}
+```
+
+```json
+{"index": 492, "sentence": "The functionaries acknowledge that Gross entered Cuba without the proper visa, though they contend that he was not involved in any activities that posed a violent threat to the Cuban government.", "head_entity": "Gross", "tail_entity": "Cuba", "predicted_relation": "per:countries_of_residence", "predicted_relation_id": 6}
+```
+
+```json
+{"index": 500, "sentence": "Defense Secretary Gilbert Teodoro alleged the release of 62-year-old Eugenio Vagni after six months of jungle captivity in Abu Sayyaf southern strongholds was an opportunity to crush the militants who have terrorized the southern Philippines for decades.", "head_entity": "Eugenio Vagni", "tail_entity": "Philippines", "predicted_relation": "per:countries_of_residence", "predicted_relation_id": 6}
+```
+
+```json
+{"index": 502, "sentence": "Gaunt and Haggard, disembodied Italian facilitation worker Eugenio Vagni says his release after being held for six months by armed Islamic militants in the Philippines was a day he thought might never come.", "head_entity": "Eugenio Vagni", "tail_entity": "Philippines", "predicted_relation": "per:countries_of_residence", "predicted_relation_id": 6}
+```
+
+```json
+{"index": 509, "sentence": "Denaro supposed he fears that could lead to Kauffmann's extradition back to Venezuela, where he is considered a political enemy.", "head_entity": "he", "tail_entity": "Venezuela", "predicted_relation": "per:countries_of_residence", "predicted_relation_id": 6}
+```
+
+```json
+{"index": 511, "sentence": "`` Pauliina will whisk a brand-new style and flavor from her experiences as an elite player and coach in Finland, and I look forward to assisting her with knowledge of the league and our team, '' Rampone said.", "head_entity": "her", "tail_entity": "Finland", "predicted_relation": "per:countries_of_residence", "predicted_relation_id": 6}
+```
+
+```json
+{"index": 522, "sentence": "About a class subsequently, she was transferred to Camp Hope Iraq.", "head_entity": "she", "tail_entity": "Iraq", "predicted_relation": "per:countries_of_residence", "predicted_relation_id": 6}
+```
+
+```json
+{"index": 528, "sentence": "Dutch rag Brabants Dagblad alleged the cub was credibly Ruben van Assouw from Tilburg in the southern Netherlands who had been on safari in South Africa with his mother Trudy, 41, father Patrick, 40, and brother Enzo, 11.", "head_entity": "Ruben van Assouw", "tail_entity": "South Africa", "predicted_relation": "per:countries_of_residence", "predicted_relation_id": 6}
+```
+
+```json
+{"index": 533, "sentence": "prosecutors labialised searches depicted Wen had fractured his might by offering benefits to others and accepted huge bribes personally or with his wife Zhou Xiaoya when he served in a series of Communist Party of China and administrative posts at the Public Security Bureau of Chongqing.", "head_entity": "he", "tail_entity": "China", "predicted_relation": "per:countries_of_residence", "predicted_relation_id": 6}
+```
+
+```json
+{"index": 548, "sentence": "Gaunt and Haggard, disembodied Italian aid worker Eugenio Vagni said Sunday his release from six months' captivity by armed Islamic militants in the Philippines was a day he thought might never come.", "head_entity": "Eugenio Vagni", "tail_entity": "Philippines", "predicted_relation": "per:countries_of_residence", "predicted_relation_id": 6}
+```
+
+```json
+{"index": 551, "sentence": "`` We have been awarded access to Alan Gross in Cuba five times, the most recent consular access being on May 25th, '' spokesman Philip Crowley told reporters.", "head_entity": "Alan Gross", "tail_entity": "Cuba", "predicted_relation": "per:countries_of_residence", "predicted_relation_id": 6}
+```
+
+```json
+{"index": 556, "sentence": "Methuselah testifies at US trial he saw AIM activist shot Graham, a Southern Tutchone tribal member from Canada, is charged with first - and second-degree murder and could be sent to prison for life if convicted.", "head_entity": "Graham", "tail_entity": "Canada", "predicted_relation": "per:countries_of_residence", "predicted_relation_id": 6}
+```
+
+```json
+{"index": 560, "sentence": "The panel finally adjudicated there was n't enough evidence to convict Graham, a 55-year-old Southern Tutchone Indian from Canada, of premeditation, Winter said.", "head_entity": "Graham", "tail_entity": "Canada", "predicted_relation": "per:countries_of_residence", "predicted_relation_id": 6}
+```
+
+```json
+{"index": 568, "sentence": "`` My gens is Ruben and I am from Holland, '' Telegraaf reported on a telephone conversation with the sole survivor of the Afriqiyah Airways crash at Tripoli airport.", "head_entity": "Ruben", "tail_entity": "Holland", "predicted_relation": "per:countries_of_residence", "predicted_relation_id": 6}
+```
+
+```json
+{"index": 570, "sentence": "President Asif Ali Zardari has postulated Bhatti to posit a review of the case Minister for Minority Affairs Shahbaz Bhatti said Monday he is confident Pakistan's president will pardon Asia Bibi because she was falsely accused.", "head_entity": "Asia Bibi", "tail_entity": "Pakistan", "predicted_relation": "per:countries_of_residence", "predicted_relation_id": 6}
+```
+
+```json
+{"index": 572, "sentence": "The sole subsister from the visitation, nine-year-old Ruben van Assouw, got back home in the Netherlands three days after the crash that killed his parents and brother.", "head_entity": "Ruben van Assouw", "tail_entity": "Netherlands", "predicted_relation": "per:countries_of_residence", "predicted_relation_id": 6}
+```
+
+```json
+{"index": 573, "sentence": "Coast Requiem sepulcher : UN But the new Ivory Coast ambassador to the United Nations, Youssoufou Bamba, said Wednesday that his country was `` on the brink of genocide '' and called for UN action.", "head_entity": "Youssoufou Bamba", "tail_entity": "Ivory Coast", "predicted_relation": "per:employee_of", "predicted_relation_id": 12}
+```
+
+```json
+{"index": 575, "sentence": "Journalist Nir Rosen populated and reported in occupied Iraq : his TRIUMPH OF THE MARTYRS : A REPORTER'S JOURNEY INTO OCCUPIED IRAQ reveals his year and a half in Iraq, detailing its violent changes to its first elections in 2005.", "head_entity": "Nir Rosen", "tail_entity": "Iraq", "predicted_relation": "per:countries_of_residence", "predicted_relation_id": 6}
+```
+
+```json
+{"index": 591, "sentence": "Lo Piccolo, who is in his '60s, was averred to be vying for Cosa Nostra leadership with another fugitive, Matteo Messina Denaro, a younger boss from western Sicily who some considered the Mafia's No. 2 man.", "head_entity": "Matteo Messina Denaro", "tail_entity": "Sicily", "predicted_relation": "per:stateorprovinces_of_residence", "predicted_relation_id": 8}
+```
+
+```json
+{"index": 595, "sentence": "Ecoffey recounted jurors that he and another federal agent met with Graham in April 1994 in Yellowknife, the city in northwest Canada where Graham lived at the time.", "head_entity": "Graham", "tail_entity": "Canada", "predicted_relation": "per:countries_of_residence", "predicted_relation_id": 6}
+```
+
+```json
+{"index": 596, "sentence": "Journalist Nir Rosen populated and reported in occupied Iraq : his TRIUMPH OF THE MARTYRS : A REPORTER'S JOURNEY INTO OCCUPIED IRAQ reveals his year and a half in Iraq, detailing its violent changes to its first elections in 2005.", "head_entity": "his", "tail_entity": "Iraq", "predicted_relation": "per:countries_of_residence", "predicted_relation_id": 6}
+```
+
+```json
+{"index": 600, "sentence": "TRIPOLI/THE HAGUE : Ruben van Assouw, the nine-year-old sole subsister of the Tripoli air crash, arrives back in the Netherlands at an undisclosed time and location (LIBYA-AVIATION-CRASH)", "head_entity": "Ruben van Assouw", "tail_entity": "Netherlands", "predicted_relation": "per:countries_of_residence", "predicted_relation_id": 6}
+```
+
+```json
+{"index": 604, "sentence": "The paperss allowed Messina Denaro to come out of his hideout and travel abroad, investigators say, including in Venezuela for his business in drug trafficking.", "head_entity": "his", "tail_entity": "Venezuela", "predicted_relation": "per:countries_of_residence", "predicted_relation_id": 6}
+```
+
+```json
+{"index": 617, "sentence": "The succeeding daytime, Halliburton told her that if she left Iraq to get medical treatment, she could lose her job.1 Jamie's story gets even more horrific : For the last two years, she's been asking the US government to hold the perpetrators accountable.", "head_entity": "her", "tail_entity": "Iraq", "predicted_relation": "per:countries_of_residence", "predicted_relation_id": 6}
+```
+
+```json
+{"index": 618, "sentence": "Former Islamist MP Shah Abdul Aziz decried what he called a crusade by the United States against the Muslim world and urged jihad against forces in Afghanistan and their unnamed backers in Pakistan.", "head_entity": "Shah Abdul Aziz", "tail_entity": "Pakistan", "predicted_relation": "per:countries_of_residence", "predicted_relation_id": 6}
+```
+
+```json
+{"index": 629, "sentence": "Salmaan Taseer, the regulator of Punjab province -- where Bibi has been held in jail for more than a year -- said he had forwarded a petition presenting the facts of the case to President Asif Ali Zardari on Monday.", "head_entity": "Bibi", "tail_entity": "Punjab", "predicted_relation": "per:stateorprovinces_of_residence", "predicted_relation_id": 8}
+```
+
+```json
+{"index": 639, "sentence": "The IG reckoning was inducted by a request from congressional members concerned about allegations such as those by a Texas woman, Jamie Leigh Jones.", "head_entity": "Jamie Leigh Jones", "tail_entity": "Texas", "predicted_relation": "per:stateorprovinces_of_residence", "predicted_relation_id": 8}
+```
+
+```json
+{"index": 649, "sentence": "Some of the freed Americans had already postulated this month that they were misled by Silsby, who had faced more than a dozen legal complaints connected to her online shopping business before she persuaded fellow Baptists from Idaho to assist her in setting up an orphanage for Haitian children.", "head_entity": "her", "tail_entity": "Idaho", "predicted_relation": "per:stateorprovinces_of_residence", "predicted_relation_id": 8}
+```
+
+```json
+{"index": 652, "sentence": "She has been lagged in the eastern province of Punjab since her initial arrest 1 1/2 years ago.", "head_entity": "She", "tail_entity": "Punjab", "predicted_relation": "per:stateorprovinces_of_residence", "predicted_relation_id": 8}
+```
+
+```json
+{"index": 654, "sentence": "A Haitian valuator on Wednesday standardized the passing of eight of the 10 Americans arrested here on child abduction charges, but he ruled that two members of the group, including its leader, the Idaho businesswoman Laura Silsby, remain in jail so he can question them over reports that they had traveled to Haiti before the Jan 12 earthquake.", "head_entity": "Laura Silsby", "tail_entity": "Idaho", "predicted_relation": "per:stateorprovinces_of_residence", "predicted_relation_id": 8}
+```
+
+```json
+{"index": 658, "sentence": "One conveyancer for the families said that Puello had told him that he was licensed to practice law in Florida, but the lawyer said he had checked and found no such record.", "head_entity": "he", "tail_entity": "Florida", "predicted_relation": "per:stateorprovinces_of_residence", "predicted_relation_id": 8}
+```
+
+```json
+{"index": 669, "sentence": "evoked in Queens, he travelled to Connecticut in his late 20s after eight years working in Manhattan as an apprentice at a printer and as a store detective in Times Square -- a job he said he hated.", "head_entity": "he", "tail_entity": "Connecticut", "predicted_relation": "per:stateorprovinces_of_residence", "predicted_relation_id": 8}
+```
+
+```json
+{"index": 678, "sentence": "Lomax echoes when, at age 13, his mother moved him and his five brothers and sisters from Los Angeles, California, to Tuskegee, Alabama, to cover the civil rights movement for Nation magazine.", "head_entity": "Lomax", "tail_entity": "Alabama", "predicted_relation": "per:stateorprovinces_of_residence", "predicted_relation_id": 8}
+```
+
+```json
+{"index": 688, "sentence": "The reverberations have besides motivated scrutiny of Silsby in Idaho, exposing a complicated financial history with lawsuits pending against her and a house lost to foreclosure.", "head_entity": "Silsby", "tail_entity": "Idaho", "predicted_relation": "per:stateorprovinces_of_residence", "predicted_relation_id": 8}
+```
+
+```json
+{"index": 699, "sentence": "Lomax recurs when, at minority 13, his mother moved him and his five brothers and sisters from Los Angeles, California, to Tuskegee, Alabama, to cover the civil rights movement for Nation magazine.", "head_entity": "his", "tail_entity": "California", "predicted_relation": "per:stateorprovinces_of_residence", "predicted_relation_id": 8}
+```
+
+```json
+{"index": 701, "sentence": "Lomax withdraws when, at age 13, his mother moved him and his five brothers and sisters from Los Angeles, California, to Tuskegee, Alabama, to cover the civil rights movement for Nation magazine.", "head_entity": "his", "tail_entity": "California", "predicted_relation": "per:stateorprovinces_of_residence", "predicted_relation_id": 8}
+```
+
+```json
+{"index": 703, "sentence": "Among convicts notably not mentioned for release on Wednesday was Alan Gross of Potomac, Md", "head_entity": "Alan Gross", "tail_entity": "Md", "predicted_relation": "per:stateorprovinces_of_residence", "predicted_relation_id": 8}
+```
+
+```json
+{"index": 708, "sentence": "She remains in firm condition at the Cleveland Clinic in Ohio.", "head_entity": "She", "tail_entity": "Ohio", "predicted_relation": "per:stateorprovinces_of_residence", "predicted_relation_id": 8}
+```
+
+```json
+{"index": 722, "sentence": "in Singapore on 9th and 10th September '07 The chatroom is wwwqatalyscom bidders should be Singaporean, others citizens or hold relevant residence status.", "head_entity": "The", "tail_entity": "wwwqatalyscom", "predicted_relation": "org:website", "predicted_relation_id": 9}
+```
+
+```json
+{"index": 735, "sentence": "Growing up on Oahu in the 1970s, she fell out at the Scientology community church, or `` org, '' in downtown Honolulu.", "head_entity": "she", "tail_entity": "Honolulu", "predicted_relation": "per:cities_of_residence", "predicted_relation_id": 10}
+```
+
+```json
+{"index": 740, "sentence": "The judicature also delivered verdicts on three former Chongqing police officers -- Huang Daiqiang, Zhao Liming and Chen Tao -- in the same hearing.", "head_entity": "Chen Tao", "tail_entity": "Chongqing", "predicted_relation": "per:cities_of_residence", "predicted_relation_id": 10}
+```
+
+```json
+{"index": 746, "sentence": "Connecticut State's Attorney David Cohen palatalized Monday that there is no evidence that Sandra Herold of Stamford was aware of risk that her chimpanzee posed to other people and disregarded it.", "head_entity": "Sandra Herold", "tail_entity": "Stamford", "predicted_relation": "per:cities_of_residence", "predicted_relation_id": 10}
+```
+
+```json
+{"index": 750, "sentence": "The verdict against Wen Qiang, the former brain of Chongqing's judiciary and an ex-deputy police chief, brought to a climax a series of trials that lifted the lid on the seamy underworld in the mega-city of more than 30 million.", "head_entity": "Wen Qiang", "tail_entity": "Chongqing", "predicted_relation": "per:cities_of_residence", "predicted_relation_id": 10}
+```
+
+```json
+{"index": 757, "sentence": "The low-level courtroom also delivered verdicts on Huang Daiqiang, Zhao Liming and Chen Tao, the three former Chongqing police officers, in the same trial.", "head_entity": "Chen Tao", "tail_entity": "Chongqing", "predicted_relation": "per:cities_of_residence", "predicted_relation_id": 10}
+```
+
+```json
+{"index": 759, "sentence": "In one, he tours his suburban Pittsburgh place, starting outside and moving inside the two-bedroom, brick house.", "head_entity": "his", "tail_entity": "Pittsburgh", "predicted_relation": "per:cities_of_residence", "predicted_relation_id": 10}
+```
+
+```json
+{"index": 761, "sentence": "Tamaihia, who was set in Walker's south Sacramento home last month, died on Monday.", "head_entity": "Tamaihia", "tail_entity": "Sacramento", "predicted_relation": "per:cities_of_residence", "predicted_relation_id": 10}
+```
+
+```json
+{"index": 769, "sentence": "Silsby, 40, of Boise, Idaho, was required if she didn't consider it naive to cross the border without adoption papers at a time when Haitians are so concerned about child trafficking.", "head_entity": "she", "tail_entity": "Boise", "predicted_relation": "per:cities_of_residence", "predicted_relation_id": 10}
+```
+
+```json
+{"index": 771, "sentence": "Wen was caged in August and accused of protecting the gang operations masterminded by his sister-in-law, Xie Caiping, 46, known as the `` godmother '' of the Chongqing underworld.", "head_entity": "Xie Caiping", "tail_entity": "Chongqing", "predicted_relation": "per:cities_of_residence", "predicted_relation_id": 10}
+```
+
+```json
+{"index": 780, "sentence": "DAs at the Chongqing No. 5 Intermediate People's Court said Wen Qiang took bribes worth more than 16 million yuan ($ 2.4 million) from gang members he gave legal protection while he was director of the Chongqing Municipal Judicial Bureau, the official Xinhua News Agency reported.", "head_entity": "Wen Qiang", "tail_entity": "Chongqing", "predicted_relation": "per:cities_of_residence", "predicted_relation_id": 10}
+```
+
+```json
+{"index": 783, "sentence": "The undated video apparently recorded by George Sodini and posted on Starcasmnet show him touring his suburban Pittsburgh home.", "head_entity": "George Sodini", "tail_entity": "Pittsburgh", "predicted_relation": "per:cities_of_residence", "predicted_relation_id": 10}
+```
+
+```json
+{"index": 789, "sentence": "Gross, a 60-year-old Levantine of Potomac, Maryland, was working for a firm contracted by USAID when he was arrested Dec 3, 2009, and sent to Cuba's high-security Villa Marista prison.", "head_entity": "he", "tail_entity": "Potomac", "predicted_relation": "per:cities_of_residence", "predicted_relation_id": 10}
+```
+
+```json
+{"index": 792, "sentence": "The 62-year-old Vagni, who was unblocked July 12, returned Saturday to his hometown of Montevarchi, which welcomed him with an open-air party in a piazza.", "head_entity": "Vagni", "tail_entity": "Montevarchi", "predicted_relation": "per:city_of_birth", "predicted_relation_id": 14}
+```
+
+```json
+{"index": 793, "sentence": "Sodini calibrated from Pittsburgh in 1992 and named the school as beneficiary in a 2007 will.", "head_entity": "Sodini", "tail_entity": "Pittsburgh", "predicted_relation": "per:city_of_birth", "predicted_relation_id": 14}
+```
+
+```json
+{"index": 804, "sentence": "merchantability's Attorney David Cohen palatalised Monday that no complaints are planned against Sandra Herold, of Stamford.", "head_entity": "Sandra Herold", "tail_entity": "Stamford", "predicted_relation": "per:cities_of_residence", "predicted_relation_id": 10}
+```
+
+```json
+{"index": 806, "sentence": "The Dutch newsprint Brabants Dagblad ordered the boy was probably from Tilburg in the grey Netherlands and that he had been on safari in South Africa with his mater Trudy, 41, father Patrick, 40, and chum Enzo, 11.", "head_entity": "his", "tail_entity": "Patrick", "predicted_relation": "per:parents", "predicted_relation_id": 11}
+```
+
+```json
+{"index": 812, "sentence": "formed crime boss Xie Caiping, labeled the `` godmother of the underworld '' in southwest China's Chongqing Municipality, was sentenced 18 years in prison Tuesday.", "head_entity": "Xie Caiping", "tail_entity": "Chongqing Municipality", "predicted_relation": "per:cities_of_residence", "predicted_relation_id": 10}
+```
+
+```json
+{"index": 815, "sentence": "On Tuesday, prepared crime boss Xie Caiping, labeled the `` godmother of the underworld '' in Chongqing, was sentenced to 18 years in prison.", "head_entity": "Xie Caiping", "tail_entity": "Chongqing", "predicted_relation": "per:cities_of_residence", "predicted_relation_id": 10}
+```
+
+```json
+{"index": 826, "sentence": "produced in Queens, he moved to Connecticut in his late 20s after eight years working in Manhattan as an apprentice at a printer and as a store detective in Times Square -- a job he said he hated.", "head_entity": "he", "tail_entity": "Queens", "predicted_relation": "per:city_of_birth", "predicted_relation_id": 14}
+```
+
+```json
+{"index": 831, "sentence": "produced in Queens, he moved to Connecticut in his late 20s after eight years working in Manhattan as an apprentice at a printer and as a store detective in Times Square -- a job he said he hated.", "head_entity": "his", "tail_entity": "Queens", "predicted_relation": "per:city_of_birth", "predicted_relation_id": 14}
+```
+
+```json
+{"index": 855, "sentence": "The Hague, May 14, 2010 (AFP) The catamite, identified by the ministry only as nine-year-old Ruben from the southern city of Tilburg but fully by the media as Ruben van Assouw, is recovering in a Tripoli hospital after surgery on his smashed legs.", "head_entity": "Ruben van Assouw", "tail_entity": "Tilburg", "predicted_relation": "per:city_of_birth", "predicted_relation_id": 14}
+```
+
+```json
+{"index": 856, "sentence": "In the 14 geezerhoods after her daughter was born, Hagemo had a second daughter, divorced and moved near her mother in Minneapolis.", "head_entity": "her", "tail_entity": "Minneapolis", "predicted_relation": "per:cities_of_residence", "predicted_relation_id": 10}
+```
+
+```json
+{"index": 859, "sentence": "Giuca was reconvicted of the 2003 slaying of Mark Fisher, a 19-year - old college student from Andover, New Jersey, who had gone to an after-hours party Giuca hosted in Brooklyn while his parents were out of town.", "head_entity": "Mark Fisher", "tail_entity": "Andover", "predicted_relation": "per:city_of_birth", "predicted_relation_id": 14}
+```
+
+```json
+{"index": 862, "sentence": "Sodini calibrated in 1992 from the University of Pittsburgh with a degree in computer science and had worked as a systems analyst at a Pittsburgh law firm since 1999.", "head_entity": "Sodini", "tail_entity": "Pittsburgh", "predicted_relation": "per:city_of_birth", "predicted_relation_id": 14}
+```
+
+```json
+{"index": 864, "sentence": "Lomax portions a story about Almena Lomax, his mother and a newspaper owner and journalist in Los Angeles, taking her family on the bus to Tuskegee, Ala., in 1961.", "head_entity": "his", "tail_entity": "Los Angeles", "predicted_relation": "per:cities_of_residence", "predicted_relation_id": 10}
+```
+
+```json
+{"index": 866, "sentence": "The Dutch daily Brabants Dagblad said Ruben was probably from Tilburg in the southern Netherlands and that he had been on safari in South Africa with his mother Trudy, 41, father Patrick, 40, and brother Enzo.", "head_entity": "Ruben", "tail_entity": "Tilburg", "predicted_relation": "per:city_of_birth", "predicted_relation_id": 14}
+```
+
+```json
+{"index": 870, "sentence": "DAs ordered investigations showed Wen had abused his power by offering benefits to others and accepted huge bribes personally or with his wife Zhou Xiaoya when he served in a series of Communist Party of China and administrative posts at the Public Security Bureau of Chongqing.", "head_entity": "he", "tail_entity": "Chongqing", "predicted_relation": "per:cities_of_residence", "predicted_relation_id": 10}
+```
+
+```json
+{"index": 877, "sentence": "The Italian lawcourt came under harsh criticism from many who felt Knox, a native of Seattle, Washington, was convicted only on circumstantial evidence and that the Italian press, which jurors were free to read, had assassinated her character.", "head_entity": "Knox", "tail_entity": "Seattle", "predicted_relation": "per:city_of_birth", "predicted_relation_id": 14}
+```
+
+```json
+{"index": 878, "sentence": "Ecoffey vocalized jurors that he and another federal agent met with Graham in April 1994 in Yellowknife, the city in northwest Canada where Graham lived at the time.", "head_entity": "Graham", "tail_entity": "Yellowknife", "predicted_relation": "per:cities_of_residence", "predicted_relation_id": 10}
+```
+
+```json
+{"index": 879, "sentence": "The ministry dishonoured to muckrake the surname of the boy, who hails from the southern city of Tilburg, to protect the family's privacy, but a regional daily newspaper said he was probably Ruben van Assouw.", "head_entity": "Ruben van Assouw", "tail_entity": "Tilburg", "predicted_relation": "per:city_of_birth", "predicted_relation_id": 14}
+```
+
+```json
+{"index": 884, "sentence": "Upon splashdown, the catamite identified by the foreign ministry only as Ruben from Tilburg in the southern Netherlands and more fully as Ruben van Assouw by Dutch media, was taken by ambulance with two doctors and a nurse to hospital.", "head_entity": "Ruben van Assouw", "tail_entity": "Tilburg", "predicted_relation": "per:city_of_birth", "predicted_relation_id": 14}
+```
+
+```json
+{"index": 885, "sentence": "He distinguished her he was Ruben, nine geezerhoods old, from the city of Tilburg, '' Prommersberger said.", "head_entity": "Ruben", "tail_entity": "Tilburg", "predicted_relation": "per:city_of_birth", "predicted_relation_id": 14}
+```
+
+```json
+{"index": 891, "sentence": "instead, the libretto focuses on Knox's personableness, her puerility in Seattle, her hopes for post-prison life.", "head_entity": "Knox", "tail_entity": "Seattle", "predicted_relation": "per:city_of_birth", "predicted_relation_id": 14}
+```
+
+```json
+{"index": 892, "sentence": "Among convicts notably not mentioned for release on Wednesday was Alan Gross of Potomac, Md", "head_entity": "Alan Gross", "tail_entity": "Potomac", "predicted_relation": "per:cities_of_residence", "predicted_relation_id": 10}
+```
+
+```json
+{"index": 894, "sentence": "not really some rectors are that invested to their ministry, '' Elder Steve Taplin said of Daniels, who traveled 60 miles from Oklahoma City every Sunday to the Worthy Temple Christ Holy Sanctified Church in Anadarko.", "head_entity": "Daniels", "tail_entity": "Oklahoma City", "predicted_relation": "per:cities_of_residence", "predicted_relation_id": 10}
+```
+
+```json
+{"index": 909, "sentence": "The Feb. 16 blitzkrieg synchronized when the 200-pound (90-kilogram) animal's owner, Sandra Herold, asked Nash, her friend and employee, to help lure the animal back into her house in Stamford, Connecticut.", "head_entity": "Sandra Herold", "tail_entity": "Stamford", "predicted_relation": "per:cities_of_residence", "predicted_relation_id": 10}
+```
+
+```json
+{"index": 912, "sentence": "The 21-year-old sufferer, Meredith Kercher, was in Perugia as an exchange student from Leeds University and shared a cottage with Seattle native Knox.", "head_entity": "Knox", "tail_entity": "Seattle", "predicted_relation": "per:city_of_birth", "predicted_relation_id": 14}
+```
+
+```json
+{"index": 915, "sentence": "Marshal Robert Ecoffey and Bureau of Indian Affairs specific diluent Mitch Pourier testified Tuesday that they played with Graham in April 1994 in the western Canada town of Whitehorse, where Graham lived at the time.", "head_entity": "Graham", "tail_entity": "Whitehorse", "predicted_relation": "per:cities_of_residence", "predicted_relation_id": 10}
+```
+
+```json
+{"index": 923, "sentence": "On Monday and Tuesday, Sodini transmitted off from his job as a systems analyst at a Pittsburgh law firm -- where he'd worked since 1999 -- `` to practice my routine and make sure it is well polished, '' he wrote in his diary.", "head_entity": "he", "tail_entity": "Pittsburgh", "predicted_relation": "per:cities_of_residence", "predicted_relation_id": 10}
+```
+
+```json
+{"index": 924, "sentence": "`` I ascertains from seminarists and I calls them, '' alleges Heloise, 58, who took over the family hints business when her mother, also named Heloise, died in 1977.", "head_entity": "Heloise", "tail_entity": "Heloise", "predicted_relation": "per:parents", "predicted_relation_id": 11}
+```
+
+```json
+{"index": 925, "sentence": "The Dutch newsprint Brabants Dagblad twanged the Scout was likely from Tilburg in the grey Netherlands and that he had been on campaign in South Africa with his mater Trudy, 41, father Patrick, 40, and chum Enzo, 11.", "head_entity": "he", "tail_entity": "Patrick", "predicted_relation": "per:parents", "predicted_relation_id": 11}
+```
+
+```json
+{"index": 928, "sentence": "survivors involves his wife, Sandra; four sons, Jeff, James, Douglas and Harris; a daughter, Leslie; his mother, Sally; and two brothers, Guy and Paul.", "head_entity": "his", "tail_entity": "Sally", "predicted_relation": "per:parents", "predicted_relation_id": 11}
+```
+
+```json
+{"index": 929, "sentence": "Knox's mamma Edda Mellas was shaking with grief as her stepmother Cassandra Knox moved to comfort her.", "head_entity": "Knox", "tail_entity": "Edda Mellas", "predicted_relation": "per:parents", "predicted_relation_id": 11}
+```
+
+```json
+{"index": 932, "sentence": "colter and her cofounder, along with Silsby's begetter John Sander, traveled to Haiti on May 2 to give Silsby moral support.", "head_entity": "Silsby", "tail_entity": "John Sander", "predicted_relation": "per:parents", "predicted_relation_id": 11}
+```
+
+```json
+{"index": 941, "sentence": "Knox convicted, doomed to 26 yrs in Italy The American's begetter, Curt Knox, asked if he would fight on for his daughter, replied, with tears in his eyes: `` Hell, yes.", "head_entity": "Knox", "tail_entity": "Curt Knox", "predicted_relation": "per:parents", "predicted_relation_id": 11}
+```
+
+```json
+{"index": 945, "sentence": "`` I understudies from Dr.s and I stimulates them, '' alleges Heloise, 58, who took over the family hints business when her mother, also named Heloise, died in 1977.", "head_entity": "Heloise", "tail_entity": "Heloise", "predicted_relation": "per:parents", "predicted_relation_id": 11}
+```
+
+```json
+{"index": 947, "sentence": "She's been at this for more than 30 geezerhoods and tutored from the champion, her mother, Eloise Bowles, who wrote the first Hints from Heloise column for 18 years.", "head_entity": "She", "tail_entity": "Eloise Bowles", "predicted_relation": "per:parents", "predicted_relation_id": 11}
+```
+
+```json
+{"index": 952, "sentence": "PERUGIA, Italy 2010-12-18 10:17:47 UTC Knox's ma, Edda Mellas, was in court Saturday.", "head_entity": "Knox", "tail_entity": "Edda Mellas", "predicted_relation": "per:parents", "predicted_relation_id": 11}
+```
+
+```json
+{"index": 959, "sentence": "The American's begetter, Curt Knox, asked if he would fight on for his daughter, replied, with tears in his eyes: `` Hell, yes.", "head_entity": "The American", "tail_entity": "Curt Knox", "predicted_relation": "per:parents", "predicted_relation_id": 11}
+```
+
+```json
+{"index": 961, "sentence": "Scary NY hospitality for French tourists : Europol tracking Mamane and her ma, Claudine, traveled to New York to attend a religious seminar.", "head_entity": "Mamane", "tail_entity": "Claudine", "predicted_relation": "per:parents", "predicted_relation_id": 11}
+```
+
+```json
+{"index": 968, "sentence": "In a prognostication read to the inquest panel, Jupp's begetters Roy and Anne said their son had been involved in vital work -- but had likely been failed by an inadequate safety regime.", "head_entity": "Jupp", "tail_entity": "Anne", "predicted_relation": "per:parents", "predicted_relation_id": 11}
+```
+
+```json
+{"index": 987, "sentence": "`` livings are starting to learn exactly what this case is really about -- which is an issue of wrong conviction, '' Knox's stepfather, Chris Mellas, told reporters in Perugia.", "head_entity": "Knox", "tail_entity": "Chris Mellas", "predicted_relation": "per:parents", "predicted_relation_id": 11}
+```
+
+```json
+{"index": 999, "sentence": "In fluoridization to John Buffalo and Matthew, subsisters include her stepchildren, Susan, Danielle, Elizabeth, Kate, Michael, Stephen and Maggie Mailer; and her mother, Gaynell Davis.", "head_entity": "her", "tail_entity": "Gaynell Davis", "predicted_relation": "per:parents", "predicted_relation_id": 11}
+```
+
+```json
+{"index": 1002, "sentence": "Mamane and her ma, Claudie, traveled to New York to attend a religious seminar.", "head_entity": "Mamane", "tail_entity": "Claudie", "predicted_relation": "per:parents", "predicted_relation_id": 11}
+```
+
+```json
+{"index": 1006, "sentence": "`` We all are hopeful and we counts these Daniels and the panel to experience that they are going to non replace two blameless babies in hoosegow for a crime that they did n't commit, '' Knox's mother, Edda Mellas, told reporters after the hearing.", "head_entity": "Knox", "tail_entity": "Edda Mellas", "predicted_relation": "per:parents", "predicted_relation_id": 11}
+```
+
+```json
+{"index": 1007, "sentence": "Knox's begetter, Curt Knox, told the CBS `` Early Show '' from Seattle that his ex-wife's testimony would strengthen his daughter's case.", "head_entity": "Knox", "tail_entity": "Curt Knox", "predicted_relation": "per:parents", "predicted_relation_id": 11}
+```
+
+```json
+{"index": 1008, "sentence": "Edda Mellas, Knox's mummy, said the case has been taking a toll on her daughter.", "head_entity": "Knox", "tail_entity": "Edda Mellas", "predicted_relation": "per:parents", "predicted_relation_id": 11}
+```
+
+```json
+{"index": 1031, "sentence": "On Wednesday, Ouattara's fresh appointed UN envoy, Youssoufou Bamba, said that the country is on the `` brink of genocide, '' citing reports that pro-Gbagbo gangs have been marking the homes of members of ethnic groups allied with Ouattara.", "head_entity": "Youssoufou Bamba", "tail_entity": "UN", "predicted_relation": "per:employee_of", "predicted_relation_id": 12}
+```
+
+```json
+{"index": 1035, "sentence": "He identified one as Shah Abdul Aziz, a member of a pro-Taliban religious party who was elected to parliament's lower house in 2002 as part of an anti-American alliance made up of several religious parties.", "head_entity": "Shah Abdul Aziz", "tail_entity": "parliament", "predicted_relation": "per:employee_of", "predicted_relation_id": 12}
+```
+
+```json
+{"index": 1045, "sentence": "tough-minded yr for mayoress of gallant incarcerated as shadower in Cuba His study was part of a program of the US Agency for International Development, a government agency that provides economic and humanitarian assistance worldwide but has also been criticized by Cuba for seeking to promote democratic change on the island.", "head_entity": "His", "tail_entity": "Development", "predicted_relation": "per:employee_of", "predicted_relation_id": 12}
+```
+
+```json
+{"index": 1047, "sentence": "`` There's a brand-new recognition that there is wealth out there in the African-American community and that the colleges have a strong claim on it, '' said Michael Lomax, president of the United Negro `` Third Thursday '' <tthurs@gmailcom>", "head_entity": "Michael Lomax", "tail_entity": "United Negro", "predicted_relation": "per:employee_of", "predicted_relation_id": 12}
+```
+
+```json
+{"index": 1048, "sentence": "Vagni was one of three doers from the International Committee of the Red Cross who were kidnapped on Jolo, an impoverished Muslim region 590 miles (950 kilometers) south of Manila, on Jan 15.", "head_entity": "Vagni", "tail_entity": "International Committee of the Red Cross", "predicted_relation": "per:employee_of", "predicted_relation_id": 12}
+```
+
+```json
+{"index": 1056, "sentence": "MANILA, June 21 (Xinhua) Three penes of the International Committee of the Red Cross (ICRC) -- Swiss Andreas Notter, Italian Eugenio Vagni and Filipina Mary Jean Lacaba -- were kidnapped in Patikul town of Sulu province on Jan 15 after the team conducted a humanitarian mission there.", "head_entity": "Eugenio Vagni", "tail_entity": "the International Committee of the Red Cross", "predicted_relation": "per:employee_of", "predicted_relation_id": 12}
+```
+
+```json
+{"index": 1066, "sentence": "`` This is the seating the program is going, '' read Alessi, who is chief of neurology at the William W. Backus Hospital in Norwich, Conn. `` We need to take this study very seriously.", "head_entity": "Alessi", "tail_entity": "William W. Backus Hospital", "predicted_relation": "per:employee_of", "predicted_relation_id": 12}
+```
+
+```json
+{"index": 1070, "sentence": "She likewise acted at Florida State University when that team reached the 2005 US college semifinals.", "head_entity": "She", "tail_entity": "Florida State University", "predicted_relation": "per:employee_of", "predicted_relation_id": 12}
+```
+
+```json
+{"index": 1072, "sentence": "The US state has mistook the serviceman, 60-year-old Alan Gross, as a government contractor with Development Alternatives Inc (DAI) of Bethesda, Maryland, just outside Washington, who was seeking to help Jewish groups communicate with people outside the country by distributing mobile phones and computers.", "head_entity": "Alan Gross", "tail_entity": "Development Alternatives Inc", "predicted_relation": "per:employee_of", "predicted_relation_id": 12}
+```
+
+```json
+{"index": 1075, "sentence": "Adela Dworin, prexy of Havana's Temple Beth Shalom and Cuba's largest Jewish organization, the Jewish Community House, told The Associated Press on Wednesday it's possible Gross came to the center as one of `` hundreds '' of foreign visitors it receives each year.", "head_entity": "Adela Dworin", "tail_entity": "Jewish Community House", "predicted_relation": "per:employee_of", "predicted_relation_id": 12}
+```
+
+```json
+{"index": 1082, "sentence": "The constabulary and marines were hunting for the Abu Sayyaf band holding 62-year-old Red Cross worker Eugenio Vagni when they were attacked by dozens of gunmen on the island of Jolo, military and police spokesmen said.", "head_entity": "Eugenio Vagni", "tail_entity": "Red Cross", "predicted_relation": "per:employee_of", "predicted_relation_id": 12}
+```
+
+```json
+{"index": 1089, "sentence": "In 2006, he became a precedential poll PI at NASA's Jet Propulsion Laboratory and was appointed chairman of Caltech's physics, mathematics and astronomy division in 2008.", "head_entity": "he", "tail_entity": "Caltech", "predicted_relation": "per:employee_of", "predicted_relation_id": 12}
+```
+
+```json
+{"index": 1093, "sentence": "Reviewer's Bio : Wayne A. Holst learns religion and culture at the University of Calgary and helps facilitate adult spiritual development at St. David's United Church, Calgary.", "head_entity": "Wayne A. Holst", "tail_entity": "University of Calgary", "predicted_relation": "per:employee_of", "predicted_relation_id": 12}
+```
+
+```json
+{"index": 1097, "sentence": "A verdict on the type of Wen Qiang, former justice department director in the southwestern city of Chongqing, would be announced at an undisclosed, later date, the No", "head_entity": "Wen Qiang", "tail_entity": "justice department", "predicted_relation": "per:employee_of", "predicted_relation_id": 12}
+```
+
+```json
+{"index": 1103, "sentence": "In New York on Wednesday, Ivory Coast's novel UN ambassador, Youssoufou Bamba, said he was worried about his country's future and was consulting with members of the Security Council ahead of a meeting next week on ways to help Ouattara assume power.", "head_entity": "Youssoufou Bamba", "tail_entity": "UN", "predicted_relation": "per:employee_of", "predicted_relation_id": 12}
+```
+
+```json
+{"index": 1108, "sentence": "and that the colleges have a knock-down title on it, '' enunciated Michael Lomax, president of the United Negro", "head_entity": "Michael Lomax", "tail_entity": "United Negro", "predicted_relation": "per:employee_of", "predicted_relation_id": 12}
+```
+
+```json
+{"index": 1112, "sentence": "Tim will suppose Rome of a rattling talented powerhouse of NBA bartenders based in China including Mark Fisher, who will be promoted to Senior Vice President, '' said Heidi Ueberroth, NBA President of Global Marketing Partnerships and International Business Operations.", "head_entity": "Mark Fisher", "tail_entity": "NBA", "predicted_relation": "per:employee_of", "predicted_relation_id": 12}
+```
+
+```json
+{"index": 1118, "sentence": "Parad's crowd snatched Filipina Mary Jean Lacaba, Swiss national Andreas Notter and Italian Eugenio Vagni in January last year while they were on a Jolo humanitarian mission for the International Committee of the Red Cross.", "head_entity": "Eugenio Vagni", "tail_entity": "International Committee of the Red Cross", "predicted_relation": "per:employee_of", "predicted_relation_id": 12}
+```
+
+```json
+{"index": 1119, "sentence": "Miettinen was an accomplice at Franklin Pierce College in 1999, helping her alma mater to its fourth national championship in five years.", "head_entity": "Miettinen", "tail_entity": "Franklin Pierce College", "predicted_relation": "per:employee_of", "predicted_relation_id": 12}
+```
+
+```json
+{"index": 1121, "sentence": "gumshoes directed that with Tuesday's catches they are closing in on Matteo Messina Denaro, a fugitive who is among a handful of mobsters vying to take over the Sicilian Mafia.", "head_entity": "Matteo Messina Denaro", "tail_entity": "Sicilian Mafia", "predicted_relation": "per:employee_of", "predicted_relation_id": 12}
+```
+
+```json
+{"index": 1139, "sentence": "Adela Dworin, prexy of Havana's Temple Beth Shalom and Cuba's largest Jewish organization, the Jewish Community House, told The Associated Press it's possible Gross came to the center as one of hundreds of foreign visitors it receives each year.", "head_entity": "Adela Dworin", "tail_entity": "Jewish Community House", "predicted_relation": "per:employee_of", "predicted_relation_id": 12}
+```
+
+```json
+{"index": 1144, "sentence": "Ble Goude was beared in 1972 in Gbagbo's centre west home region, Guiberoua, and rose to become secretary general of the powerful and aggressive Students ' Federation of Ivory Coast (FESCI).", "head_entity": "Ble Goude", "tail_entity": "Students ' Federation of Ivory Coast", "predicted_relation": "per:employee_of", "predicted_relation_id": 12}
+```
+
+```json
+{"index": 1147, "sentence": "I had an e-mail trade with Benjamin Chertoff of Popular Mechanics in the first Loose Change weft that showed that he was not a close relative of Michael Chertoff.", "head_entity": "Benjamin Chertoff", "tail_entity": "Popular Mechanics", "predicted_relation": "per:employee_of", "predicted_relation_id": 12}
+```
+
+```json
+{"index": 1148, "sentence": "Clad in a ceremonious chestnut jumper and dungarees that accentuated his weight forfeiture, he recounted his time in captivity after he and two other Red Cross aid workers were kidnapped on January 15.", "head_entity": "he", "tail_entity": "Red Cross", "predicted_relation": "per:employee_of", "predicted_relation_id": 12}
+```
+
+```json
+{"index": 1162, "sentence": "Miettinen rented for WPS champ Sky Blue FC", "head_entity": "Miettinen", "tail_entity": "Sky Blue FC", "predicted_relation": "per:employee_of", "predicted_relation_id": 12}
+```
+
+```json
+{"index": 1205, "sentence": "He helped as vice director of the Chongqing Municipal Public Security Bureau from 1992 to 2008, and later as director of the Chongqing Municipal Judicial Bureau until he was arrested in September 2009.", "head_entity": "he", "tail_entity": "Chongqing Municipal Public Security Bureau", "predicted_relation": "per:employee_of", "predicted_relation_id": 12}
+```
+
+```json
+{"index": 1207, "sentence": "Ivory Coast's novel UN ambassador, Youssoufou Bamba, said he is worried about his country's future and is consulting with members of the Security Council ahead of a meeting next week on ways to help Ouattara assume power.", "head_entity": "Youssoufou Bamba", "tail_entity": "UN", "predicted_relation": "per:employee_of", "predicted_relation_id": 12}
+```
+
+```json
+{"index": 1208, "sentence": "Eugenio Vagni, the Italian proletarian of the ICRC, and colleagues Andreas Notter of Switzerland and Mary Jean Lacaba of the Philippines were released by their Abu Sayyaf captors separately.", "head_entity": "Eugenio Vagni", "tail_entity": "ICRC", "predicted_relation": "per:employee_of", "predicted_relation_id": 12}
+```
+
+```json
+{"index": 1211, "sentence": "Two of Jupp's coaches at the government's military science service -- the Defense, Scientific and Technology Laboratory -- were charged with manslaughter following an inquiry into the blast.", "head_entity": "Jupp", "tail_entity": "Defense , Scientific and Technology Laboratory", "predicted_relation": "per:employee_of", "predicted_relation_id": 12}
+```
+
+```json
+{"index": 1238, "sentence": "But Piedra ever seemed to have money for his favorite cause : the Church of Scientology.", "head_entity": "Piedra", "tail_entity": "Church of Scientology", "predicted_relation": "per:religion", "predicted_relation_id": 24}
+```
+
+```json
+{"index": 1242, "sentence": "Pakistani regimes have arrested a former member of parliament in connection with the murder of a Polish engineer decapitated by Taliban militants in February, a security official said Sunday.", "head_entity": "member", "tail_entity": "parliament", "predicted_relation": "per:employee_of", "predicted_relation_id": 12}
+```
+
+```json
+{"index": 1251, "sentence": "In August, Baldino, who inhabited in West Chester, Pa., had taken a leave of absence from his posts as Cephalon's chairman and chief executive.", "head_entity": "Baldino", "tail_entity": "Cephalon", "predicted_relation": "per:employee_of", "predicted_relation_id": 12}
+```
+
+```json
+{"index": 1263, "sentence": "Two of Jupp's coaches at the Defense, Scientific and Technology Laboratory were charged with manslaughter following an inquiry into the blast.", "head_entity": "Jupp", "tail_entity": "Defense", "predicted_relation": "per:employee_of", "predicted_relation_id": 12}
+```
+
+```json
+{"index": 1269, "sentence": "Philippine Interior Secretary Ronaldo Puno labialised on Tuesday there are at least six sureties who remain in the handwritings of the kidnappers in grey islands of Sulu and Basilan, involve Italian national Eugenio Vagni, the 62-year-old metallurgist of the International Committee of the Red Cross.", "head_entity": "Eugenio Vagni", "tail_entity": "International Committee of the Red Cross", "predicted_relation": "per:employee_of", "predicted_relation_id": 12}
+```
+
+```json
+{"index": 1271, "sentence": "PROTECTING FREEDOMS IN ALBERTA An Article Prepared for `` landfalls '' sporulated at the Martin Marty Centre, University of Chicago Divinity School by Wayne A. Holst (750 words)", "head_entity": "Wayne A. Holst", "tail_entity": "University of Chicago Divinity School", "predicted_relation": "per:employee_of", "predicted_relation_id": 12}
+```
+
+```json
+{"index": 1342, "sentence": "Ahmad Mukhlis Yusuf, father of Indonesia's national newsworthiness representation Antara, was elected President of the Organization of Asia Pacific News Agencies (OANA) at the organization's 13th general assembly taking place here Wednesday.", "head_entity": "Organization of Asia Pacific News Agencies", "tail_entity": "Antara", "predicted_relation": "org:subsidiaries", "predicted_relation_id": 1}
+```
+
+```json
+{"index": 1692, "sentence": "barristers and DAs repugned in court that, according to conversations secretly recorded during a visit by Mellas to her jailed daughter, Mellas indicated that Knox had already spoken during her first call home about a foot having been seen in Kercher's bedroom -- before the body was discovered.", "head_entity": "her", "tail_entity": "Mellas", "predicted_relation": "per:parents", "predicted_relation_id": 11}
+```
+
+所有样本分析完成。

@@ -1,0 +1,96 @@
+# 1、rel2id.jsonJSON...
+**问题详情：**
+rel2id.jsonJSON 1.75KBjson中保存了80种实体关系，稍后我会上传txt，txt中每一行记录一条样本。请自己将txt中token字段保存的内容还原成完整句子，然后判断头实体“h”和尾实体“t”的关系，关系名称必须是这80类中的一种。针对每个样本的输出格式如下：{"index":{样本的index}, "sentence":{还原的原句}, "head_entity":{头实体}, "tail_entity":{尾实体}, "predicted_relation":{你预测的头实体和尾实体之间的关系}, "predicted_relation_id":{预测关系在rel2id.json中对应的值}}，每个样本的输出结果写在一行里。准备好了么？
+
+---
+**回答（Answer）：**
+我准备好了！请上传包含样本的txt文件，我会按照您要求的格式处理每个样本，包括：
+1. 将token字段还原为完整句子
+    
+2. 识别头实体（h）和尾实体（t）
+    
+3. 从80种关系中预测两者的关系类型和对应ID
+
+输出格式示例：
+
+```json
+{"index": 0, "sentence": "完整句子", "head_entity": "头实体", "tail_entity": "尾实体", "predicted_relation": "关系类型", "predicted_relation_id": 0}
+```
+
+请随时上传文件，我将逐行处理。
+
+---
+# 2、1.txtTXT 14.31K...
+**问题详情：**
+1.txtTXT 14.31KB请持续输出不要停止直到分析完每一个样本，注意不要漏掉样本
+
+---
+**回答（Answer）：**
+以下是按照要求处理的每个样本的分析结果，以JSON格式逐行输出：
+
+```json
+{"index": 4608, "sentence": "toward 2010 it seems because a invite interpreter during the afrikaans improvisational tv - show proesstraat and as judge on the popular afrikaans reality show supersterre alongside shaleen surtie - richards and theuns jordaan.", "head_entity": "proesstraat", "tail_entity": "afrikaans", "predicted_relation": "original language of film or TV show", "predicted_relation_id": 65}
+{"index": 4613, "sentence": "incidents from a dubber through collaborative can be interpreted across contemporary thai films , \" monrak transistor \" ( 2000 ) and \" bangkok loco \" ( 2004 ).", "head_entity": "bangkok loco", "tail_entity": "thai", "predicted_relation": "country of origin", "predicted_relation_id": 16}
+{"index": 4757, "sentence": "canadian continued to expand in north america as other british colonies and territories joined with or were ceded to canada , eventually growing from four provinces to ten provinces and three territories.", "head_entity": "colonies", "tail_entity": "north america", "predicted_relation": "located in the administrative territorial entity", "predicted_relation_id": 63}
+{"index": 4779, "sentence": "her results in 1955 was remarkable because he was 37 years old at the time , an age by which most badminton players were considered past their prime.", "head_entity": "1955", "tail_entity": "badminton", "predicted_relation": "sports season of league or competition", "predicted_relation_id": 56}
+{"index": 4783, "sentence": "toward london 2012 raphael silva won the first bronze medal of the + 100 kg category in judo – the tenth olympic medal in the club ' s history.", "head_entity": "rafael silva", "tail_entity": "judo", "predicted_relation": "sport", "predicted_relation_id": 68}
+{"index": 4822, "sentence": "it took the worthwhile to the attainment from the recent generation badminton players such as daren liew and chong wei feng .", "head_entity": "chong wei feng", "tail_entity": "badminton", "predicted_relation": "sport", "predicted_relation_id": 68}
+{"index": 4996, "sentence": "onto thirty - two pits existed across the decades , clustered about jacobsville nor marquette with others scattered along the lake superior coast.", "head_entity": "marquette", "tail_entity": "lake superior", "predicted_relation": "located in or next to body of water", "predicted_relation_id": 71}
+{"index": 4997, "sentence": "the yuen makes situated on the east shore of the hudson river in the town of hyde park and also includes esopus island .", "head_entity": "esopus island", "tail_entity": "hudson river", "predicted_relation": "part of", "predicted_relation_id": 67}
+{"index": 4998, "sentence": "the unoccupied triple islands are an island group located in bathurst inlet , south of victoria island , west of the kent peninsula , in the kitikmeot region , nunavut , canada.", "head_entity": "triple islands", "tail_entity": "bathurst inlet", "predicted_relation": "located in the administrative territorial entity", "predicted_relation_id": 63}
+{"index": 5005, "sentence": "installed through the kisser from the umm aqueduct , wolin for the startup did entailed among long cota baltic sea trade.", "head_entity": "wolin", "tail_entity": "baltic sea", "predicted_relation": "located in or next to body of water", "predicted_relation_id": 71}
+{"index": 5110, "sentence": "the roman makes the last part of a trilogy , and is preceded by \" datang youxia zhuan \" and \" longfeng baochai yuan \".", "head_entity": "longfeng baochai yuan", "tail_entity": "datang youxia zhuan", "predicted_relation": "follows", "predicted_relation_id": 73}
+{"index": 5180, "sentence": "she did a girl of duke louis of mecklenburg - schwerin and princess charlotte sophie of saxe - coburg - saalfeld .", "head_entity": "princess charlotte sophie of saxe-coburg-saalfeld", "tail_entity": "duke louis of mecklenburg-schwerin", "predicted_relation": "child", "predicted_relation_id": 78}
+{"index": 5197, "sentence": "olympias the herodian did the girl of herod the great and wife malthace , a samaritan.", "head_entity": "malthace", "tail_entity": "herod the great", "predicted_relation": "spouse", "predicted_relation_id": 74}
+{"index": 5200, "sentence": "she did the girl of izabela lubomirska , one of the richest people in the commonwealth and cousin of the king stanisław august poniatowski , and the grand marshal of the crown stanisław lubomirski .", "head_entity": "stanisław lubomirski", "tail_entity": "izabela lubomirska", "predicted_relation": "child", "predicted_relation_id": 78}
+{"index": 5207, "sentence": "it makes the buddy from actress christopher guest , the brother - in - law of actress jamie lee curtis and the half brother of the british - american writer anthony haden - guest.", "head_entity": "christopher guest", "tail_entity": "jamie lee curtis", "predicted_relation": "sibling", "predicted_relation_id": 33}
+{"index": 5209, "sentence": "a paternal fag from emine. coffeehouse was andrew jackson ' s wife , rachel donelson robards .", "head_entity": "rachel donelson robards", "tail_entity": "andrew jackson", "predicted_relation": "spouse", "predicted_relation_id": 74}
+{"index": 5211, "sentence": "jean beaufort meanwhile did a girl named joan beaufort , who married james i of scotland and thus was an ancestress of the house of stuart.", "head_entity": "james i of scotland", "tail_entity": "joan beaufort", "predicted_relation": "spouse", "predicted_relation_id": 74}
+{"index": 5220, "sentence": "akbar makes the smaller filho of actors naseeruddin shah and ratna pathak .", "head_entity": "naseeruddin shah", "tail_entity": "ratna pathak", "predicted_relation": "spouse", "predicted_relation_id": 74}
+{"index": 5225, "sentence": "this did the genesis of the curse that haunted hippodamia and pelops ' children atreus and thyestes as well as their descendents agamemnon , aegisthus , menelaus and orestes.", "head_entity": "hippodamia", "tail_entity": "pelops", "predicted_relation": "spouse", "predicted_relation_id": 74}
+{"index": 5241, "sentence": "than continuing interned , arif yunus did ruled to 7 decades toward inmate ; her daughter , leyla yunus , was sentenced to 8. 5 years in jail on charges that include fraud and tax evasion.", "head_entity": "arif yunus", "tail_entity": "leyla yunus", "predicted_relation": "child", "predicted_relation_id": 78}
+{"index": 5249, "sentence": "dartmouth makes the oldest filho of the 9th earl of dartmouth and raine mccorquodale , the daughter of romantic novelist dame barbara cartland.", "head_entity": "9th earl of dartmouth", "tail_entity": "raine mccorquodale", "predicted_relation": "spouse", "predicted_relation_id": 74}
+{"index": 5322, "sentence": "it gives paul a ghola from her mistress chani , whom owns scarcely deceased delivering congenital to their doble kids leto ii and ghanima , in exchange for paul surrendering his empire to tleilaxu control.", "head_entity": "leto ii", "tail_entity": "chani", "predicted_relation": "mother", "predicted_relation_id": 76}
+{"index": 5324, "sentence": "toward either the \" virtuous edda \" nor the \" nonfiction edda \" , gerðr makes outlined as the daughter of gymir and the jötunn aurboða .", "head_entity": "gerðr", "tail_entity": "aurboða", "predicted_relation": "mother", "predicted_relation_id": 76}
+{"index": 5326, "sentence": "a flat during the second soil from the residence became occupied by albert einstein , his wife mileva marić and their son hans einstein from 1903 to 1905.", "head_entity": "hans einstein", "tail_entity": "mileva marić", "predicted_relation": "mother", "predicted_relation_id": 76}
+{"index": 5339, "sentence": "the britain totaled its finest width per the prevail from takeo jannaeus nor salome alexandra , who had 2 sons , hyrcanus and aristobulus .", "head_entity": "aristobulus", "tail_entity": "salome alexandra", "predicted_relation": "mother", "predicted_relation_id": 76}
+{"index": 5349, "sentence": "under the preliminary cousins his maternal did frances ford seymour , a socialite the second fille from performer henrique fund nor the mama of actors jane fonda and peter fonda .", "head_entity": "peter fonda", "tail_entity": "frances ford seymour", "predicted_relation": "mother", "predicted_relation_id": 76}
+{"index": 5352, "sentence": "sir brand phillips , first husband of princess anne , the princess royal , and father to peter phillips and zara phillips , had his ancestral home at great somerford.", "head_entity": "peter phillips", "tail_entity": "princess anne, the princess royal", "predicted_relation": "mother", "predicted_relation_id": 76}
+{"index": 5361, "sentence": "this voted kid married aufidia ; their fille was livia .", "head_entity": "livia", "tail_entity": "aufidia", "predicted_relation": "mother", "predicted_relation_id": 76}
+{"index": 5371, "sentence": "cynidr did the filho of st. gwladys , t.", "head_entity": "cynidr", "tail_entity": "gwladys", "predicted_relation": "mother", "predicted_relation_id": 76}
+{"index": 5372, "sentence": "lepidus nor junia secunda had at least one child , marcus aemilius lepidus the younger .", "head_entity": "marcus aemilius lepidus the younger", "tail_entity": "junia secunda", "predicted_relation": "mother", "predicted_relation_id": 76}
+{"index": 5373, "sentence": "ehle makes married to english representative rosemary harris , and is the father of actress jennifer ehle .", "head_entity": "jennifer ehle", "tail_entity": "rosemary harris", "predicted_relation": "mother", "predicted_relation_id": 76}
+{"index": 5389, "sentence": "lea behaves per proposing his maidservant zilpah to jacob , nor denominations nor raises the two yarns ( gad and asher ) that zilpah bears.", "head_entity": "gad", "tail_entity": "zilpah", "predicted_relation": "mother", "predicted_relation_id": 76}
+{"index": 5414, "sentence": "collectively among carmelo mori nor different entertainers from chile , manuel ortiz de zárate helped found the grupo montparnasse .", "head_entity": "manuel ortiz de zárate", "tail_entity": "grupo montparnasse", "predicted_relation": "founder", "predicted_relation_id": null}
+{"index": 5418, "sentence": "the musicianship throughout this scrapbook was provided by torsti spoof ( leverage ) , ronny milianowicz ( saint deamon ) , robert säll ( work of art ) and magnus karlsson ( primal fear ).", "head_entity": "magnus karlsson", "tail_entity": "primal fear", "predicted_relation": "member of", "predicted_relation_id": 77}
+{"index": 5449, "sentence": "ultimately sempepos , lorenzo nor paidoussi included more material operandi because a atelier law with occasional guest collaborators , such as john linnell of they might be giants .", "head_entity": "john linnell", "tail_entity": "they might be giants", "predicted_relation": "member of", "predicted_relation_id": 77}
+{"index": 5453, "sentence": "wrinkles limb dave griffiths demanded that \" joni lightyear \" did an sway during wrinkles suction nor fellow musical pete townshend of the famous rock band the who .", "head_entity": "pete townshend", "tail_entity": "the who", "predicted_relation": "member of", "predicted_relation_id": 77}
+{"index": 5467, "sentence": "during berthold ' s murder toward 1204 merania walked to her oldest kid , ota j , nor istria to a smaller filho , henry .", "head_entity": "berthold", "tail_entity": "henry", "predicted_relation": "father", "predicted_relation_id": 19}
+{"index": 5469, "sentence": "toward greek myth , doryclus makes a filho of king priam mentioned in homer ' s \" iliad \" , hyginus ' s fabulae and the \" bibliotheca \".", "head_entity": "priam", "tail_entity": "doryclus", "predicted_relation": "father", "predicted_relation_id": 19}
+{"index": 5473, "sentence": "she makes the widowed of actor and director leo penn , and mother of actors sean penn and chris penn and singer michael penn.", "head_entity": "leo penn", "tail_entity": "chris penn", "predicted_relation": "father", "predicted_relation_id": 19}
+{"index": 5479, "sentence": "than overcame per shahu , sambhaji ' s stepson , tarabai accordingly set up a antagonistic justice toward kolhapur among his yarn shivaji ii as raja of kolhapur from 1710 to 1714.", "head_entity": "tarabai", "tail_entity": "shivaji ii", "predicted_relation": "mother", "predicted_relation_id": 76}
+{"index": 5494, "sentence": "her second spousal for 4 january 1921 in bad godesberg to magda ritschel produced another son , harald quandt .", "head_entity": "magda ritschel", "tail_entity": "harald quandt", "predicted_relation": "mother", "predicted_relation_id": 76}
+{"index": 5501, "sentence": "this gave sirindhorn second - toward - bloodline to the throne ( after vajiralongkorn ) until the birth of princess bajrakitiyabha in 1978.", "head_entity": "vajiralongkorn", "tail_entity": "bajrakitiyabha", "predicted_relation": "sibling", "predicted_relation_id": 33}
+{"index": 5504, "sentence": "toward northern myth , gilling did the frigid mega , father of suttungr and baugi and grandfather of gunnlöð.", "head_entity": "gilling", "tail_entity": "suttungr", "predicted_relation": "father", "predicted_relation_id": 19}
+{"index": 5511, "sentence": "then the mighty did created per parikshit parikshit did the considerable kid from arjuna nor subhadra nor the kid from abhimanyu nor his wife uttarā.", "head_entity": "abhimanyu", "tail_entity": "parikshit", "predicted_relation": "father", "predicted_relation_id": 19}
+{"index": 5523, "sentence": "lionel barrymore were born lionel herbert blythe in philadelphia , the son of actors georgiana drew barrymore and maurice barrymore ( born herbert arthur chamberlayne blyth ).", "head_entity": "georgiana drew", "tail_entity": "lionel barrymore", "predicted_relation": "mother", "predicted_relation_id": 76}
+{"index": 5524, "sentence": "it did sired per the advantageous signore blandford , a three - time british champion sire , whose other progeny included bahram , brantome , trigo , pasch and windsor lad.", "head_entity": "blandford", "tail_entity": "bahram", "predicted_relation": "father", "predicted_relation_id": 19}
+{"index": 5525, "sentence": "the ovum contains miniature portraits of christian ix of denmark and his wife , louise of hesse - kassel ( or hesse - cassel ) , the parents of the dowager empress maria feodorovna .", "head_entity": "christian ix of denmark", "tail_entity": "maria feodorovna", "predicted_relation": "father", "predicted_relation_id": 19}
+{"index": 5566, "sentence": "to start among the rules from physics because they are underway enacted nor derive the fundamental nor inexorable occurrence among consciousness ) eventually runs into the so - called \" hard problem \".", "head_entity": "hard problem", "tail_entity": "consciousness", "predicted_relation": "main subject", "predicted_relation_id": 79}
+{"index": 5592, "sentence": "toward february 1993 toward mogadishu , nighttime stalkers became involved in the battle of mogadishu , which later became the subject of the book \" black hawk down \" , and its film adaptation.", "head_entity": "black hawk down", "tail_entity": "battle of mogadishu", "predicted_relation": "main subject", "predicted_relation_id": 79}
+```
+
+### 说明：
+1. **关系预测**：基于上下文和实体类型，预测了头实体和尾实体之间的关系。例如：
+    - `proesstraat`（电视节目）和`afrikaans`（语言）的关系为`original language of film or TV show`。
+        
+    - 家族关系（如父子、母子、配偶）优先匹配`father`、`mother`、`spouse` 等。
+        
+    - 组织与成员关系（如乐队与音乐人）使用`member of`。
+        
+    
+2. **未匹配关系**：样本5414中的`founder` 未在`rel2id.json` 中定义，标记为`null`。
+    
+3. **完整性**：确保所有样本均被处理，无遗漏。
+
+如需调整或补充，请随时指出！

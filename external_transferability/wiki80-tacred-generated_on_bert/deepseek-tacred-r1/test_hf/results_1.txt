@@ -1,0 +1,57 @@
+我将严格按照要求处理每个样本，逐行分析并输出结果：
+
+```json
+{"index": 13254, "sentence": "\"to the immensity his work may have offended you or your government,\" Judy Gross wrote, referring to her husband, Alan P. Gross, \"he and i are genuinely remorseful.\"", "head_entity": "her", "tail_entity": "Judy Gross", "predicted_relation": "NA", "predicted_relation_id": 13}
+```
+
+```json
+{"index": 13405, "sentence": "six victors will compete in the 2007 NTSO piano concerto competition 's final round Dec. 8 at the National Taiwan Symphony Orchestra 's concert hall in Wufeng township, Taichung county.", "head_entity": "National Taiwan Symphony Orchestra", "tail_entity": "Wufeng", "predicted_relation": "org:city_of_headquarters", "predicted_relation_id": 26}
+```
+
+```json
+{"index": 13432, "sentence": "American Global Group said it had transferred ownership to the Federal Reserve Bank of New York parts of two international subsidiaries: American Life Insurance Company -LRB- ALICO -RRB- and American International Assurance Company -LRB- AIA -RRB-.", "head_entity": "ALICO", "tail_entity": "American International Assurance Company", "predicted_relation": "org:alternate_names", "predicted_relation_id": 23}
+```
+
+```json
+{"index": 13496, "sentence": "this journalist is for Karr Ingham, an economist whom created the Huston Petro Hint -LRB- TPI -RRB-, which represents a service of the Texas Alliance of Energy Producers.", "head_entity": "TPI", "tail_entity": "Texas Alliance of Energy Producers", "predicted_relation": "org:member_of", "predicted_relation_id": 25}
+```
+
+```json
+{"index": 13507, "sentence": "British Generation - you choose electricity calculator when measured by volume, 65% of Britain 's total waste mountain is stored at Sellafield, which is owned by the NDA but operated by BNG.", "head_entity": "NDA", "tail_entity": "BNG", "predicted_relation": "org:subsidiaries", "predicted_relation_id": 1}
+```
+
+```json
+{"index": 14028, "sentence": "Panama owns furnished a letter of intention to quit the Central American Parliament -LRB- Parlacen -RRB-, the foreign ministry said Wednesday.", "head_entity": "Central American Parliament", "tail_entity": "Panama", "predicted_relation": "org:members", "predicted_relation_id": 22}
+```
+
+```json
+{"index": 15360, "sentence": "\"we received a call request\" for administrators to say that the MEC, continuing regarded toward a Libyan outpatient, reported the denomination Ruben, his grandmother An van de Sande told the Brabants Dagblad.", "head_entity": "Ruben", "tail_entity": "An van de Sande", "predicted_relation": "per:other_family", "predicted_relation_id": 38}
+```
+
+```json
+{"index": 15379, "sentence": "Knox 's queer, Janet Huff of West Seattle, told King-TV she was holding onto her Blackberry like it was a lifeline while awaiting news.", "head_entity": "Knox", "tail_entity": "Janet Huff", "predicted_relation": "per:other_family", "predicted_relation_id": 38}
+```
+
+```json
+{"index": 15390, "sentence": "Benjamin Chertoff -25- Sunni- immemorial coz of Michael Chertoff; senior \"researcher\" for Popular Mechanics ' hit piece on 9-11 truth movement", "head_entity": "Benjamin Chertoff", "tail_entity": "Michael Chertoff", "predicted_relation": "per:other_family", "predicted_relation_id": 38}
+```
+
+```json
+{"index": 15392, "sentence": "Benjamin Chertoff 25- Sunni- immemorial coz of Michael Chertoff; senior 3researcher2 for Popular Mechanics9 hit piece on 9-11 truth movement", "head_entity": "Benjamin Chertoff", "tail_entity": "Michael Chertoff", "predicted_relation": "per:other_family", "predicted_relation_id": 38}
+```
+
+```json
+{"index": 15412, "sentence": "Kercher, among South London, was found dead last Friday with her throat slit in her bedroom in the apartment she shared with Knox in Perugia, the main city in Italy 's central Umbria region.", "head_entity": "her", "tail_entity": "London", "predicted_relation": "per:city_of_birth", "predicted_relation_id": 14}
+```
+
+分析说明：
+1. 所有句子已从token列表完整还原
+2. 关系预测基于实体上下文和关系定义：
+   - 机构总部关系（org:city_of_headquarters）用于机构与地点
+   - 别名关系（org:alternate_names）用于正式名称与缩写
+   - 成员关系（org:members/org:member_of）用于组织从属
+   - 家庭关系（per:other_family）用于非直系亲属
+   - 出生地关系（per:city_of_birth）用于人物与地点
+   - 无明确关系时使用NA
+3. 严格遵循42种预定义关系类型
+4. 所有11个样本已完整处理无遗漏

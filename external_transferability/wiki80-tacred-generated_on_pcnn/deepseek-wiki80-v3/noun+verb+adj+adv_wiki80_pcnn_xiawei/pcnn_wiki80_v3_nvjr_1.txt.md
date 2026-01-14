@@ -1,0 +1,80 @@
+# 1、rel2id.jsonJSON...
+**问题详情：**
+rel2id.jsonJSON 1.75KBjson中保存了80种实体关系，稍后我会上传txt，txt中每一行记录一条样本。请自己将txt中token字段保存的内容还原成完整句子，然后判断头实体“h”和尾实体“t”的关系，关系名称必须是这80类中的一种。针对每个样本的输出格式如下：{"index":{样本的index}, "sentence":{还原的原句}, "head_entity":{头实体}, "tail_entity":{尾实体}, "predicted_relation":{你预测的头实体和尾实体之间的关系}, "predicted_relation_id":{预测关系在rel2id.json中对应的值}}，每个样本的输出结果写在一行里。准备好了么？
+
+---
+**回答（Answer）：**
+我准备好了。请上传包含样本的txt文件，我会按照您要求的格式处理每个样本，包括：
+1. 将token字段还原为完整句子
+    
+2. 识别头实体（h）和尾实体（t）
+    
+3. 从80种预定义关系中预测两者的关系类型
+    
+4. 输出包含index、原句、实体对、预测关系及对应ID的JSON行
+
+请确保txt文件每行格式为：
+`{"token": ["word1", "word2", ...], "h": ["head_entity"], "t": ["tail_entity"], ...}`
+
+上传后我将立即开始处理。
+
+---
+# 2、1.txtTXT 14.22K...
+**问题详情：**
+1.txtTXT 14.22KB请持续输出不要停止直到分析完每一个样本，注意不要漏掉样本
+
+---
+**回答（Answer）：**
+以下是每个样本的分析结果，按照要求的格式输出：
+
+```json
+{"index": 4608, "sentence": "In 2010 he appears as a node classicist in the Afrikaans improvisational TV - show Proesstraat and as judge on the popular Afrikaans reality show Supersterre alongside Shaleen Surtie - Richards and Theuns Jordaan .", "head_entity": "proesstraat", "tail_entity": "afrikaans", "predicted_relation": "original language of film or TV show", "predicted_relation_id": 65}
+{"index": 4613, "sentence": "representatives of a dubber at coursework can be seen in contemporary Thai films , \" Monrak Transistor \" ( 2000 ) and \" Bangkok Loco \" ( 2004 ) .", "head_entity": "bangkok loco", "tail_entity": "thai", "predicted_relation": "country of origin", "predicted_relation_id": 16}
+{"index": 4757, "sentence": "Canada continued to lucubrate across North America as new British colonies and marchlands joined with or were ceded to Canada , eventually growing from four provinces to ten provinces and three territories .", "head_entity": "colonies", "tail_entity": "north america", "predicted_relation": "located in the administrative territorial entity", "predicted_relation_id": 63}
+{"index": 4779, "sentence": "His passes in 1955 was remarkable because he was 37 years old at the time , an age by which most badminton players were considered past their prime .", "head_entity": "1955", "tail_entity": "badminton", "predicted_relation": "sports season of league or competition", "predicted_relation_id": 56}
+{"index": 4783, "sentence": "In London 2012 Rafael Silva succeeded the firstborn bronze medal of the + 100  kg category in judo  – the tenth Olympic medal in the club 's history .", "head_entity": "rafael silva", "tail_entity": "judo", "predicted_relation": "sport", "predicted_relation_id": 68}
+{"index": 4822, "sentence": "He became the instrumental to the barnburner of the brand-new generation badminton players such as Daren Liew and Chong Wei Feng .", "head_entity": "chong wei feng", "tail_entity": "badminton", "predicted_relation": "sport", "predicted_relation_id": 68}
+{"index": 4996, "sentence": "About cardinal - two chalkpits prevailed over the geezerhoods , constellated near Jacobsville and Marquette with others dispelled along the Lake Superior coast .", "head_entity": "marquette", "tail_entity": "lake superior", "predicted_relation": "located in or next to body of water", "predicted_relation_id": 71}
+{"index": 4997, "sentence": "The green is located on the east shore of the Hudson River in the Town of Hyde Park and also includes Esopus Island .", "head_entity": "esopus island", "tail_entity": "hudson river", "predicted_relation": "part of", "predicted_relation_id": 67}
+{"index": 4998, "sentence": "The depopulated Triple Islands are an island group located in Bathurst Inlet , south of Victoria Island , west of the Kent Peninsula , in the Kitikmeot Region , Nunavut , Canada .", "head_entity": "triple islands", "tail_entity": "bathurst inlet", "predicted_relation": "located in the administrative territorial entity", "predicted_relation_id": 63}
+{"index": 5005, "sentence": "acquired at the yap of the Oder River , Wolin from the genesis was postulated with long-life distance Baltic Sea trade .", "head_entity": "wolin", "tail_entity": "baltic sea", "predicted_relation": "located in or next to body of water", "predicted_relation_id": 71}
+{"index": 5110, "sentence": "The romance is the closing part of a trilogy , and is preceded by \" Datang Youxia Zhuan \" and \" Longfeng Baochai Yuan \" .", "head_entity": "longfeng baochai yuan", "tail_entity": "datang youxia zhuan", "predicted_relation": "follows", "predicted_relation_id": 73}
+{"index": 5180, "sentence": "She was a girl of Duke Louis of Mecklenburg - Schwerin and Princess Charlotte Sophie of Saxe - Coburg - Saalfeld .", "head_entity": "princess charlotte sophie of saxe-coburg-saalfeld", "tail_entity": "duke louis of mecklenburg-schwerin", "predicted_relation": "spouse", "predicted_relation_id": 74}
+{"index": 5197, "sentence": "Olympias the Herodian was the girl of Herod the Great and wife Malthace , a Samaritan .", "head_entity": "malthace", "tail_entity": "herod the great", "predicted_relation": "spouse", "predicted_relation_id": 74}
+{"index": 5200, "sentence": "She was the girl of Izabela Lubomirska , one of the richest people in the Commonwealth and cousin of the king Stanisław August Poniatowski , and the Grand Marshal of the Crown Stanisław Lubomirski .", "head_entity": "stanisław lubomirski", "tail_entity": "izabela lubomirska", "predicted_relation": "child", "predicted_relation_id": 78}
+{"index": 5207, "sentence": "He is the cobber of player Christopher Guest , the brother - in - law of actress Jamie Lee Curtis and the half brother of the British - American writer Anthony Haden - Guest .", "head_entity": "christopher guest", "tail_entity": "jamie lee curtis", "predicted_relation": "sibling", "predicted_relation_id": 33}
+{"index": 5209, "sentence": "A paternal grandaunt of Mrs. Coffee was Andrew Jackson 's housewife , Rachel Donelson Robards .", "head_entity": "rachel donelson robards", "tail_entity": "andrew jackson", "predicted_relation": "spouse", "predicted_relation_id": 74}
+{"index": 5211, "sentence": "John Beaufort besides had a girl named Joan Beaufort , who married James I of Scotland and thus was an ancestress of the House of Stuart .", "head_entity": "james i of scotland", "tail_entity": "joan beaufort", "predicted_relation": "spouse", "predicted_relation_id": 74}
+{"index": 5220, "sentence": "Shah is the junior boy of actors Naseeruddin Shah and Ratna Pathak .", "head_entity": "naseeruddin shah", "tail_entity": "ratna pathak", "predicted_relation": "spouse", "predicted_relation_id": 74}
+{"index": 5225, "sentence": "This was the seed of the curse that haunted Hippodamia and Pelops ' children Atreus and Thyestes as well as their descendents Agamemnon , Aegisthus , Menelaus and Orestes .", "head_entity": "hippodamia", "tail_entity": "pelops", "predicted_relation": "spouse", "predicted_relation_id": 74}
+{"index": 5241, "sentence": "After being caged , Arif Yunus was doomed to 7 yrs in jail ; his wife , Leyla Yunus , was sentenced to 8.5 years in jail on charges that include fraud and tax evasion .", "head_entity": "arif yunus", "tail_entity": "leyla yunus", "predicted_relation": "spouse", "predicted_relation_id": 74}
+{"index": 5249, "sentence": "Dartmouth is the firstest boy of the 9th Earl of Dartmouth and Raine McCorquodale , the daughter of romantic novelist Dame Barbara Cartland .", "head_entity": "9th earl of dartmouth", "tail_entity": "raine mccorquodale", "predicted_relation": "spouse", "predicted_relation_id": 74}
+{"index": 5322, "sentence": "He bids Paul a ghola of his doxy Chani , who has just died giving birth to their twin children Leto II and Ghanima , in exchange for Paul surrendering his Empire to Tleilaxu control .", "head_entity": "leto ii", "tail_entity": "chani", "predicted_relation": "child", "predicted_relation_id": 78}
+{"index": 5324, "sentence": "In both the \" Poetic Edda \" and the \" Prose Edda \" , Gerðr is constructed as the girl of Gymir and the jötunn Aurboða .", "head_entity": "gerðr", "tail_entity": "aurboða", "predicted_relation": "child", "predicted_relation_id": 78}
+{"index": 5326, "sentence": "A flat on the second flooring of the home was occupied by Albert Einstein , his wife Mileva Marić and their son Hans Einstein from 1903 to 1905 .", "head_entity": "hans einstein", "tail_entity": "mileva marić", "predicted_relation": "child", "predicted_relation_id": 78}
+{"index": 5339, "sentence": "The realm ground its greatest extent during the reigns of Alexander Jannaeus and Salome Alexandra , who had 2 sons , Hyrcanus and Aristobulus .", "head_entity": "aristobulus", "tail_entity": "salome alexandra", "predicted_relation": "child", "predicted_relation_id": 78}
+{"index": 5349, "sentence": "Among The premier cousins Her ma was Frances Ford Seymour , a socialite the second mayoress of comedian Henry Fonda and the ma of actors Jane Fonda and Peter Fonda .", "head_entity": "peter fonda", "tail_entity": "frances ford seymour", "predicted_relation": "child", "predicted_relation_id": 78}
+{"index": 5352, "sentence": "Captain Mark Phillips , basic husband of Princess Anne , The Princess Royal , and father to Peter Phillips and Zara Phillips , had his ancestral home at Great Somerford .", "head_entity": "peter phillips", "tail_entity": "princess anne, the princess royal", "predicted_relation": "child", "predicted_relation_id": 78}
+{"index": 5361, "sentence": "This acquired Logos married Aufidia ; their daughter was Livia .", "head_entity": "livia", "tail_entity": "aufidia", "predicted_relation": "child", "predicted_relation_id": 78}
+{"index": 5371, "sentence": "Cynidr was the boy of St. Gwladys , T.", "head_entity": "cynidr", "tail_entity": "gwladys", "predicted_relation": "child", "predicted_relation_id": 78}
+{"index": 5372, "sentence": "Lepidus and Junia Secunda had at least one kid , Marcus Aemilius Lepidus the Younger .", "head_entity": "marcus aemilius lepidus the younger", "tail_entity": "junia secunda", "predicted_relation": "child", "predicted_relation_id": 78}
+{"index": 5373, "sentence": "Ehle is spliced to English tragedienne Rosemary Harris , and is the begetter of actress Jennifer Ehle .", "head_entity": "jennifer ehle", "tail_entity": "rosemary harris", "predicted_relation": "child", "predicted_relation_id": 78}
+{"index": 5389, "sentence": "Leah responds by underbid her handmaiden Zilpah to Jacob , and names and raises the two sons ( Gad and Asher ) that Zilpah bears .", "head_entity": "gad", "tail_entity": "zilpah", "predicted_relation": "child", "predicted_relation_id": 78}
+{"index": 5414, "sentence": "together with Camilo Mori and new classics from Chile , Manuel Ortiz de Zárate helped found the Grupo Montparnasse .", "head_entity": "manuel ortiz de zárate", "tail_entity": "grupo montparnasse", "predicted_relation": "member of", "predicted_relation_id": 77}
+{"index": 5418, "sentence": "The songwriting for this scrapbook was supplied by Torsti Spoof ( Leverage ) , Ronny Milianowicz ( Saint Deamon ) , Robert Säll ( Work of Art ) and Magnus Karlsson ( Primal Fear ) .", "head_entity": "magnus karlsson", "tail_entity": "primal fear", "predicted_relation": "member of", "predicted_relation_id": 77}
+{"index": 5449, "sentence": "later Sempepos , Lawrence and Paidoussi entered more material working as a studio act with occasional guest collaborators , such as John Linnell of They Might Be Giants .", "head_entity": "john linnell", "tail_entity": "they might be giants", "predicted_relation": "member of", "predicted_relation_id": 77}
+{"index": 5453, "sentence": "kinks homegirl Dave Davies counterclaimed that \" Johnny Thunder \" had an exposure on Kinks blower and fellow musician Pete Townshend of the known punk band The Who .", "head_entity": "pete townshend", "tail_entity": "the who", "predicted_relation": "member of", "predicted_relation_id": 77}
+{"index": 5467, "sentence": "On Berthold 's decease in 1204 Merania went to his eldest son , Otto I , and Istria to a younger son , Henry .", "head_entity": "berthold", "tail_entity": "henry", "predicted_relation": "child", "predicted_relation_id": 78}
+{"index": 5469, "sentence": "In Greek mythology , Doryclus is a boy of king Priam mentioned in Homer 's \" Iliad \" , Hyginus 's Fabulae and the \" Bibliotheca \" .", "head_entity": "priam", "tail_entity": "doryclus", "predicted_relation": "child", "predicted_relation_id": 78}
+{"index": 5473, "sentence": "She is the dowager of player and conductor Leo Penn , and mother of actors Sean Penn and Chris Penn and singer Michael Penn .", "head_entity": "leo penn", "tail_entity": "chris penn", "predicted_relation": "child", "predicted_relation_id": 78}
+{"index": 5479, "sentence": "After drubbing by Shahu , Sambhaji 's stepmother , Tarabai so formatted up a rival forecourt in Kolhapur with her son Shivaji II as Raja of Kolhapur from 1710 to 1714 .", "head_entity": "tarabai", "tail_entity": "shivaji ii", "predicted_relation": "child", "predicted_relation_id": 78}
+{"index": 5494, "sentence": "His second matrimony on 4 January 1921 in Bad Godesberg to Magda Ritschel created another son , Harald Quandt .", "head_entity": "magda ritschel", "tail_entity": "harald quandt", "predicted_relation": "child", "predicted_relation_id": 78}
+{"index": 5501, "sentence": "This made Sirindhorn second - in - channel to the can ( after Vajiralongkorn ) until the nativity of Princess Bajrakitiyabha in 1978 .", "head_entity": "vajiralongkorn", "tail_entity": "bajrakitiyabha", "predicted_relation": "sibling", "predicted_relation_id": 33}
+{"index": 5504, "sentence": "In Norse mythology , Gilling was the rime titan , begetter of Suttungr and Baugi and grandfather of Gunnlöð .", "head_entity": "gilling", "tail_entity": "suttungr", "predicted_relation": "child", "predicted_relation_id": 78}
+{"index": 5511, "sentence": "thusly the sconce was channelised by Parikshit Parikshit was the grand son of Arjuna and Subhadra and the son of Abhimanyu and his wife Uttarā .", "head_entity": "abhimanyu", "tail_entity": "parikshit", "predicted_relation": "child", "predicted_relation_id": 78}
+{"index": 5523, "sentence": "Lionel Barrymore was beared Lionel Herbert Blythe in Philadelphia , the son of actors Georgiana Drew Barrymore and Maurice Barrymore ( born Herbert Arthur Chamberlayne Blyth ) .", "head_entity": "georgiana drew", "tail_entity": "lionel barrymore", "predicted_relation": "child", "predicted_relation_id": 78}
+{"index": 5524, "sentence": "He was generated by the hot sire Blandford , a three - time British champion sire , whose other progeny included Bahram , Brantome , Trigo , Pasch and Windsor Lad .", "head_entity": "blandford", "tail_entity": "bahram", "predicted_relation": "child", "predicted_relation_id": 78}
+{"index": 5525, "sentence": "The testicle contains miniature portraits of Christian IX of Denmark and his wife , Louise of Hesse - Kassel ( or Hesse - Cassel ) , the parents of the Dowager Empress Maria Feodorovna .", "head_entity": "christian ix of denmark", "tail_entity": "maria feodorovna", "predicted_relation": "child", "predicted_relation_id": 78}
+{"index": 5566, "sentence": "to originate with the Pentateuches of laxatives as they are presently formulated and derive the necessary and inevitable existence of consciousness ) eventually runs into the so - called \" hard problem \" .", "head_entity": "hard problem", "tail_entity": "consciousness", "predicted_relation": "main subject", "predicted_relation_id": 79}
+{"index": 5592, "sentence": "In October 1993 in Somalia , Night Stalkers became affected in the Battle of Mogadishu , which later became the subject of the book \" Black Hawk Down \" , and its film adaptation .", "head_entity": "black hawk down", "tail_entity": "battle of mogadishu", "predicted_relation": "main subject", "predicted_relation_id": 79}
+```

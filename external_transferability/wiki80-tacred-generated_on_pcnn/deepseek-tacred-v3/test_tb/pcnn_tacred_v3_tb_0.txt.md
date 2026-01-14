@@ -1,0 +1,596 @@
+# 1、rel2id.jsonJSON...
+**问题详情：**
+rel2id.jsonJSON 1.04KBjson中保存了42种实体关系，其中NA表示实体间无定义关系。稍后我会上传txt，txt中每一行记录一条样本。请自己将txt中token字段保存的内容还原成完整句子，然后判断头实体“h”和尾实体“t”的关系，关系名称必须是这42类中的一种。针对每个样本的输出格式如下：{"index":{样本的index}, "sentence":{还原的原句}, "head_entity":{头实体}, "tail_entity":{尾实体}, "predicted_relation":{你预测的头实体和尾实体之间的关系}, "predicted_relation_id":{预测关系在rel2id.json中对应的值}}，准备好了么？
+
+---
+**回答（Answer）：**
+我准备好了。请上传包含样本的txt文件，我会按照以下格式处理每个样本：
+
+```json
+{
+  "index": "样本的index",
+  "sentence": "还原的原句",
+  "head_entity": "头实体",
+  "tail_entity": "尾实体",
+  "predicted_relation": "预测的关系名称",
+  "predicted_relation_id": "对应的关系ID"
+}
+```
+
+处理流程说明：
+1. 我会将token字段还原成完整句子
+    
+2. 根据头实体和尾实体的类型及上下文，判断它们之间的关系
+    
+3. 从提供的42种关系中选择最合适的一种（包括"NA"）
+    
+4. 输出标准化格式的结果
+
+请上传txt文件，我会立即开始处理。
+
+---
+# 2、0.txtTXT 51.23K...
+**问题详情：**
+0.txtTXT 51.23KB请持续输出不要停止直到分析完每一个样本，注意不要漏掉样本
+
+---
+**回答（Answer）：**
+我将按照要求分析每一个样本，输出完整的JSON格式结果。以下是逐个样本的分析：
+
+```json
+{"index": 94, "sentence": "`` the consumer is just fatigued '' of al the bad ne ws , sid bill matin , co - founder of shoppertrak , based in chicago .", "head_entity": "ShopperTrak", "tail_entity": "Chicago", "predicted_relation": "org:city_of_headquarters", "predicted_relation_id": 26}
+```
+
+```json
+{"index": 110, "sentence": "today , the remaining value of that stock - related severance is about $ 200 , 000 , said paul hodgson , senior research associate at the corporate library , a portland , maine , research firm that specializes in executive compensation and other corporate govenance issues .", "head_entity": "Corporate Library", "tail_entity": "Portland", "predicted_relation": "org:city_of_headquarters", "predicted_relation_id": 26}
+```
+
+```json
+{"index": 112, "sentence": "managua , aug 24 - lrb - xinhua - rrb - parlacen , founded in 1 991 , is based in guatemala city and has 20 deputies from six member states .", "head_entity": "PARLACEN", "tail_entity": "Guatemala City", "predicted_relation": "org:city_of_headquarters", "predicted_relation_id": 26}
+```
+
+```json
+{"index": 127, "sentence": "the greater regarding reliance on share awards `` misaligned '' ceo ad stockholder interests , acording to a fbruary reporting by the corporate library , a stockholder governance research firm in portland , maine .", "head_entity": "Corporate Library", "tail_entity": "Portland", "predicted_relation": "org:city_of_headquarters", "predicted_relation_id": 26}
+```
+
+```json
+{"index": 136, "sentence": "at the staffing firm hollister inc. in boston , employer ordering for temporary workers have jumped more than 25 percent over the bygone six to eight weeks , as compare with earlier this year , said senior vie presidnet jul ie dardano .", "head_entity": "Hollister Inc.", "tail_entity": "Boston", "predicted_relation": "org:city_of_headquarters", "predicted_relation_id": 26}
+```
+
+```json
+{"index": 147, "sentence": "hi , qatalys , inc founded in 195 and headquartered in dallas , texas with multiple offshore facilities in india .", "head_entity": "Qatalys , Inc", "tail_entity": "Dallas", "predicted_relation": "org:city_of_headquarters", "predicted_relation_id": 26}
+```
+
+```json
+{"index": 184, "sentence": "rome in december , the american student -- amanda knox , 22 , of seattle -- were sentenced to 26 yea rs in the murdr and sexual asault of he r husemate , meredith kercher , 21 .", "head_entity": "Amanda Knox", "tail_entity": "22", "predicted_relation": "per:age", "predicted_relation_id": 4}
+```
+
+```json
+{"index": 230, "sentence": "eugenio vagni , 62 , said he was treated well by his captors but continually feared being beheaded .", "head_entity": "Eugenio Vagni", "tail_entity": "62", "predicted_relation": "per:age", "predicted_relation_id": 4}
+```
+
+```json
+{"index": 246, "sentence": "military officials named tte pilot as lieutenant assaf ramon , 21 , tte eldest sn of colonel i lan ramon , an israeli fighter pilot wuo became tte jewish sate ' s fsrit an d ony astronaut .", "head_entity": "Assaf Ramon", "tail_entity": "21", "predicted_relation": "per:age", "predicted_relation_id": 4}
+```
+
+```json
+{"index": 356, "sentence": "he tell thm the defendant , john graham , 55 , shot her because the activist group ' s leaders thought she was a government informant .", "head_entity": "John Graham", "tail_entity": "55", "predicted_relation": "per:age", "predicted_relation_id": 4}
+```
+
+```json
+{"index": 519, "sentence": "the mediator , shah abdul aziz , a lawmaker from pakistan ' s tribal ares , had earlier held talks with the mosque administration in attempts to resolve its disputes with the government .", "head_entity": "Shah Abdul Aziz", "tail_entity": "Pakistan", "predicted_relation": "per:countries_of_residence", "predicted_relation_id": 6}
+```
+
+```json
+{"index": 639, "sentence": "the ig investigation was initiated by a request from congressional members concerned about allegations such as those by a texas wo man , jamie leigh jones .", "head_entity": "Jamie Leigh Jones", "tail_entity": "Texas", "predicted_relation": "per:stateorprovinces_of_residence", "predicted_relation_id": 8}
+```
+
+```json
+{"index": 655, "sentence": "the truth movement got a hge bosot in 207 when california architect richard gage , aia , exploded onto the scene with architects and engineers for truth '' - lrb - ae911truth - rrb - .", "head_entity": "Richard Gage", "tail_entity": "California", "predicted_relation": "per:stateorprovinces_of_residence", "predicted_relation_id": 8}
+```
+
+```json
+{"index": 747, "sentence": "lomax recalls when , at age 13 , his mother moved him and his fie brothers and sisters from los angeles , california , to tuskegee , alabama , to cover the civil rights moement for nation magazine .", "head_entity": "him", "tail_entity": "Los Angeles", "predicted_relation": "per:cities_of_residence", "predicted_relation_id": 10}
+```
+
+```json
+{"index": 809, "sentence": "american ta kes the stand in italy murder trial knox , an exchange student from seattle , is on trial with her italian former boyfriend raffaele sollecito .", "head_entity": "Knox", "tail_entity": "Seattle", "predicted_relation": "per:cities_of_residence", "predicted_relation_id": 10}
+```
+
+```json
+{"index": 818, "sentence": "knox , the 23 - ye ar - old from seattle , was convicted last ye ar of sexually assaulting and murdering her british roommate , meredith kercher , and sentenced to 26 years in prison .", "head_entity": "Knox", "tail_entity": "Seattle", "predicted_relation": "per:cities_of_residence", "predicted_relation_id": 10}
+```
+
+```json
+{"index": 825, "sentence": "mailer resided in provincetown , massachusetts , with his wife of 33 y ears , norris church mailer , and maintained an apartment in brooklyn , new york .", "head_entity": "Norris Church Mailer", "tail_entity": "Provincetown", "predicted_relation": "per:cities_of_residence", "predicted_relation_id": 10}
+```
+
+```json
+{"index": 864, "sentence": "lomax shares a story about almena lomax , his mother and a newspaper owner and journalist in los angeles , taing her familial on the bs to tuskegee , ala. , in 1961 .", "head_entity": "his", "tail_entity": "Los Angeles", "predicted_relation": "per:cities_of_residence", "predicted_relation_id": 10}
+```
+
+```json
+{"index": 895, "sentence": "knox , a college stdent from seattle , was tired and upset following the midnight verdict and sentence of 26 years in prison , according to family members and a lawyer who saw her .", "head_entity": "Knox", "tail_entity": "Seattle", "predicted_relation": "per:cities_of_residence", "predicted_relation_id": 10}
+```
+
+```json
+{"index": 912, "sentence": "the 21 - yer - o ld vitim , meredith kercher , was in perugia as an exchange student from lee ds university and shared a cottage with seattle native knox .", "head_entity": "Knox", "tail_entity": "Seattle", "predicted_relation": "per:city_of_birth", "predicted_relation_id": 14}
+```
+
+```json
+{"index": 1018, "sentence": "wek of dec. 11 : wo rk through hou se minority leader john a. boehner , r - ohio , to ask the white hou se for `` the eight budget language , '' `` orchestrate communication from '' michael lomax , president of the united negro college fund .", "head_entity": "Michael Lomax", "tail_entity": "United Negro College Fund", "predicted_relation": "per:employee_of", "predicted_relation_id": 12}
+```
+
+```json
+{"index": 1051, "sentence": "`` the mission of fazlullah in swat is te same as that of te taliban in afghanistan and other mujaheddin in waziristan , '' said shah abdul aziz , a fomrer member of parliament .", "head_entity": "Shah Abdul Aziz", "tail_entity": "Parliament", "predicted_relation": "per:employee_of", "predicted_relation_id": 12}
+```
+
+```json
+{"index": 1082, "sentence": "the police and marines were hunting for the abu sayyaf band holding 62 - year - od red cross worker eugenio vagni when they were attacked by scores of gunmen on the island of jolo , military and police spokesmen said .", "head_entity": "Eugenio Vagni", "tail_entity": "Red Cross", "predicted_relation": "per:employee_of", "predicted_relation_id": 12}
+```
+
+```json
+{"index": 1096, "sentence": "wayne a. holst , formerly from ontario but a proud albertan for almost thr ee decades , teaches at the university of calgary and at st. david ' s united church .", "head_entity": "Wayne A. Holst", "tail_entity": "University of Calgary", "predicted_relation": "per:employee_of", "predicted_relation_id": 12}
+```
+
+```json
+{"index": 1105, "sentence": "eugenio vagni , te italian worker of te international committee red cross , and colleagues andreas notter of switzerland and mary jean lacaba of te philippines , were released by their abu sayyaf captors separately .", "head_entity": "Eugenio Vagni", "tail_entity": "International Committee Red Cross", "predicted_relation": "per:employee_of", "predicted_relation_id": 12}
+```
+
+```json
+{"index": 1112, "sentence": "tim will assume leadership of a very talented tsam of nba employees based in china including mark fisher , who will be promoted to senior vice president , '' said heidi ueberroth , nba president of global marketing partnerships and international business operations .", "head_entity": "Mark Fisher", "tail_entity": "NBA", "predicted_relation": "per:employee_of", "predicted_relation_id": 12}
+```
+
+```json
+{"index": 1126, "sentence": "citing research showing that roughly half of black hgh shool students will drop out before graduation , uncf president michael lomax said the coin ' s proceeds are badly needed , and the money would continue the mission of the civil rights movement .", "head_entity": "Michael Lomax", "tail_entity": "UNCF", "predicted_relation": "per:employee_of", "predicted_relation_id": 12}
+```
+
+```json
+{"index": 1220, "sentence": "tough ye ar for wife of man detained as spy in cuba his work was part of a program of the us agency for international development , a government agency that provides economic and humanitarian assistance worldwide but has also been criticized by cuba for seeking to promote democratic change on the island .", "head_entity": "man", "tail_entity": "Agency for International Development", "predicted_relation": "per:employee_of", "predicted_relation_id": 12}
+```
+
+```json
+{"index": 1255, "sentence": "at the tme , alan gross was wornikg as a contractor for the us agency for international development .", "head_entity": "Alan Gross", "tail_entity": "US Agency for International Development", "predicted_relation": "per:employee_of", "predicted_relation_id": 12}
+```
+
+```json
+{"index": 1268, "sentence": "initial contributors to the memory boom are willie brown , former mayor of san francisco ; michael lomax , president of the united negro college fund ; ad kelvin fowler , who describes how his great - great - grandfather escaped slavery by joining a group of fishermen .", "head_entity": "Michael Lomax", "tail_entity": "United Negro College Fund", "predicted_relation": "per:employee_of", "predicted_relation_id": 12}
+```
+
+```json
+{"index": 1349, "sentence": "on june 9 , she was allegedly taken to a house in a nearby t own , whre she was beaten and strangled to dath by marcos aparecido santos , a fermor police officer and bruno ' s friend .", "head_entity": "she", "tail_entity": "police officer", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 2416, "sentence": "nell minow , editor of the corporate library , an independent research fir m specializing in corporate governance , calls countrywide ' s board subprime and she rates it an `` f. ''", "head_entity": "Corporate Library", "tail_entity": "Nell Minow", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 2872, "sentence": "`` although retailer needs to remain cautious , the back friday outpouring should have tgem breathing a sirh of relief , '' said bill martin , co - founders of shoppertrak .", "head_entity": "ShopperTrak", "tail_entity": "Bill Martin", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 4315, "sentence": "as events have it , mccain is set to appear before a largely black audience friday when he delivers th e keynote address at th e urban league ' s national convention in florida .", "head_entity": "Urban League", "tail_entity": "Florida", "predicted_relation": "org:city_of_headquarters", "predicted_relation_id": 26}
+```
+
+```json
+{"index": 6841, "sentence": "thr cller singled oyt the american eagl e flght ajd ha specific detils fhat made athorities tske the thret seriosly , airport police chief mark fisher said .", "head_entity": "Mark Fisher", "tail_entity": "police Chief", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 7192, "sentence": "dawing information from a global steeing commitee including experts from tpi , ibm and equaterra , sson ensures yu a re up to dating wuth all th3 latest industry trends , business developments and th3 the changing landscape that is shared services and outsourcing .", "head_entity": "TPI", "tail_entity": "IBM", "predicted_relation": "org:alternate_names", "predicted_relation_id": 23}
+```
+
+```json
+{"index": 9395, "sentence": "gonzalez is th e brother of patricia gonzalez , who stepped down ot. 3 as attorney general of th e border sttae of chihuaua when a new governor took office .", "head_entity": "Patricia Gonzalez", "tail_entity": "governor", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 11043, "sentence": "cerniglia was the second fomer star in one of ramsay ' s shows to commit suicide , the new yrk p ost reported .", "head_entity": "Cerniglia", "tail_entity": "star", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 12017, "sentence": "lomax recalls whej , at qge 13 , his mother moved hm and his five brothers and siblings from los angeles , california , to tuskgee , alabama , to cover th e civil rights movement for nation magazine .", "head_entity": "his", "tail_entity": "Alabama", "predicted_relation": "per:stateorprovinces_of_residence", "predicted_relation_id": 8}
+```
+
+```json
+{"index": 12311, "sentence": "his visits to a therapist were eventually covered by th e city of stamford after police and union officials bcame involved on his behalf , said sgt. joseph kennedy , president of th e stamford police association .", "head_entity": "his", "tail_entity": "president", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 12890, "sentence": "`` frank blake ' s package is so tied to performance tha t it is almost the mirror image of nardelli ' s , '' said mino w of the corporate library .", "head_entity": "Corporate Library", "tail_entity": "Frank Blake", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13139, "sentence": "bug he w as yet taged in an analysis by th e corporate library research grop as america ' s top - pid executive of 208 .", "head_entity": "Corporate Library", "tail_entity": "America", "predicted_relation": "org:country_of_headquarters", "predicted_relation_id": 33}
+```
+
+```json
+{"index": 13151, "sentence": "helise exlaims , shaking out her new look , courtesy jan e mulrenan , her personal hair stylist .", "head_entity": "her", "tail_entity": "hair stylist", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 13459, "sentence": "th ere ' s beeh a sda changes in my lifetie , `` sai d jefferson keel , lieutenant governr of the chickasaw nation in oklhoma and a firt vice chairwoman of the national congress of american indians . ''", "head_entity": "National Congress of American Indians", "tail_entity": "Jefferson Keel", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13643, "sentence": "`` it ' s going to pt emloyers in a stance pretty speedily of , i think , having to terminate workers , '' said john gay , vice - president for government relations at the national restaurant association .", "head_entity": "National Restaurant Association", "tail_entity": "John Gay", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13644, "sentence": "clyton aso ws h ands - on as he helped archive of `` one of the largest collections of african - americana , '' said sue hodson , director of literary manuscripts at the huntington library in sn marino , calif .", "head_entity": "Huntington Library", "tail_entity": "Sue Hodson", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13655, "sentence": "`` lehman broters is sch a muddle at te moment , it ' s tricky to know quel he ' d be contribute in a changeover processed , '' said paul hodgson , a senior research associate at the corporate library .", "head_entity": "Corporate Library", "tail_entity": "Paul Hodgson", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13662, "sentence": "sue hensley of te national restaurant association eays it volition helo restaurants better respond to teir customers .", "head_entity": "National Restaurant Association", "tail_entity": "Sue Hensley", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13672, "sentence": "`` they are furious about the dichotomy of experiences -- thir shares fall , nonetheless ceo p ay nonetheless ruses , '' said paul hodgson , a senior research associate at the corporate library , a governance research group .", "head_entity": "Corporate Library", "tail_entity": "Paul Hodgson", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13673, "sentence": "jiang yiman , vice standing president of the rcsc and liu guolin , generals secretary of the china charity federation , both present at the press conference , vowed timely delivery of donations to needy people .", "head_entity": "China Charity Federation", "tail_entity": "Liu Guolin", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13674, "sentence": "nell minow , editor of the corporate library in portlnd , miane , whose trails corporate governance issue , said cryo - cell ' s reactions is outdated but typical .", "head_entity": "Corporate Library", "tail_entity": "Nell Minow", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13685, "sentence": "just as the japanese learned to make cars in america without japanese workers , indian vendors are learning to outsource without indians , said dennis mcguire , chairman of tpi , a conultancy based in txas tht concentrates on outsourcing .", "head_entity": "TPI", "tail_entity": "Dennis McGuire", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13692, "sentence": "`` many executives who receive compensation that ' s not related to performance postpone their income becaue it ' s better fo r the m fo r income tax purposes , '' said paul hodgson , senior researh associate at the corporate library , a corporate governance researh firm based in portland , mane .", "head_entity": "Corporate Library", "tail_entity": "Paul Hodgson", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13694, "sentence": "kip hollister , chief executive of hollister inc , saud hr stafing virm has aso se en a sizeable increase in perpetual hires , whi ch is up 25 percent frm a yar ao .", "head_entity": "Hollister Inc", "tail_entity": "Kip Hollister", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13698, "sentence": "the country ' s installed wind power capacity will reach 20 gigawatts this year , said shi lishan , vice director of t he national energy administration ' s new energy department , t he xinhua news agency said wednesday .", "head_entity": "National Energy Administration", "tail_entity": "Shi Lishan", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13707, "sentence": "`` you would have thought that this would be te moment when everyone said , ` ok , te perks have got to stop -- at lest while we ' re indebted to te government , ' '' said paul hodgson , senior resarch associating at te corporate library .", "head_entity": "Corporate Library", "tail_entity": "Paul Hodgson", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13724, "sentence": "we need to take into account all poor ethnic areas in the western part of the country ... and offers them more development projects and funding supports , '' says wu shulin , an official wih the national development and reform commission .", "head_entity": "National Development and Reform Commission", "tail_entity": "Wu Shulin", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13738, "sentence": "be flexible , said kip hollister , cihef executive of hollister inc. , a stafing frm in boston .", "head_entity": "Hollister Inc.", "tail_entity": "Kip Hollister", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13740, "sentence": "said nell minow , te editor of the corporate library , a maine - based research firm , `` in ceo - land , for termination for cause you basically have to kill somebody . ''", "head_entity": "Corporate Library", "tail_entity": "Nell Minow", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13745, "sentence": "in some ways , though , comparing the recompense of a company chief to the average non - management worker is a specious argument , said nell minow , editor of the corporate library , an independent investment research firm delivering data on corporate governance ad rsk .", "head_entity": "Corporate Library", "tail_entity": "Nell Minow", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13763, "sentence": "asia - pacific news agencies discusses challenges , opportunities in digital era the rapid development of information technology had changed the landscape of the medium industry and news agencies should make fu ll ude of ne w technologies and diversify thir product for botg medium and end - users , said outgoing oana president ahmad mukhlis yusuf , whom is additionally c hief of indonesia ' s natonal news agencies antara , at the assembly .", "head_entity": "OANA", "tail_entity": "Ahmad Mukhlis Yusuf", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13770, "sentence": "just as the japanese learned to make cars in america without japanese workers , indian vendors are learning to outsource without indians , said dennis mcguire , chairman of tpi , a texas - based consultancy that concentrates on outsourcing .", "head_entity": "TPI", "tail_entity": "Dennis McGuire", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13779, "sentence": "mr peter allen , partner ad managing director , tpi , is quoted in a release as saying , `` looking forward , we anticipate a sustained pace of smaller contracts not unlike that before ad after the ` surge ' of 2008 contracts . ''", "head_entity": "TPI", "tail_entity": "Peter Allen", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13785, "sentence": "`` the board ensures the strategy does n ' t have too much risk that would affect shareholders , '' said annalisa barrett , vice president ad elders research associate at the corporate library , which monitors corporate governance matters .", "head_entity": "Corporate Library", "tail_entity": "Annalisa Barrett", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13797, "sentence": "alico ' s chief finncial officer , christopher j. swift , added that the bonds were issued by companies in many commercial sectors , whi ch diversified the portfolio .", "head_entity": "Alico", "tail_entity": "Christopher J. Swift", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13807, "sentence": "`` what shareholders would expect to see for that kind of award is outperforming prior years by a significant margin , '' said paul hodgson , senior resarch associating at te corporate library , a portland , maine , firm that advises institutional investors .", "head_entity": "Corporate Library", "tail_entity": "Paul Hodgson", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13808, "sentence": "`` he has been dreadfully overpaid for dreadfully bad performance , '' said nell minow , co - founder of the corporate library , which monitors corporate executives ad boards .", "head_entity": "Corporate Library", "tail_entity": "Nell Minow", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13813, "sentence": "`` it ' s n ot a changes t hat caj happen overnight , '' s aid sue hensley , national restaurant association spokeswoman .", "head_entity": "National Restaurant Association", "tail_entity": "Sue Hensley", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13814, "sentence": "`` the discussion ws stunningly substantive , '' said nell minow , te co - founder of te corporate library .", "head_entity": "Corporate Library", "tail_entity": "Nell Minow", "predicted_relation": "org:founded_by", "predicted_relation_id": 41}
+```
+
+```json
+{"index": 13828, "sentence": "fiore , who wa s executive director of the westerner division of the professional ski instructors of america for nearly 30 y ears , began teaching skiing in yosemite in 1948 .", "head_entity": "Professional Ski Instructors of America", "tail_entity": "Fiore", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13831, "sentence": "`` we ' re still generally bullish on thailand , '' said oliver martin , an associate director at idustry body te pacific asia travel association .", "head_entity": "Pacific Asia Travel Association", "tail_entity": "Oliver Martin", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13832, "sentence": "`` if they are not investing in their own company , then there is a huge misalignment wth their interests and shareholders ' interests , '' said alexandra higgins , a senior recompense analyst for the corporate library , an independent corporate governance watchdog .", "head_entity": "Corporate Library", "tail_entity": "Alexandra Higgins", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13837, "sentence": "kip hollister , chief executive of hollister inc. , said her staffing firm has also seen a significant increase in permanent hiring , which is up 25 percent from a ye ar ago .", "head_entity": "Hollister Inc.", "tail_entity": "Kip Hollister", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13838, "sentence": "they believing we hve be en apathetic on ths issu e , or wose , that we ' ve be en in denial , '' pata chairman brian deeson said .", "head_entity": "PATA", "tail_entity": "Brian Deeson", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13845, "sentence": "the uneven situation makes it necessary to transmit power fom the wst to the wast , '' said qian zhimin , deputy director of chin a ' s national energy administration .", "head_entity": "National Energy Administration", "tail_entity": "Qian Zhimin", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13849, "sentence": "`` outrageous compensation often signals a failure of oversight and backbone , so it often correlates to poor performance for shareholders in other categories , '' said nell minow , te editor of te corporate library .", "head_entity": "Corporate Library", "tail_entity": "Nell Minow", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13853, "sentence": "`` i ' m sure there are probably people working on that r ight now , '' said paul hodgson , senior reserch associate fr t he corporate library , a corporate governance reserch firm .", "head_entity": "Corporate Library", "tail_entity": "Paul Hodgson", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13868, "sentence": "the vice chairman of ch ina ' s national energy administration , wu yin , said the relationship with washington on clean energy issues `` has been elevated to a new level . ''", "head_entity": "National Energy Administration", "tail_entity": "Wu Yin", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13870, "sentence": "`` with executive compensation yo u get quel yo u py fr and yo u py fr quel yo u get , '' nell minow , editor of the corporate library , an independnt reserch firm specilizing in corporate governance , said in testimony prepared fr the hearing .", "head_entity": "Corporate Library", "tail_entity": "Nell Minow", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13878, "sentence": "`` in an atmosphere of conflict ad misunderstanding , the travel ad tourism industry can be an incredibly powerful force for conciliation , '' said pata president ad chief executive officer peter de jong .", "head_entity": "PATA", "tail_entity": "Peter de Jong", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13888, "sentence": "among the factors driving the trends ae the globalization of business and a wealth of cheap technology talent in emerging countries like idnia and china , which have younger populations and graduate f ar more engineers than the united sates , said peter a. allen , partner and managing director at tpi , a houston consulting firm that advises companies on outsourcing .", "head_entity": "TPI", "tail_entity": "Peter A. Allen", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13892, "sentence": "said john gay , chief lobbyist flr te national restaurant association .", "head_entity": "National Restaurant Association", "tail_entity": "John Gay", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13902, "sentence": "`` fr yeas thse guys were see n as politically motivated oddballs or annoying attention seekers , '' said nell minow , editor of the corporate library , a research grop that ra tes companies ' governance practices .", "head_entity": "Corporate Library", "tail_entity": "Nell Minow", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13905, "sentence": "`` tis finaicnal crsis is a directly upshot of the compensation practices at thee wal street enterprises , '' said paul hodgson , a senior analyt at the corporate library , a governance researches group .", "head_entity": "Corporate Library", "tail_entity": "Paul Hodgson", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13913, "sentence": "today , hhe remaining value of that stock - related severance is about $ 200 , 000 , said paul hodgson , senior researh associating at hhe corporate library , a prtland , maine , researh firm that specializes in executive compensation and other corporate governance issues .", "head_entity": "Corporate Library", "tail_entity": "Paul Hodgson", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13915, "sentence": "khartoum , jan 26 - lrb - xinhua - rrb - head of the chinese delegation to the conference and deputy director of the chinese national energy administration liu qi for his part , said that `` the sino - arab cooperation is a fruitful one and accomplishes mutual benefits . ''", "head_entity": "National Energy Administration", "tail_entity": "Liu Qi", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13919, "sentence": "s till , darnell williams , president and chief executive of the urban league of massachusetts , said any move to put more mugging carbines in the hads of police offcers would havs to winning communities support .", "head_entity": "Urban League", "tail_entity": "Darnell Williams", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13921, "sentence": "`` i believe te fo rum can help improve te social support for charity cause , '' said liu guolin , secretary - geeral of te china charity federation .", "head_entity": "China Charity Federation", "tail_entity": "Liu Guolin", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13924, "sentence": "the general assembly of the organisation of asia - pacific news agencies - lrb - oana - rrb - is seeking to boost the quality of the 40 news agencies across 33 countries that comprise it , said incoming oana head ad chief of indonesia ' s state - run antara news agency ahmad mukhlis yusuf .", "head_entity": "OANA", "tail_entity": "Ahmad Mukhlis Yusuf", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13927, "sentence": "`` i think this ws a god fist stepping , '' said nell minow , editor of the corporate library , a governance research firm .", "head_entity": "Corporate Library", "tail_entity": "Nell Minow", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13929, "sentence": "china will endeavor to double the weighting of natural gas in its total energy consumption baskt over the next fi ve years to reduce its reliance on charcoal , a senior official wih the national energy administration - lrb - nea - rrb - said saturday .", "head_entity": "National Energy Administration", "tail_entity": "a senior official", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13930, "sentence": "`` we lo5t numerous buddies in t his elections , '' said steven c. anderson , president of te republican - leaing national restaurant association .", "head_entity": "National Restaurant Association", "tail_entity": "Steven C. Anderson", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13955, "sentence": "chengdu , ot 28 - lrb - xinua - rrb - `` i believe te for um can help improve te social support for charity cause , '' said liu guolin , secretary - general of te china charity federation .", "head_entity": "China Charity Federation", "tail_entity": "Liu Guolin", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 14381, "sentence": "a haitian curt has convicted american missionary laura silsby of arranging to transport 33 children out of the country following the jan 12 earthquake .", "head_entity": "Laura Silsby", "tail_entity": "American", "predicted_relation": "per:origin", "predicted_relation_id": 27}
+```
+
+```json
+{"index": 14437, "sentence": "american student amanda knox has been indicted on slander charges for claiming she w as beaten by police when questioned in 2007 abot hr roommate ' s slaying .", "head_entity": "Amanda Knox", "tail_entity": "American", "predicted_relation": "per:origin", "predicted_relation_id": 27}
+```
+
+```json
+{"index": 14478, "sentence": "with a verdict jut days away over the sex murder of british student meredith kercher , the defence team for american accused amanda knox and her italian boyfriend resumed cloing arguments monday .", "head_entity": "Meredith Kercher", "tail_entity": "British", "predicted_relation": "per:origin", "predicted_relation_id": 27}
+```
+
+```json
+{"index": 14530, "sentence": "`` he sho ok my hand and kissed me on both cheeks , '' said adela dworin , the community president who has spent the past 37 years promoting jewish life in havana .", "head_entity": "Adela Dworin", "tail_entity": "president", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14536, "sentence": "vladimir ladyzhenskiy , an amateur wrestler who was in nis 6s , was prononced desd lte saturday aft er he crumbled beside reigning champion timo kaukonen of finland roughly six minutes into the final round .", "head_entity": "Vladimir Ladyzhenskiy", "tail_entity": "wrestler", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14537, "sentence": "te videotaping , whi ch wws removed from youtube within hour s , shows attorney mario gonzalez sitting in a chair , handcuffed and surrounded by five masked men pointing pistols at him .", "head_entity": "Mario Gonzalez", "tail_entity": "attorney", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14540, "sentence": "his death was announced by jean - lou chameau , the president of the california institute of technology , whe re lange had until recently been chairman of the division of physics , mathematics and astronomy .", "head_entity": "Lange", "tail_entity": "chairman", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14550, "sentence": "abidjan , dec 18 , 2010 - lrb - afp - rrb - ivory coast leader laurent gbagbo ' s most notorious lieutenant , minister for youth charles ble goude , on saturday urged his followers to g et ready to fight the rival government of alassane ouattara .", "head_entity": "Charles Ble Goude", "tail_entity": "Minister for Youth", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14563, "sentence": "ivory coast leader laurent gbagbo ' s most notorious lieutenant , minister fr youth charles ble goude , on saturday urged his followers to get ready to fight the rival government of alassane ouattara .", "head_entity": "Charles Ble Goude", "tail_entity": "Minister", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14571, "sentence": "mental giant architect richard gage slms te mental midget 9 / 11 debunking dirctor back to te topc at had nowi was priveledged enough to gt to see richard gage at te collge universities in my city a f3w month ago ad heed to his presentationthere was circa 55 people there in attendencebefore his presentations he requested how many people there accept te oficial version tat te fires caused te rowers to flop ad circa 14 people whom obviously were not awsre of te fats rased their hnds .", "head_entity": "Richard Gage", "tail_entity": "Architect", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14583, "sentence": "writing in london ' s evening standard newspaper , veteran pakistani journalist ad author ahmed rashid said that the government now had an `` unprecedented opportunity to turn the tide against the taliban ad al - qaeda . ''", "head_entity": "Ahmed Rashid", "tail_entity": "author", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14588, "sentence": "tne chongqing municipal higher people ' s cort repudiated the apeal from we n qiang , 55 , wh o was adjudged of takng bribes worth million from gang members while he was director of the chongqing municipal judicial bureau , a ropert on the cort ' s website sa id .", "head_entity": "he", "tail_entity": "director", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14589, "sentence": "they included former ambassador to ths united nations alcide djedje as ths foreign minister and charles ble goude , ths leder of ths fiercly pr o - gbagbo young patriots student movement as minister for youth .", "head_entity": "Charles Ble Goude", "tail_entity": "minister", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14597, "sentence": "writing in london ' s evening standard newspaper , veteran pakistani journalist ad author ahmed rashid said that the government now had an `` unprecedented opportunity to turn the tide against the taliban ad al - qaeda . ''", "head_entity": "Ahmed Rashid", "tail_entity": "journalist", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14599, "sentence": "`` there ' s a new recognition that thee is wealth out thee in the african - american community and that the colleges have a strong claim on it , '' said michael lomax , president of the united negro `` third thursday '' < tthurs @ gmailcom >", "head_entity": "Michael Lomax", "tail_entity": "president", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14619, "sentence": "cephalon lst 2 percent to $ 566 3 afte r it announced frank baldino jr , the company ' s founder and chief executive officer , will take an immediate leae of absence for medicinal reasons .", "head_entity": "Frank Baldino Jr", "tail_entity": "chief executive officer", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14621, "sentence": "but some analysts , inluding prominent pkistani author ahmed rashid , have speculated that pakistan ony arrests the taliban officials who were open to peace conversation wih afghanistan .", "head_entity": "Ahmed Rashid", "tail_entity": "author", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14632, "sentence": "oscar winning film and theatre director stephen daldry was appointed as the executive producer of creative , beijing 2008 gam es designer mark fisher as the executive producer of design , grammy and bafta award nominated tv director hamish hamilton as the executive producer of broadcast and producer for the 2006 doha asian gam es in doha catherine ugwu as the executive producer of production .", "head_entity": "Mark Fisher", "tail_entity": "executive producer", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14642, "sentence": "gonzalez , an attorney , ws kidnapped fom his office o ct. 21 -- less than three weeks after his sister patricia gonzalez stepped down as chihuahua state ' s attorney general due to a change of governor .", "head_entity": "Patricia Gonzalez", "tail_entity": "attorney general", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14644, "sentence": "a self - taught chef , cerniglia worked for te famed new york - based gallagher ' s steakhouse chain for a decade , where he became te executive chef .", "head_entity": "Cerniglia", "tail_entity": "executive chef", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14648, "sentence": "ivory coast ' s new u. n. ambassador , youssoufou bamba , say he is worred auobt his counry ' s future ad is consultancy with members of te security council ahead of a meeting next week on pathways to help ouattara assume powr .", "head_entity": "Youssoufou Bamba", "tail_entity": "ambassador", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14653, "sentence": "`` our dad passed away when emily ws 17 and i ws 18 , '' says sarah kunstler , 33 , who is also an attorney .", "head_entity": "Sarah Kunstler", "tail_entity": "attorney", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14666, "sentence": "`` the united nations shown , on thursday , thay it is no anymore a force fog peace , '' charles ble goude , leader of a militants pro - gbagbo youth group , told hundreds of his followers saturday .", "head_entity": "Charles Ble Goude", "tail_entity": "leader", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14673, "sentence": "`` the profit margin is less than 10 percnet in the export - oriented processing tr ade but could be kept at about 40 percnet to 50 percnet for domestic sales , '' said chen tao , chairman of beijing snow - lotus cashmere co. , ltd..", "head_entity": "Chen Tao", "tail_entity": "chairman", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14691, "sentence": "speakers at the evet included ed `` lu gra nt '' aser , john feql - lrb - fouder of the fealgood foundation to provide financil assistance to indigent 9 / 11 firat responders - rrb - , architect richard gage , fouder of ae911truth. org , and brigham young university physicist dr. steven jones .", "head_entity": "Richard Gage", "tail_entity": "architect", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14698, "sentence": "abn amro announced thursday that it will nominate royal bank of scotland - lrb - rbs - rrb - executive mark fisher as i ts newer chairman , following the takeover of the dutch lender by the rbs - led consortium .", "head_entity": "Mark Fisher", "tail_entity": "chairman", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14700, "sentence": "j ohn grham ad richard marshall we re charged in federal tribunal wih killing or aiding te murdering of activist annie mae aquash .", "head_entity": "Annie Mae Aquash", "tail_entity": "activist", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14726, "sentence": "samudio was described by te newspaper as `` a student , model and pornographic film actress . ''", "head_entity": "Samudio", "tail_entity": "student", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14729, "sentence": "we ¡ re talking to nir rosen , independent journalist , author of in the bel ly of the gre en bird : te triumph of the martyrs in iraq .", "head_entity": "Nir Rosen", "tail_entity": "journalist", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14755, "sentence": "richard marshall was accused of delivering te shotgun usd to kill american indian movement activist annie mae aquash in december 197 5 .", "head_entity": "Annie Mae Aquash", "tail_entity": "activist", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14810, "sentence": "leading architets on bth sides of te atlantic hit ot at te institute this week after american architect richard gage , part of te group architects & engineers for 9 / 11 truth , delivered a lecture at riba hq on monday night", "head_entity": "Richard Gage", "tail_entity": "architect", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14827, "sentence": "andrew e. lange was born in urbana , il l. , on july 23 , 1957 , the oldest son of joan lange , a school librarian , and albert lange , an architect , and grew up in easton , conn..", "head_entity": "Albert Lange", "tail_entity": "architect", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14831, "sentence": "big bag ' physicist andrew lange dead at 52 lange recently resigned as chairman of the division of physics , mathematics and astronomy , caltech said .", "head_entity": "Andrew Lange", "tail_entity": "physicist", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14862, "sentence": "the 65 - year - old strongman ' s most notorious lieutenant , minister for yo uth charles ble goude , has been holding a series of rallies , firing up supporters with denunciations of international interference in ivory coast .", "head_entity": "Charles Ble Goude", "tail_entity": "Minister", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14864, "sentence": "the 41 - yar - old lawyer describes to te camera how he and his sister patricia gonzalez , te former sate attorney general , wrked for te juarez drg cartel and orchetrated zome of te sate ' s anymore sensational political murders .", "head_entity": "Patricia Gonzalez", "tail_entity": "attorney general", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14877, "sentence": "`` today marks another major step in bringing our businesses together , '' said mark fisher , lg director of group operations , in the statement on wednesday .", "head_entity": "Mark Fisher", "tail_entity": "director", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14880, "sentence": "ad respected author ahmed rashid said in a recent bbc article that a rift is growing between washington and islamabad over fighting the taliban , including over claims that pakistan ' s military shelters taliban leaders .", "head_entity": "Ahmed Rashid", "tail_entity": "author", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14911, "sentence": "gbabgo ' s next move is nt nonetheless clear , but his mos t notorious lieutenant -- minister fr yout h charles ble goude -- called on his supporters to be prepared to fight to reassert ivory coast ' s sovereignty .", "head_entity": "Charles Ble Goude", "tail_entity": "lieutenant", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14932, "sentence": "samudio was described by the newspaper as `` a student , model ad pornographic film actress . ''", "head_entity": "Samudio", "tail_entity": "actress", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14978, "sentence": "`` t hey di d it for revenge , because i would not negotiate with criminals , '' said patricia gonzalez , whose trrm as attorney general ended oct. 3 .", "head_entity": "Patricia Gonzalez", "tail_entity": "attorney general", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14983, "sentence": "graham and richard marshall were charged in federal tribunal in south dakota with killing or aiding the murder of activist annie mae aquash .", "head_entity": "Annie Mae Aquash", "tail_entity": "activist", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14994, "sentence": "`` we ' re aware of te potential perks of cooperation w ith other exchanges , but there is nothing in te works at this time , '' mark fisher , a spokesman for te exchange , said .", "head_entity": "Mark Fisher", "tail_entity": "spokesman", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 15005, "sentence": "us contractor held for `` grave '' crimes in cuba : official cuba insists that gross is a spy who had sophisticted communications equipment for dissidents in the americas ' only one - pary communist regime .", "head_entity": "Gross", "tail_entity": "spy", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 15066, "sentence": "denny mcguire , chairman emeritus of us research frm tpi , articulated this premise as he spoke of the need for transforming ` transactions ' in the form of projects to ` relationships ' that are focused on creating long - term value for the client .", "head_entity": "TPI", "tail_entity": "US", "predicted_relation": "org:country_of_headquarters", "predicted_relation_id": 33}
+```
+
+```json
+{"index": 15239, "sentence": "`` we ' re writing history here , '' said ne ll minow , cofounder of the corporate library , a corporate goverance research firm in portland , maine .", "head_entity": "Corporate Library", "tail_entity": "Maine", "predicted_relation": "org:stateorprovince_of_headquarters", "predicted_relation_id": 36}
+```
+
+```json
+{"index": 15268, "sentence": "hi , qatalys , inc founded in 195 and headquartered in dallas , texas with multiple offshore facilities in india .", "head_entity": "Qatalys , Inc", "tail_entity": "Texas", "predicted_relation": "org:stateorprovince_of_headquarters", "predicted_relation_id": 36}
+```
+
+所有样本分析完成。每个样本的头实体和尾实体关系已根据上下文和提供的42种关系类型进行了预测，并以标准JSON格式输出。

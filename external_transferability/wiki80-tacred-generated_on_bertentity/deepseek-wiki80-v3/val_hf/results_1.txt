@@ -1,0 +1,71 @@
+以下是每个样本的分析结果：
+
+```json
+{"index": 5467, "sentence": "during berthold 's murder toward 1204 merania walked to her oldest kid , ota j , nor istria to a smaller yarn , henry .", "head_entity": "berthold", "tail_entity": "henry", "predicted_relation": "father", "predicted_relation_id": 19}
+```
+
+```json
+{"index": 5469, "sentence": "toward greek myth , doryclus makes a filho of king priam mentioned in homer 's \" iliad \" , hyginus 's fabulae and the \" bibliotheca \".", "head_entity": "priam", "tail_entity": "doryclus", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5477, "sentence": "work for the old residency from old speaker from southern african thabo mbeki , the factory did termed than bud mbeki , the girl of govan and epainette mbeki following her death in 2005.", "head_entity": "govan", "tail_entity": "thabo mbeki", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5479, "sentence": "than overcame per shahu , sambhaji 's stepson , tarabai accordingly set up a antagonistic justice toward kolhapur among his yarn shivaji ii as raja of kolhapur from 1710 to 1714.", "head_entity": "tarabai", "tail_entity": "shivaji ii", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5480, "sentence": "relying to karel van mander , it did the second filho of pieter aertsen , the younger brother of pieter pietersz the elder , and the older brother of dirck pietersz.", "head_entity": "pieter aertsen", "tail_entity": "pieter pietersz the elder", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5484, "sentence": "jean strasberg ( birthed might 20 , 1941 toward recent york township ) makes the filho of lee and paula strasberg of the actors studio , and brother of actress susan strasberg .", "head_entity": "paula strasberg", "tail_entity": "susan strasberg", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5485, "sentence": "per an survey from vanishing babies , damian wayne , aka merle , spiderman 's filho with talia al ghul , has taken the batmobile out to an abandoned toy factory without batman 's consent.", "head_entity": "talia al ghul", "tail_entity": "damian wayne", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5486, "sentence": "it makes the filho of gordie and colleen howe , younger brother of marty howe , and nephew of vic howe.", "head_entity": "colleen howe", "tail_entity": "marty howe", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5491, "sentence": "it makes a filho of enlil and ninlil , along with nanna and ninurta.", "head_entity": "ninlil", "tail_entity": "nanna", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5494, "sentence": "her second spousal during 4 january 1921 toward unwholesome godesberg to magda ritschel manufactured another filho , harald quandt .", "head_entity": "magda ritschel", "tail_entity": "harald quandt", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5498, "sentence": "she did the hermano of johann albert heinrich reimarus and the daughter of hermann samuel reimarus .", "head_entity": "hermann samuel reimarus", "tail_entity": "johann albert heinrich reimarus", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5506, "sentence": "the vivienne reported toward the slice deals to naomi foner , whom did a planter during the showcase per the preliminary two episodes nor makes the mummy of actress maggie gyllenhaal and actor jake gyllenhaal.", "head_entity": "naomi foner", "tail_entity": "maggie gyllenhaal", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5508, "sentence": "during the murder from yesugei , temujin , her mummy hoelun , his siblings and two half - brothers ( including behter ) were abandoned by their tribe and left to fend for themselves.", "head_entity": "hoelun", "tail_entity": "temujin", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5517, "sentence": "aarya meanwhile owns a average - buddy , the performer prateik babbar , whom makes the filho of raj babbar by his second wife smita patil .", "head_entity": "smita patil", "tail_entity": "prateik babbar", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5523, "sentence": "lionel barrymore did birthed lionel herbert blythe toward bryn , the son of actors georgiana drew barrymore and maurice barrymore ( born herbert arthur chamberlayne blyth ).", "head_entity": "georgiana drew", "tail_entity": "lionel barrymore", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5581, "sentence": "the erect makes featured apparently at the negotiator ( 1998 ) where it serves as the location of offices for the internal affairs division of the chicago police department .", "head_entity": "the negotiator", "tail_entity": "chicago police department", "predicted_relation": "part of", "predicted_relation_id": 67}
+```
+
+```json
+{"index": 5585, "sentence": "this makeup displays lavi 's master from talmud nor kabbalah , because the rhyming stanzas incorporate demonstrations for the tanakh , rabbinical principles nor views , nor demonstrations for the zohar and other mystical texts.", "head_entity": "zohar", "tail_entity": "kabbalah", "predicted_relation": "part of", "predicted_relation_id": 67}
+```
+
+所有样本已分析完毕。

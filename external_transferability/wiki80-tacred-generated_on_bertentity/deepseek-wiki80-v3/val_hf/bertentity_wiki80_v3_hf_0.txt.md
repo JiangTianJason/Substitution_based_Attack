@@ -1,0 +1,427 @@
+# 1、rel2id.jsonJSON...
+**问题详情：**
+rel2id.jsonJSON 1.75KBjson中保存了80种实体关系，稍后我会上传txt，txt中每一行记录一条样本。请自己将txt中token字段保存的内容还原成完整句子，然后判断头实体“h”和尾实体“t”的关系，关系名称必须是这80类中的一种。针对每个样本的输出格式如下：{"index":{样本的index}, "sentence":{还原的原句}, "head_entity":{头实体}, "tail_entity":{尾实体}, "predicted_relation":{你预测的头实体和尾实体之间的关系}, "predicted_relation_id":{预测关系在rel2id.json中对应的值}}，准备好了么？
+
+---
+**回答（Answer）：**
+我准备好了！请上传包含样本的txt文件，每行一个样本。我会按照以下格式处理每个样本：
+1. 将token字段还原为完整句子
+    
+2. 识别头实体"h"和尾实体"t"
+    
+3. 判断两者之间的关系（从给定的80类中选择最合适的）
+    
+4. 输出指定格式的JSON结果
+
+请确保txt文件中的样本格式包含token、h和t等信息。上传后我将立即开始处理。
+
+---
+# 2、0.txtTXT 57.42K...
+**问题详情：**
+0.txtTXT 57.42KB请持续输出不要停止直到分析完每一个样本，注意不要漏掉样本。每行记录一个样本的结果。
+
+---
+**回答（Answer）：**
+
+
+```json
+{"index": 89, "sentence": "against the conclusion from the celebrations, they walked throughout their preliminary preliminary surge, starting out at the reiter alpe for the wagendrischelhorn south face.", "head_entity": "wagendrischelhorn", "tail_entity": "reiter alpe", "predicted_relation": "located on terrain feature", "predicted_relation_id": 14}
+```json
+{"index": 104, "sentence": "for the timorese conclusion much karwendel crests can be reached, for example the birkkarspitze from the south.", "head_entity": "birkkarspitze", "tail_entity": "karwendel", "predicted_relation": "part of", "predicted_relation_id": 67}
+```json
+{"index": 313, "sentence": "stefaan pickup hecke makes a belgian (flemish) statesman.", "head_entity": "belgian", "tail_entity": "flemish", "predicted_relation": "said to be the same as", "predicted_relation_id": 50}
+```json
+{"index": 363, "sentence": "they are meanwhile basically interpreted because instrumental enablers from aboriginal prime minster narendra modi - led government of india 's initiatives such as smart cities, digital india and make in india.", "head_entity": "digital india", "tail_entity": "narendra modi", "predicted_relation": "head of government", "predicted_relation_id": 5}
+```json
+{"index": 393, "sentence": "toward 2004, gottfried compiled the usc explanation \"rebuilding scientific immunity toward politician making\", which scolded the bush administration and called for \"restoration of scientific integrity in the united states\".", "head_entity": "united states", "tail_entity": "bush administration", "predicted_relation": "applies to jurisdiction", "predicted_relation_id": 61}
+```json
+{"index": 481, "sentence": "during the asia from the indus - soviet agreement, it acrimoniously defended the dispositions from the agreement to chairwoman yahya khan while committing that the soviet union 's economic aid would continue to pakistan.", "head_entity": "yahya khan", "tail_entity": "pakistan", "predicted_relation": "position held", "predicted_relation_id": 11}
+```json
+{"index": 525, "sentence": "ring four from \"suomen huippumalli haussa\" began spreading during 12 juni 2011 through 20.00 during the finnish canal nelonen.", "head_entity": "suomen huippumalli haussa", "tail_entity": "nelonen", "predicted_relation": "original network", "predicted_relation_id": 7}
+```json
+{"index": 634, "sentence": "gorillaz released a solitary with james murphy and andré 3000 commissioned by converse, titled \"doyathing\" on 23 february 2012.", "head_entity": "doyathing", "tail_entity": "andré 3000", "predicted_relation": "performer", "predicted_relation_id": 9}
+```json
+{"index": 658, "sentence": "the path uses interpolations from \"more\", a qu for the record from the similar surname by canadian singer tamia.", "head_entity": "more", "tail_entity": "tamia", "predicted_relation": "performer", "predicted_relation_id": 9}
+```json
+{"index": 669, "sentence": "sonequa martin - green shines because michael burnham, the first officer of the.", "head_entity": "michael burnham", "tail_entity": "sonequa martin-green", "predicted_relation": "performer", "predicted_relation_id": 9}
+```json
+{"index": 673, "sentence": "he did succeeded because french represent through the 1990 competition by azúcar moreno with \"bandido\".", "head_entity": "bandido", "tail_entity": "azúcar moreno", "predicted_relation": "performer", "predicted_relation_id": 9}
+```json
+{"index": 679, "sentence": "american banger macklemore did confined to perform four melodies, accompanied by singers eric nally and mary lambert, including \"same love\".", "head_entity": "same love", "tail_entity": "mary lambert", "predicted_relation": "performer", "predicted_relation_id": 9}
+```json
+{"index": 697, "sentence": "it aided to the mapping albums \"terror and magnificence\" (1996) by elvis costello and sarah leonard, and \"standing stone\" (1997) by paul mccartney.", "head_entity": "\"standing stone\"", "tail_entity": "paul mccartney", "predicted_relation": "composer", "predicted_relation_id": 51}
+```json
+{"index": 698, "sentence": "the preliminary any - scan scrapbook recorded on this machine was ry cooder 's \"bop till you drop\" in 1979.", "head_entity": "bop till you drop", "tail_entity": "ry cooder", "predicted_relation": "performer", "predicted_relation_id": 9}
+```json
+{"index": 859, "sentence": "minogue performed \"show me why you burlesque\" during the eleventh season from u. s. custard dancing compete \"dancing with the stars\" in november 2010.", "head_entity": "dancing with the stars", "tail_entity": "the eleventh season", "predicted_relation": "participant of", "predicted_relation_id": 10}
+```json
+{"index": 864, "sentence": "parte of directx, direct3d is used to render three - dimensional graphics in applications where performance is important, such as games.", "head_entity": "directx", "tail_entity": "direct3d", "predicted_relation": "has part", "predicted_relation_id": 12}
+```json
+{"index": 896, "sentence": "toward tandem, it went the singer the newly - created project progressive metal band guilt machine, by dutch musician arjen anthony lucassen (creator of ayreon among others), in 2009.", "head_entity": "guilt machine", "tail_entity": "arjen anthony lucassen", "predicted_relation": "performer", "predicted_relation_id": 9}
+```json
+{"index": 915, "sentence": "tavern are estimated segment from the \"province diaspora\", a syndicate from strips with members from columbia, missouri who now reside in chicago, including mahjongg and lazer crystal.", "head_entity": "mahjongg", "tail_entity": "columbia, missouri", "predicted_relation": "location of formation", "predicted_relation_id": 13}
+```json
+{"index": 934, "sentence": "toward 1968, bodast included an record throughout gm logs, initiated throughout the whom, nor were the backing band for chuck berry at the royal albert hall in london.", "head_entity": "bodast", "tail_entity": "london", "predicted_relation": "location of formation", "predicted_relation_id": 13}
+```json
+{"index": 937, "sentence": "mus did one from the creators from area code 615 and barefoot jerry, both bands made up of nashville session players.", "head_entity": "area code 615", "tail_entity": "nashville", "predicted_relation": "location of formation", "predicted_relation_id": 13}
+```json
+{"index": 965, "sentence": "ash black bufflo, rarely spelled \"sauvage\", makes the vocational surname of portland - based music composer and experimental musician jay clarke.", "head_entity": "ash black bufflo", "tail_entity": "portland", "predicted_relation": "location of formation", "predicted_relation_id": 13}
+```json
+{"index": 979, "sentence": "the preliminary weekend from reservists did toward a teatro on long island behind frank zappa, vanilla fudge, ravi shankar and others.", "head_entity": "vanilla fudge", "tail_entity": "long island", "predicted_relation": "location of formation", "predicted_relation_id": 13}
+```json
+{"index": 993, "sentence": "performer and architect césar manrique designed the morro velosa lookout, which features a snack bar, gardens, information on the geology of fuerteventura, and a scale model of the volcanic island.", "head_entity": "morro velosa", "tail_entity": "fuerteventura", "predicted_relation": "located in the administrative territorial entity", "predicted_relation_id": 63}
+```json
+{"index": 997, "sentence": "servants through the ambuklao nor binga dykes had to release waters after the storm, which flooded rice fields and fish ponds along the agno river.", "head_entity": "ambuklao", "tail_entity": "agno river", "predicted_relation": "tributary", "predicted_relation_id": 48}
+```json
+{"index": 1069, "sentence": "the older one makes brumleby, whose preliminary step among its 240 diminutive hostels did fathered by michael gottlieb bindesbøll and completed in 1857.", "head_entity": "brumleby", "tail_entity": "michael gottlieb bindesbøll", "predicted_relation": "architect", "predicted_relation_id": 15}
+```json
+{"index": 1073, "sentence": "because a carver, momik is also known for his fine carving of \"khachkars\", found primarily at the monastery complex at noravank.", "head_entity": "noravank", "tail_entity": "momik", "predicted_relation": "architect", "predicted_relation_id": 15}
+```json
+{"index": 1122, "sentence": "he owns been ordinarily broadcast in the united states, often on the nickelodeon network and once on mtv 's liquid television.", "head_entity": "liquid television", "tail_entity": "united states", "predicted_relation": "licensed to broadcast to", "predicted_relation_id": 31}
+```json
+{"index": 1158, "sentence": "nehari nor kacchi biryani are mughal saucers famous in old dhaka.", "head_entity": "nehari", "tail_entity": "mughal", "predicted_relation": "country of origin", "predicted_relation_id": 16}
+```json
+{"index": 1197, "sentence": "participants fight through an extensive dungeon crawl, much like the blizzard title \"diablo\", and can equip different weapons and items.", "head_entity": "diablo", "tail_entity": "blizzard", "predicted_relation": "developer", "predicted_relation_id": 20}
+```json
+{"index": 1200, "sentence": "the ltalian editorial of \"grazia\" was first published mondadori in november 1938.", "head_entity": "grazia", "tail_entity": "mondadori", "predicted_relation": "publisher", "predicted_relation_id": 17}
+```json
+{"index": 1245, "sentence": "tdg created twelve ssi toys from 1981 through 1988, the last being \"battles of napoleon\".", "head_entity": "battles of napoleon", "tail_entity": "ssi", "predicted_relation": "developer", "predicted_relation_id": 20}
+```json
+{"index": 1254, "sentence": "he did a preliminary emit date of april 2003 for japan, and would be developed by the same employees who worked on \"ace combat 2\" at namco.", "head_entity": "ace combat 2", "tail_entity": "namco", "predicted_relation": "developer", "predicted_relation_id": 20}
+```json
+{"index": 1256, "sentence": "the \"poxnora\" prenup aided premium jeux acquires at gare fund (employed toward any sets published by sony online entertainment).", "head_entity": "poxnora", "tail_entity": "sony online entertainment", "predicted_relation": "developer", "predicted_relation_id": 20}
+```json
+{"index": 1289, "sentence": "balaban 's different productions in 2009 include \"not since you\", a drama about a group of college friends, and \"the trotsky\", by jacob tierney.", "head_entity": "the trotsky", "tail_entity": "jacob tierney", "predicted_relation": "director", "predicted_relation_id": 18}
+```json
+{"index": 1294, "sentence": "jandhyala subramanya sastry named her 1988 telugu films \"vivaaha bhojanambu\" and \"choopulu kalisina shubhavela\" after the songs of the same name.", "head_entity": "vivaaha bhojanambu", "tail_entity": "jandhyala subramanya sastry", "predicted_relation": "director", "predicted_relation_id": 18}
+```json
+{"index": 1335, "sentence": "\"it sent her orders throughout the exertions at a announce, copreus, filho of pelops the eleian.", "head_entity": "copreus", "tail_entity": "pelops", "predicted_relation": "child", "predicted_relation_id": 78}
+```json
+{"index": 1337, "sentence": "it did the filho of johan skytte \"svenskt biografiskt handlexikon\" and mary neave and brother of vendela skytte.", "head_entity": "vendela skytte", "tail_entity": "johan skytte", "predicted_relation": "child", "predicted_relation_id": 78}
+```json
+{"index": 1350, "sentence": "abdul - muttalib deeds on the recommendation of the priestess and finally kills 300 camels and abdullah survives.", "head_entity": "abdullah", "tail_entity": "abdul-muttalib", "predicted_relation": "child", "predicted_relation_id": 78}
+```json
+{"index": 1354, "sentence": "it did a grandchild of landowner and politician peter martin anker, and nephew of landowner and politician nils anker and school founder herman anker.", "head_entity": "herman anker", "tail_entity": "peter martin anker", "predicted_relation": "child", "predicted_relation_id": 78}
+```json
+{"index": 1358, "sentence": "onto the beginning of the 1860s the emperor of brazil, pedro ii, sought to marry his daughters, princesses isabel and leopoldina, to ensure his succession.", "head_entity": "leopoldina", "tail_entity": "pedro ii", "predicted_relation": "child", "predicted_relation_id": 78}
+```json
+{"index": 1359, "sentence": "alfred did the yarn of charles james blomfield, bishop of london,“a memoir of charles james blomfield” blomfield, a: london, b. fellowes, 1863 and brother of the architect arthur blomfield.", "head_entity": "arthur blomfield", "tail_entity": "charles james blomfield", "predicted_relation": "child", "predicted_relation_id": 78}
+```json
+{"index": 1361, "sentence": "it meanwhile trained the championship girl of affirmed, flawlessly.", "head_entity": "flawlessly", "tail_entity": "affirmed", "predicted_relation": "child", "predicted_relation_id": 78}
+```json
+{"index": 1362, "sentence": "profiting for this situation, trần thủ độ arranged a spousal throughout chiêu hoàng nor trần cảnh, the eight - sunni - immemorial filho of trần thừa and the younger brother of trần liễu.", "head_entity": "trần liễu", "tail_entity": "trần thừa", "predicted_relation": "child", "predicted_relation_id": 78}
+```json
+{"index": 1370, "sentence": "kėstutis had the son of the grand duke gediminas.", "head_entity": "kėstutis", "tail_entity": "gediminas", "predicted_relation": "child", "predicted_relation_id": 78}
+```json
+{"index": 1372, "sentence": "nor mann from gorgophone, girl of the famous perseus.", "head_entity": "gorgophone", "tail_entity": "perseus", "predicted_relation": "child", "predicted_relation_id": 78}
+```json
+{"index": 1376, "sentence": "muirchertach kid from muiredach filho of eógan son of niall naígiallach in a vat full of wine on the hilltop of cleitech above bóinn.", "head_entity": "muiredach", "tail_entity": "eógan", "predicted_relation": "child", "predicted_relation_id": 78}
+```json
+{"index": 1377, "sentence": "\"nereus\", toward greek myth, did the oldest filho of pontus and gaia.", "head_entity": "nereus", "tail_entity": "pontus", "predicted_relation": "child", "predicted_relation_id": 78}
+```json
+{"index": 1390, "sentence": "nor a distant homie from cynan dindaethwy filho of rhodri molwynog.", "head_entity": "cynan dindaethwy", "tail_entity": "rhodri molwynog", "predicted_relation": "child", "predicted_relation_id": 78}
+```json
+{"index": 1393, "sentence": "it makes the filho of phyllis (culbertson) and william henry draper iii and the younger brother of actress polly draper.", "head_entity": "polly draper", "tail_entity": "william henry draper iii", "predicted_relation": "child", "predicted_relation_id": 78}
+```json
+{"index": 1402, "sentence": "the jeux gave recourse among square enix 's crystal tools game engine, making it the only square enix game outside the \"final fantasy\" series to make use of it.", "head_entity": "crystal tools", "tail_entity": "square enix", "predicted_relation": "developer", "predicted_relation_id": 20}
+```json
+{"index": 1410, "sentence": "the exclusive appliance reachable to them did an arcade junta first engendered by japanese company, nichibutsu for a game called, moon cresta (1980).", "head_entity": "moon cresta", "tail_entity": "nichibutsu", "predicted_relation": "developer", "predicted_relation_id": 20}
+```json
+{"index": 1419, "sentence": "microïds (anuman interplay 's adventure games label), owners of the cryo brand, made the game available on gog. com on april 30, 2009 alongside \"megarace 2\".", "head_entity": "megarace 2", "tail_entity": "cryo", "predicted_relation": "developer", "predicted_relation_id": 20}
+```json
+{"index": 1425, "sentence": "sniper elite v2 makes a third - everyone tactic mugger concealment footage jeux authored by rebellion developments and published by 505 games in 2012.", "head_entity": "sniper elite v2", "tail_entity": "rebellion developments", "predicted_relation": "developer", "predicted_relation_id": 20}
+```json
+{"index": 1427, "sentence": "\"taito memorials pocket\" in particular also includes remakes of the titles \"balloon bomber\", \"cameltry\", \"crazy balloon\", and \"the legend of kage\".", "head_entity": "balloon bomber", "tail_entity": "taito", "predicted_relation": "developer", "predicted_relation_id": 20}
+```json
+{"index": 1440, "sentence": "through sc09 (seattle, nor), a collaborative computer of ncdm, naval research lab, and icair showcased udt - powered wide area data intensive cloud computing applications.", "head_entity": "udt", "tail_entity": "ncdm", "predicted_relation": "developer", "predicted_relation_id": 20}
+```json
+{"index": 1460, "sentence": "inaugurated toward january 2008, ndoors corporation authorised atlantica online to the9.", "head_entity": "atlantica online", "tail_entity": "ndoors corporation", "predicted_relation": "developer", "predicted_relation_id": 20}
+```json
+{"index": 1544, "sentence": "the scopes of greatest concern for flooding were the reach of the stream around the hamlet of west kill and further downstream around the beech ridge brook confluence.", "head_entity": "beech ridge brook", "tail_entity": "west kill", "predicted_relation": "tributary", "predicted_relation_id": 48}
+```json
+{"index": 1549, "sentence": "toward 1857 availability to the arena did strengthened per the architecture among a bridge over breakfast creek near the confluence with the brisbane river.", "head_entity": "breakfast creek", "tail_entity": "brisbane river", "predicted_relation": "tributary", "predicted_relation_id": 48}
+```json
+{"index": 1551, "sentence": "the rheinneckar s - bahn, engendered in 2003, connects most of the rhine - neckar area including lines into the palatinate, odenwald, and southern hesse.", "head_entity": "neckar", "tail_entity": "rhine", "predicted_relation": "tributary", "predicted_relation_id": 48}
+```json
+{"index": 1594, "sentence": "the pes corrientes at the facility from the divisional nor across vologda oblast, when him joins the chagodoshcha, another major tributary of the mologa.", "head_entity": "pes", "tail_entity": "chagodoshcha", "predicted_relation": "tributary", "predicted_relation_id": 48}
+```json
+{"index": 1730, "sentence": "the operates from \"neue sachlichkeit\" (recent aim) photographers such as august sander and karl blossfeldt, and the industrial photographs of the bechers, formed the nucleus of his collection.", "head_entity": "karl blossfeldt", "tail_entity": "neue sachlichkeit", "predicted_relation": "movement", "predicted_relation_id": 24}
+```json
+{"index": 1847, "sentence": "toward 1999 pei solidified with marconi electronic systems, the defence interests of gec, at the same time changing its name from british aerospace to bae systems.", "head_entity": "marconi electronic systems", "tail_entity": "bae systems", "predicted_relation": "subsidiary", "predicted_relation_id": 39}
+```json
+{"index": 1919, "sentence": "french shipbuilder navantia makes proposing the \"cantabria\" conceive, while south korea 's dsme is proposing the downsized aegir variant of the \"tide\"-class tanker.", "head_entity": "\"tide\"-class tanker", "tail_entity": "dsme", "predicted_relation": "manufacturer", "predicted_relation_id": 27}
+```json
+{"index": 1928, "sentence": "bizzarrini served upon 1964 throughout iso rivolta nor worded three mannequins: iso rivolta gt, iso grifo both a3l and a3c versions.", "head_entity": "iso grifo", "tail_entity": "iso rivolta", "predicted_relation": "has part", "predicted_relation_id": 12}
+```json
+{"index": 1935, "sentence": "he became designed and constructed by dr. dániel muszka of the university of szeged, the same person who created the ladybird of szeged.", "head_entity": "ladybird of szeged", "tail_entity": "university of szeged", "predicted_relation": "developer", "predicted_relation_id": 20}
+```json
+{"index": 1953, "sentence": "cartes treatment is handled by the ati xenos, which has 10 mb of edram.", "head_entity": "xenos", "tail_entity": "ati", "predicted_relation": "developer", "predicted_relation_id": 20}
+```json
+{"index": 1977, "sentence": "this did stell 's third apparition at eurovision: she had appeared twice as part of the group hearts of soul / dream express for the netherlands in 1970 and for belgium in 1977.", "head_entity": "1970", "tail_entity": "eurovision", "predicted_relation": "participant of", "predicted_relation_id": 10}
+```json
+{"index": 2020, "sentence": "felanitx makes a ciudad toward the english autonomous community of the balearic islands, located in the southeast of majorca, 48 kilometres (30 miles) from the capital palma de mallorca.", "head_entity": "balearic islands", "tail_entity": "autonomous community", "predicted_relation": "part of", "predicted_relation_id": 67}
+```json
+{"index": 2025, "sentence": "the clerk of defense louis a. johnson succeeded to strip the navy of funds on its first supercarrier, the united states.", "head_entity": "united states", "tail_entity": "supercarrier", "predicted_relation": "instance of", "predicted_relation_id": 28}
+```json
+{"index": 2029, "sentence": "bloomer 's intentions contributed derby complete racers - up in the first division in 1896 and helped them reach three fa cup finals in 1898, 1899 and 1903.", "head_entity": "1899", "tail_entity": "fa cup finals", "predicted_relation": "participant of", "predicted_relation_id": 10}
+```json
+{"index": 2034, "sentence": "towelhead makes a new written by alicia erian and first published april 6, 2005.", "head_entity": "towelhead", "tail_entity": "alicia erian", "predicted_relation": "author", "predicted_relation_id": 17}
+```json
+{"index": 2051, "sentence": "the feather sexes makes a 1991 newer by the british adventurer sir ranulph fiennes (reissued as killer elite, echoing the title of its 2011 film adaptation).", "head_entity": "its 2011 film adaptation", "tail_entity": "sir ranulph fiennes", "predicted_relation": "author", "predicted_relation_id": 17}
+```json
+{"index": 2057, "sentence": "he makes freely based on the novel \"the night watch\" by sergei lukyanenko, and is the first part of a duology, followed by \"day watch\".", "head_entity": "day watch", "tail_entity": "sergei lukyanenko", "predicted_relation": "author", "predicted_relation_id": 17}
+```json
+{"index": 2059, "sentence": "the theatre did reasoned during the new \"and ride a tiger\" by robert wilder, author of \"written on the wind\".", "head_entity": "written on the wind", "tail_entity": "robert wilder", "predicted_relation": "author", "predicted_relation_id": 17}
+```json
+{"index": 2061, "sentence": "the computer cooperating during the theatre makes considerably the similar because this which manufactured the stipend - defeating adjustment of philip pullman 's the butterfly tattoo.", "head_entity": "the butterfly tattoo", "tail_entity": "philip pullman", "predicted_relation": "author", "predicted_relation_id": 17}
+```json
+{"index": 2066, "sentence": "it followed this among the preliminary flick tailor among george orwell 's \"1984\" (1956), co - financed with american money.", "head_entity": "1984", "tail_entity": "george orwell", "predicted_relation": "author", "predicted_relation_id": 17}
+```json
+{"index": 2069, "sentence": "they might be famed highest onto the u. s. editions of all five borrowers books by mary norton, published by harcourt 1953 – 1961 and 1982, a series inaugurated very early in their careers.", "head_entity": "borrowers", "tail_entity": "mary norton", "predicted_relation": "author", "predicted_relation_id": 17}
+```json
+{"index": 2083, "sentence": "than the sidebar bureau chess from welsh 's 2003 alive measure movie of dr seuss 's \"the cat in the hat\" universal got cold feet and the project was again put into turnaround.", "head_entity": "the cat in the hat", "tail_entity": "seuss", "predicted_relation": "author", "predicted_relation_id": 17}
+```json
+{"index": 2093, "sentence": "the bourne caveat makes the third jas bourn newer written by robert ludlum and a sequel to \"the bourne supremacy\" (1986).", "head_entity": "the bourne supremacy", "tail_entity": "robert ludlum", "predicted_relation": "author", "predicted_relation_id": 17}
+```json
+{"index": 2094, "sentence": "for tony lee moral 's book \"hitchcock and the making of marnie,\" winston graham revealed that the inspiration for \"marnie\" came from three real - life incidents:", "head_entity": "marnie", "tail_entity": "winston graham", "predicted_relation": "author", "predicted_relation_id": 17}
+```json
+{"index": 2372, "sentence": "during neighbouring seats were unity mitford, diana mitford and dr. frank buchmanunity mitford: an enquiry into her life and the frivolity of evil, p. 121.", "head_entity": "diana mitford", "tail_entity": "unity mitford", "predicted_relation": "sibling", "predicted_relation_id": 33}
+```json
+{"index": 2376, "sentence": "she makes the mama of the actress romina yan (†), and of the producer and current telefe director tomás yankelevich.", "head_entity": "romina yan", "tail_entity": "tomás yankelevich", "predicted_relation": "child", "predicted_relation_id": 78}
+```json
+{"index": 2379, "sentence": "géza 's newest hermano, stephen, started conspiring with their uncle, beloš, and other lords against géza, according to the nearly contemporaneous rahewin.", "head_entity": "stephen", "tail_entity": "géza", "predicted_relation": "sibling", "predicted_relation_id": 33}
+```json
+{"index": 2405, "sentence": "any concerto makes preliminary concerto primarily constituted throughout this cine by milind date, who also performed bansuri on some tracks.", "head_entity": "milind date", "tail_entity": "bansuri", "predicted_relation": "instrument", "predicted_relation_id": 34}
+```json
+{"index": 2459, "sentence": "10148 among the philippines introduced by antipolo second district congressman robbie puno, which grants filipino citizenship to douthit, lapsed into law after president aquino failed to sign it.", "head_entity": "antipolo", "tail_entity": "philippines", "predicted_relation": "located in the administrative territorial entity", "predicted_relation_id": 63}
+```json
+{"index": 2480, "sentence": "for 2004 to 2007 it did the chairwoman of the young socialists in the spd (\"jusos\"), the youth organization of the german social democratic party.", "head_entity": "social democratic party", "tail_entity": "german", "predicted_relation": "country", "predicted_relation_id": 35}
+```json
+{"index": 2491, "sentence": "the dissertation of \"arming america\" is that gun culture in the united states did not have roots in the colonial and early national period but arose during the 1850s and 1860s.", "head_entity": "colonial", "tail_entity": "united states", "predicted_relation": "country", "predicted_relation_id": 35}
+```json
+{"index": 2513, "sentence": "the lion 2 makes a german critical battleground depot (kampfpanzer) enacted per krauss - maffei toward the rapid 1970s nor preliminary joining serve in 1979.", "head_entity": "krauss-maffei", "tail_entity": "german", "predicted_relation": "country", "predicted_relation_id": 35}
+```json
+{"index": 2594, "sentence": "player john leguizamo performed at no shame theatre in new york city while no shame was hosted at home for contemporary theatre and art in tribeca.", "head_entity": "john leguizamo", "tail_entity": "new york city", "predicted_relation": "work location", "predicted_relation_id": 38}
+```json
+{"index": 2600, "sentence": "toward rapid insurance from the gdańsk strike by western press, (which was permitted into the shipyard), anna walentynowicz is mentioned earlier than lech wałęsa.", "head_entity": "anna walentynowicz", "tail_entity": "gdańsk", "predicted_relation": "work location", "predicted_relation_id": 38}
+```json
+{"index": 2611, "sentence": "this legislation did substituted toward august 2012 per a prohibit on public nudity in san francisco, proposed by scott wiener.", "head_entity": "scott wiener", "tail_entity": "san francisco", "predicted_relation": "work location", "predicted_relation_id": 38}
+```json
+{"index": 2625, "sentence": "through the rib about duarte, he is among the group of resistance fighters trying to cover the escape to sweden of an important scientist (evidently the nuclear physicist niels bohr).", "head_entity": "niels bohr", "tail_entity": "sweden", "predicted_relation": "country of citizenship", "predicted_relation_id": 6}
+```json
+{"index": 2644, "sentence": "it taught per mississippi college and the former women 's institution, hillman college, also in clinton, mississippi, and then the university of arkansas at fayetteville.", "head_entity": "clinton", "tail_entity": "fayetteville", "predicted_relation": "located in the administrative territorial entity", "predicted_relation_id": 63}
+```json
+{"index": 2650, "sentence": "ellsworth storey did for baltimore, originally traveled seattle because a youngster, nor settled there toward 1903 than obtaining an construction graduation for the academia of illinois.", "head_entity": "ellsworth storey", "tail_entity": "seattle", "predicted_relation": "residence", "predicted_relation_id": 37}
+```json
+{"index": 2660, "sentence": "the facility apart sent south dakota governor dennis daugaard a letter requesting a meeting in pierre.", "head_entity": "dennis daugaard", "tail_entity": "pierre", "predicted_relation": "work location", "predicted_relation_id": 38}
+```json
+{"index": 2676, "sentence": "during 19 january 1995 a memorial dedicated to the memory of agustín rodríguez sahagún was opened, in the madrid park that also bears his name.", "head_entity": "agustín rodríguez sahagún", "tail_entity": "madrid", "predicted_relation": "location", "predicted_relation_id": 58}
+```json
+{"index": 2679, "sentence": "it accused lantos from \"mendacity behind ... inflammable buzzwords\" an unlocked carta to robert lantos: toward defensive of the toronto declaration by john greyson, rabble. ca, september 15, 2009.", "head_entity": "john greyson", "tail_entity": "toronto", "predicted_relation": "work location", "predicted_relation_id": 38}
+```json
+{"index": 2683, "sentence": "through the 37 - min dial, thomas müller got the scoring underway for munich with a penalty, kicking the ball low to the right and sending the goalkeeper the wrong way.", "head_entity": "thomas müller", "tail_entity": "munich", "predicted_relation": "work location", "predicted_relation_id": 38}
+```json
+{"index": 2710, "sentence": "sinforoso canaveri did politically entwined to the familia of mallié, rouquaud, périchon and crotto, belonging to the french society of buenos aires.", "head_entity": "crotto", "tail_entity": "buenos aires", "predicted_relation": "work location", "predicted_relation_id": 38}
+```json
+{"index": 2718, "sentence": "among the initiation of hostilities, the ministry of supply finally established a biological weapons programme at porton down, headed by the microbiologist paul fildes.", "head_entity": "paul fildes", "tail_entity": "porton down", "predicted_relation": "work location", "predicted_relation_id": 38}
+```json
+{"index": 2737, "sentence": "harman expanded to include illuminating toward 2013 among the shopping of martin professional.", "head_entity": "harman", "tail_entity": "martin professional", "predicted_relation": "subsidiary", "predicted_relation_id": 39}
+```json
+{"index": 2755, "sentence": "onto 30 at cent of 3 commando brigade, performing vital support roles, were not royal marines in 2004, such as 29 commando regiment royal artillery and 59 commando squadron royal engineers.", "head_entity": "3 commando brigade", "tail_entity": "29 commando regiment royal artillery", "predicted_relation": "has part", "predicted_relation_id": 12}
+```json
+{"index": 2761, "sentence": "toward 2001, bottega veneta did obtained per dolce syndicate, nor is now a part of the french multinational group kering.", "head_entity": "kering", "tail_entity": "bottega veneta", "predicted_relation": "owned by", "predicted_relation_id": 46}
+```json
+{"index": 2769, "sentence": "trinigy nor its vista locos did gained by havok in 2011.", "head_entity": "havok", "tail_entity": "trinigy", "predicted_relation": "owned by", "predicted_relation_id": 46}
+```json
+{"index": 2786, "sentence": "during 4 juni 2014, they changed their undertaking template to yield depot and served flipkart, jabong, myntra, zovi, koovs & zivame as their clients.", "head_entity": "flipkart", "tail_entity": "myntra", "predicted_relation": "subsidiary", "predicted_relation_id": 39}
+```json
+{"index": 2884, "sentence": "sncf homeroom z 22500 looks very similar to ratp altéo trains, but many differences exist between these models, such as motorization and design of inner spaces.", "head_entity": "altéo", "tail_entity": "ratp", "predicted_relation": "subsidiary", "predicted_relation_id": 39}
+```json
+{"index": 2894, "sentence": "frst the south african air force (saaf) alouette helicopter gunships stood by helplessly and watched the swapol units come under attack but their orders would soon change and they would be rearmed.", "head_entity": "alouette", "tail_entity": "south african air force", "predicted_relation": "part of", "predicted_relation_id": 67}
+```json
+{"index": 2906, "sentence": "he will meanwhile give the recent transtech artic articulated streetcars toward the helsinki city transport.", "head_entity": "transtech artic", "tail_entity": "helsinki city transport", "predicted_relation": "operator", "predicted_relation_id": 41}
+```json
+{"index": 2910, "sentence": "onto april 9, 1943, the united states navy commissioned \"sea cloud\" as uss \"sea cloud\" (ix - 99), though she maintained a coast guard crew.", "head_entity": "sea cloud", "tail_entity": "united states navy", "predicted_relation": "operator", "predicted_relation_id": 41}
+```json
+{"index": 2918, "sentence": "opendoar makes retained by the university of nottingham under the sherpa umbrella of services and was developed in collaboration with lund university.", "head_entity": "opendoar", "tail_entity": "university of nottingham", "predicted_relation": "developer", "predicted_relation_id": 20}
+```json
+{"index": 2960, "sentence": "it makes a critical personality from johansen 's prix - winning \"millennium\" series, along with lisbeth salander.", "head_entity": "\"millennium\" series", "tail_entity": "lisbeth salander", "predicted_relation": "characters", "predicted_relation_id": 42}
+```json
+{"index": 2962, "sentence": "toward currency, alidoro later economies pinocchio of the green fisherman, who was going to eat the marionette, as pinocchio returns home.", "head_entity": "pinocchio", "tail_entity": "the green fisherman", "predicted_relation": "characters", "predicted_relation_id": 42}
+```json
+{"index": 2964, "sentence": "the second - released low residence livre, \"farmer boy\" features almanzo wilder at ages 8 to 10 in upstate new york.", "head_entity": "farmer boy", "tail_entity": "almanzo wilder", "predicted_relation": "characters", "predicted_relation_id": 42}
+```json
+{"index": 2986, "sentence": "a same implication owns stirred to the personalisation nor \"reification\" toward the discworld cosmos of mythological beings symbolising abstract concepts, such as death, the hogfather and other anthropomorphic personifications.", "head_entity": "hogfather", "tail_entity": "death", "predicted_relation": "characters", "predicted_relation_id": 42}
+```json
+{"index": 2988, "sentence": "aslan 's why makes alone mentioned once more in \"the horse and his boy\".", "head_entity": "the horse and his boy", "tail_entity": "aslan", "predicted_relation": "characters", "predicted_relation_id": 42}
+```json
+{"index": 3065, "sentence": "than his mom 's death in 1941, she stayed at chequers, the prime minister 's country home in buckinghamshire.", "head_entity": "chequers", "tail_entity": "prime minister", "predicted_relation": "residence", "predicted_relation_id": 37}
+```json
+{"index": 3113, "sentence": "toward 1994, perrelli began sing with the well - established dansband anders engbergs.", "head_entity": "anders engbergs", "tail_entity": "dansband", "predicted_relation": "member of", "predicted_relation_id": 77}
+```json
+{"index": 3196, "sentence": "watchos makes a proprietary mobility working plan enacted per potato inc. to run on the apple watch.", "head_entity": "apple watch", "tail_entity": "watchos", "predicted_relation": "operating system", "predicted_relation_id": 45}
+```json
+{"index": 3234, "sentence": "nir berkovic(; born 16 february 1982) makes a old palestine ballon pianist nor underway the instructor from hapoel rishon lezion, her brah eyal owns the club.", "head_entity": "hapoel rishon lezion", "tail_entity": "eyal", "predicted_relation": "member of", "predicted_relation_id": 77}
+```json
+{"index": 3235, "sentence": "than lima concluded down toward january 2004, the jouef trademark was acquired a few months later by hornby railways (tran 2004).", "head_entity": "lima", "tail_entity": "hornby railways", "predicted_relation": "owned by", "predicted_relation_id": 46}
+```json
+{"index": 3242, "sentence": "he makes elaborated by ivory tower and published by ubisoft for microsoft windows, playstation 4 and xbox one.", "head_entity": "ivory tower", "tail_entity": "ubisoft", "predicted_relation": "developer", "predicted_relation_id": 20}
+```json
+{"index": 3252, "sentence": "1994 victoire miinnehoma did possessed per comedian freddie starr.", "head_entity": "miinnehoma", "tail_entity": "freddie starr", "predicted_relation": "owned by", "predicted_relation_id": 46}
+```json
+{"index": 3266, "sentence": "than king county voters approved a bond for a domed stadium (what would become the kingdome) in 1968, the seattle pilots were officially born.", "head_entity": "kingdome", "tail_entity": "king county", "predicted_relation": "located in the administrative territorial entity", "predicted_relation_id": 63}
+```json
+{"index": 3273, "sentence": "tonka (embracing kenner) did obtained per the play company hasbro in mid - 1991.", "head_entity": "kenner", "tail_entity": "hasbro", "predicted_relation": "owned by", "predicted_relation_id": 46}
+```json
+{"index": 3286, "sentence": "toward 2007, thon resettled to its recent habitation in the bryce jordan center on the penn state university campus in university park, pennsylvania.", "head_entity": "bryce jordan center", "tail_entity": "penn state university", "predicted_relation": "located in the administrative territorial entity", "predicted_relation_id": 63}
+```json
+{"index": 3314, "sentence": "\"vvvvvv\" were released on january 11, 2010 for microsoft windows and mac os x.", "head_entity": "vvvvvv", "tail_entity": "microsoft windows", "predicted_relation": "platform", "predicted_relation_id": 47}
+```json
+{"index": 3362, "sentence": "threads creek, a watercourse that makes segment from the hawkesbury - nepean catchment, makes housed in greater western sydney, new south wales, australia.", "head_entity": "hawkesbury", "tail_entity": "nepean", "predicted_relation": "tributary", "predicted_relation_id": 48}
+```json
+{"index": 3370, "sentence": "the mamore makes disrupted per rapids a small thousands above its confluence among the beni, but a railway 300 km long has been undertaken from below the rapids of the madeira.", "head_entity": "madeira", "tail_entity": "beni", "predicted_relation": "tributary", "predicted_relation_id": 48}
+```json
+{"index": 3379, "sentence": "toward this incident, because among the esla nor pisuerga with the duero, the sil has flows larger than the miño at the junction.", "head_entity": "duero", "tail_entity": "pisuerga", "predicted_relation": "tributary", "predicted_relation_id": 48}
+```json
+{"index": 3385, "sentence": "for the mountains above the town there are wide panoramic views of the neckar region, towards hohenasperg and stromberg, and the valleys and hills of the murr and bottwar region.", "head_entity": "neckar", "tail_entity": "murr", "predicted_relation": "tributary", "predicted_relation_id": 48}
+```json
+{"index": 3438, "sentence": "sagan raped her considerable tourism victoire drought at the vuelta a españa by outsprinting nacer bouhanni and john degenkolb on the third stage.", "head_entity": "vuelta a españa", "tail_entity": "john degenkolb", "predicted_relation": "participant", "predicted_relation_id": 40}
+```json
+{"index": 3443, "sentence": "andrea depicted mexico at the miss world 2017 in china where stephanie del valle of puerto rico crowned manushi chhillar of india as her successor at the end of the event.", "head_entity": "miss world 2017", "tail_entity": "manushi chhillar", "predicted_relation": "winner", "predicted_relation_id": 49}
+```json
+{"index": 3458, "sentence": "cska are the advocating russian premier league champions, and will take part in the russian super cup, russian cup and champions league, entering at the group stage.", "head_entity": "russian premier league", "tail_entity": "cska", "predicted_relation": "participating team", "predicted_relation_id": 3}
+```json
+{"index": 3484, "sentence": "was not play: harry vardon (1900), fred herd (1898), joe lloyd (1897), horace rawlins (1895).", "head_entity": "1898", "tail_entity": "fred herd", "predicted_relation": "participant of", "predicted_relation_id": 10}
+```json
+{"index": 3496, "sentence": "german jupp heynckes makes the exclusive boy to have earned the cup twice and did so in consecutive years (2003 and 2004) with german club schalke 04.", "head_entity": "2003", "tail_entity": "schalke 04", "predicted_relation": "participant of", "predicted_relation_id": 10}
+```json
+{"index": 3503, "sentence": "she married the rio god hydaspes (the modern jhelum river) and became mother of deriades, king in india.", "head_entity": "jhelum river", "tail_entity": "hydaspes", "predicted_relation": "said to be the same as", "predicted_relation_id": 50}
+```json
+{"index": 3523, "sentence": "the lancia assortment (tipo 830) was an executive car (e - segment in europe) manufactured and marketed by the lancia subdivision of fiat.", "head_entity": "e-segment", "tail_entity": "executive car", "predicted_relation": "instance of", "predicted_relation_id": 28}
+```json
+{"index": 3528, "sentence": "still, the ripper nature in the film \"murder by decree\", assigned the fictitious name \"sir thomas spivey,\" was based on sir william gull.", "head_entity": "william gull", "tail_entity": "ripper", "predicted_relation": "said to be the same as", "predicted_relation_id": 50}
+```json
+{"index": 3565, "sentence": "toward strongest christian traditions this jacobo is considered to be the james, son of alphaeus, and he and james the less are considered the same person.", "head_entity": "james the less", "tail_entity": "james, son of alphaeus", "predicted_relation": "said to be the same as", "predicted_relation_id": 50}
+```json
+{"index": 3589, "sentence": "akon nor giorgia tuinfort co - produced \"mirrors\" in collaboration with kierszenbaum.", "head_entity": "mirrors", "tail_entity": "akon", "predicted_relation": "performer", "predicted_relation_id": 9}
+```json
+{"index": 3622, "sentence": "palmer co - wrote the topic song to 2013 television series \"mob city\" with mark isham entitled \"hello again\" and performed it.", "head_entity": "mob city", "tail_entity": "mark isham", "predicted_relation": "composer", "predicted_relation_id": 51}
+```json
+{"index": 3634, "sentence": "gordine urged in moraes nor jobim throughout a recent punctuation for the film \"orfeu negro\", or \"black orpheus\" (1959).", "head_entity": "black orpheus", "tail_entity": "jobim", "predicted_relation": "composer", "predicted_relation_id": 51}
+```json
+{"index": 3699, "sentence": "birthed during willemstad, netherlands antilles, sumter began his career with crksv jong holland in the sekshon pagá, the highest level of football in curaçao.", "head_entity": "crksv jong holland", "tail_entity": "sekshon pagá", "predicted_relation": "league", "predicted_relation_id": 52}
+```json
+{"index": 3715, "sentence": "the 18 - path scrapbook was released 20 may 2013 on wati b and on mmc, the latter founded by maître gims himself.", "head_entity": "maître gims", "tail_entity": "wati b", "predicted_relation": "record label", "predicted_relation_id": 53}
+```json
+{"index": 3755, "sentence": "the poem was released on the 1974 epic retrospective \"the best of george jones\", which also featured \"the door.\"", "head_entity": "the best of george jones", "tail_entity": "epic", "predicted_relation": "record label", "predicted_relation_id": 53}
+```json
+{"index": 3804, "sentence": "\"chick chicken\" meanwhile took a24 's widest - grossing cinematography domestically, ahead of \"moonlight\", which made $27.9 million.", "head_entity": "moonlight", "tail_entity": "a24", "predicted_relation": "distributor", "predicted_relation_id": 54}
+```json
+{"index": 3811, "sentence": "the duet founded the irrespective inscription label psychopathic records with alex abbiss as manager, and produced and starred in the feature films \"big money hustlas\" and \"big money rustlas\".", "head_entity": "big money rustlas", "tail_entity": "psychopathic records", "predicted_relation": "distributor", "predicted_relation_id": 54}
+```json
+{"index": 3833, "sentence": "his mann, famed toward theatre nor amphitheatre as david bacon, was murdered in 1943, two weeks after finishing a major role in the republic serial \"the masked marvel\".", "head_entity": "the masked marvel", "tail_entity": "republic", "predicted_relation": "distributor", "predicted_relation_id": 54}
+```json
+{"index": 3840, "sentence": "the kino was an international hit, and along with \"confession\" proved a breakthrough for anglo - amalgamated.", "head_entity": "confession", "tail_entity": "anglo-amalgamated", "predicted_relation": "distributor", "predicted_relation_id": 54}
+```json
+{"index": 3853, "sentence": "he did drafted per prestigious filmmakers wong jing, manfred wong and andrew lau during the success of the \"young and dangerous\" series.", "head_entity": "\"young and dangerous\" series", "tail_entity": "manfred wong", "predicted_relation": "director", "predicted_relation_id": 18}
+```json
+{"index": 3881, "sentence": "than a short downturn, vijayakumar 's second innings came in 1988 with mani ratnam 's agni natchathiram where he played the role of phrabu ganesan and karthik muthuraman 's father.", "head_entity": "agni natchathiram", "tail_entity": "mani ratnam", "predicted_relation": "director", "predicted_relation_id": 18}
+```json
+{"index": 3902, "sentence": "the roman will feature the historian from khamoshiyan nor two different novels penned by vikram bhatt – 1920 (film) and.", "head_entity": "khamoshiyan", "tail_entity": "vikram bhatt", "predicted_relation": "director", "predicted_relation_id": 18}
+```json
+{"index": 4069, "sentence": "this did the fourth yu. s. open for the lake course of the olympic club; the first two in 1955 and 1966 ended in playoffs, and 1987 was a one - stroke victory.", "head_entity": "1987", "tail_entity": "olympic club", "predicted_relation": "participant of", "predicted_relation_id": 10}
+```json
+{"index": 4109, "sentence": "the disneyworld print from epcot 's chic innoventions expo opened with the new tomorrowland in 1998, using a stylized rendition of \"there 's a great big beautiful tomorrow\" as its theme song.", "head_entity": "innoventions", "tail_entity": "epcot", "predicted_relation": "part of", "predicted_relation_id": 67}
+```json
+{"index": 4112, "sentence": "huis bergh represents a castle in 's - heerenberg and is one of the largest castles in the netherlands.", "head_entity": "huis bergh", "tail_entity": "'s-heerenberg", "predicted_relation": "located in the administrative territorial entity", "predicted_relation_id": 63}
+```json
+{"index": 4119, "sentence": "the bots operated toward gig among the manhattan typhoons who play at mcu park on coney island.", "head_entity": "mcu park", "tail_entity": "coney island", "predicted_relation": "located in the administrative territorial entity", "predicted_relation_id": 63}
+```json
+{"index": 4180, "sentence": "throughout illustration, soviet algebra nor economist leonid kantorovich worded the cereals of linear programming in 1939 through efforts to solve a plywood manufacturer 's production optimization issues.", "head_entity": "leonid kantorovich", "tail_entity": "linear programming", "predicted_relation": "field of work", "predicted_relation_id": 59}
+```json
+{"index": 4216, "sentence": "the cause from the manslaughter did payback throughout markelov 's previous collaborative because a bar toward the advantages from anti - russian partisans.", "head_entity": "markelov", "tail_entity": "russian", "predicted_relation": "country of citizenship", "predicted_relation_id": 6}
+```json
+{"index": 4254, "sentence": "at the close liaison among the mambai people, most of the bunak people here are bilingual with this malayo - polynesian language and their mother tongue also shows influences of the mambai language.", "head_entity": "mambai people", "tail_entity": "mambai language", "predicted_relation": "language of work or name", "predicted_relation_id": 60}
+```json
+{"index": 4413, "sentence": "it did admitted because a 'gradual rancher' by the government of india and received an accolade in the rashtrapati bhavan, new delhi from the president of india at the time.", "head_entity": "rashtrapati bhavan", "tail_entity": "new delhi", "predicted_relation": "located in the administrative territorial entity", "predicted_relation_id": 63}
+```json
+{"index": 4422, "sentence": "two recent centers became engendered: liberté and charenton – écoles in charenton - le - pont.", "head_entity": "charenton – écoles", "tail_entity": "charenton-le-pont", "predicted_relation": "located in the administrative territorial entity", "predicted_relation_id": 63}
+```json
+{"index": 4431, "sentence": "the senne fer () represents a single - track branch line from brackwede to paderborn with a through service to bielefeld in the german state of north rhine - westphalia.", "head_entity": "brackwede", "tail_entity": "bielefeld", "predicted_relation": "located in the administrative territorial entity", "predicted_relation_id": 63}
+```json
+{"index": 4455, "sentence": "she did originally selected to the oahu residence from reps toward 2004 depicting the kāhala zona of honolulu on oahu.", "head_entity": "kāhala", "tail_entity": "honolulu", "predicted_relation": "located in the administrative territorial entity", "predicted_relation_id": 63}
+```json
+{"index": 4605, "sentence": "lahari concerto, forerunner record label company is making its re - entry in to the tamil music industry with masala padam.", "head_entity": "masala padam", "tail_entity": "tamil", "predicted_relation": "language of work or name", "predicted_relation_id": 60}
+```json
+{"index": 4606, "sentence": "its initial serbian language title is буре барута (\"bure baruta\") which means \"powder keg\".", "head_entity": "bure baruta", "tail_entity": "serbian language", "predicted_relation": "language of work or name", "predicted_relation_id": 60}
+```json
+{"index": 4695, "sentence": "then, the chanson was succeeded as romanian representative at the 2002 contest by monica anghel & marcel pavel with \"tell me why\".", "head_entity": "tell me why", "tail_entity": "2002 contest", "predicted_relation": "participant of", "predicted_relation_id": 10}
+```json
+{"index": 4704, "sentence": "toward generative phonology, another format from transformation is the phonological rule, which describes a mapping between an underlying representation (the phoneme) and the surface form that is articulated during natural speech.", "head_entity": "phonological rule", "tail_entity": "generative phonology", "predicted_relation": "field of work", "predicted_relation_id": 59}
+```json
+{"index": 4709, "sentence": "\"why small remain\" represents followed in the southern victory series by the great war and american empire trilogies, and the settling accounts tetralogy.", "head_entity": "settling accounts", "tail_entity": "southern victory", "predicted_relation": "part of", "predicted_relation_id": 67}
+```json
+{"index": 4724, "sentence": "norad did a common yu. s. airspace force / royal canadian air force (canadian forces after february 1968) organization.", "head_entity": "royal canadian air force", "tail_entity": "canadian forces", "predicted_relation": "part of", "predicted_relation_id": 67}
+```json
+{"index": 4989, "sentence": "the supplementary railroads toward the peak time throughout eatin nor haltern meanwhile bear this designate, unless this makes never geographically correct because the niers corrientes across mönchengladbach.", "head_entity": "mönchengladbach", "tail_entity": "niers", "predicted_relation": "located in or next to body of water", "predicted_relation_id": 71}
+```json
+{"index": 5132, "sentence": "nvidia 's kepler nor maxwell - predicated tegra socs.", "head_entity": "maxwell", "tail_entity": "kepler", "predicted_relation": "followed by", "predicted_relation_id": 26}
+```json
+{"index": 5160, "sentence": "\"11\" did the preliminary emancipate of new adams material since \"colour me kubrick\" in 2005 and the first studio album in four years since \"room service\".", "head_entity": "colour me kubrick", "tail_entity": "room service", "predicted_relation": "followed by", "predicted_relation_id": 26}
+```json
+{"index": 5172, "sentence": "also, proton owns rekindled cross - authorise nor techno handover regimes among chrysler because from oct 2008, nor a proton waja lieu called the proton inspira.", "head_entity": "proton inspira", "tail_entity": "proton waja", "predicted_relation": "followed by", "predicted_relation_id": 26}
+```json
+{"index": 5186, "sentence": "birgitte originally met amir ricci from cheltenham, the smaller filho of prince henry, duke of gloucester, and princess alice, duchess of gloucester, in the late 1960s in cambridge.", "head_entity": "prince henry, duke of gloucester", "tail_entity": "princess alice, duchess of gloucester", "predicted_relation": "spouse", "predicted_relation_id": 74}
+```json
+{"index": 5187, "sentence": "continuing birthed toward atalanta, lombardi, augusto did the oldest hijo of eugène de beauharnais, napoleon i 's stepson, and princess augusta of bavaria.", "head_entity": "princess augusta of bavaria", "tail_entity": "eugène de beauharnais", "predicted_relation": "spouse", "predicted_relation_id": 74}
+```json
+{"index": 5190, "sentence": "yoel basement from custard team argued the neither - stardate politician felt like a intrigue contrivance meant strictly to keep ben and leslie apart, which he felt was not good for the story.", "head_entity": "ben", "tail_entity": "leslie", "predicted_relation": "sibling", "predicted_relation_id": 33}
+```json
+{"index": 5193, "sentence": "she did engaged to henry zach, 1st counting from linc, the filho of charles brandon, 1st duke of suffolk, and princess mary, the sister of henry viii.", "head_entity": "charles brandon, 1st duke of suffolk", "tail_entity": "princess mary", "predicted_relation": "spouse", "predicted_relation_id": 74}
+```json
+{"index": 5216, "sentence": "walentynowicz died toward a airspace meltdown about smolensk during 10 january 2010, across among speaker from warsaw, lech kaczyński, originally lady maria kaczyńska, nor much various prominent polish leaders.", "head_entity": "lech kaczyński", "tail_entity": "maria kaczyńska", "predicted_relation": "spouse", "predicted_relation_id": 74}
+```json
+{"index": 5227, "sentence": "the occupational - spanish tabor did trained in poland already in the 1660s, in part upon the prodding by queen marie louise, and jan sobieski was its member.", "head_entity": "jan sobieski", "tail_entity": "marie louise", "predicted_relation": "member of", "predicted_relation_id": 77}
+```json
+{"index": 5230, "sentence": "he meanwhile features their relatives kris and caitlyn jenner (previously known as bruce jenner), and brother rob kardashian.", "head_entity": "kris", "tail_entity": "caitlyn jenner", "predicted_relation": "sibling", "predicted_relation_id": 33}
+```json
+{"index": 5234, "sentence": "\"; through affiliation. kom toward merseyside, unified britain, the exclusive enfant of actors annette ekblom and alun lewis.", "head_entity": "annette ekblom", "tail_entity": "alun lewis", "predicted_relation": "spouse", "predicted_relation_id": 74}
+```json
+{"index": 5239, "sentence": "it did the filho of dancers pandit uday shankar and amala shankar and the nephew of the sitar maestro ravi shankar.", "head_entity": "amala shankar", "tail_entity": "uday shankar", "predicted_relation": "spouse", "predicted_relation_id": 74}
+```json
+{"index": 5248, "sentence": "per a trip to the appartment of sonic youth members thurston moore and kim gordon, moore told vig he wanted the album to sound like an obscure mecht mensch single that vig had produced.", "head_entity": "kim gordon", "tail_entity": "thurston moore", "predicted_relation": "spouse", "predicted_relation_id": 74}
+```json
+{"index": 5324, "sentence": "toward either the \"virtuous edda\" nor the \"nonfiction edda\", gerðr makes mentioned because the girl of gymir and the jötunn aurboða.", "head_entity": "gerðr", "tail_entity": "aurboða", "predicted_relation": "mother", "predicted_relation_id": 76}
+```json
+{"index": 5328, "sentence": "di dated aimee osborn, girl of rocker ozzy osbourne and celebrity personality sharon osbourne and sister to kelly and jack osbourne.", "head_entity": "jack osbourne", "tail_entity": "sharon osbourne", "predicted_relation": "mother", "predicted_relation_id": 76}
+```json
+{"index": 5332, "sentence": "following ögedei khan 's murder, töregene is the firstborn from the genghis reich throughout some decades unless his son, güyük, is elected as the new great khan.", "head_entity": "güyük", "tail_entity": "töregene", "predicted_relation": "child", "predicted_relation_id": 78}
+```json
+{"index": 5338, "sentence": "ariq böke got the youngest son of sorghaghtani beki and tolui, the youngest son of genghis khan.", "head_entity": "ariq böke", "tail_entity": "sorghaghtani beki", "predicted_relation": "child", "predicted_relation_id": 78}
+```json
+{"index": 5343, "sentence": "kazuko 's fille okiko became empress meishō, thus posthumously making oichi both a grandmother to a shogun and a great - grandmother to an empress.", "head_entity": "empress meishō", "tail_entity": "kazuko", "predicted_relation": "child", "predicted_relation_id": 78}
+```json
+{"index": 5344, "sentence": "shapur iii did the filho of yazdegerd i and shushandukht, and had two brothers named bahram v and narse.", "head_entity": "bahram v", "tail_entity": "shushandukht", "predicted_relation": "mother", "predicted_relation_id": 76}
+```json
+{"index": 5353, "sentence": "than the murder from alghu toward 1266, orghana nominated his son mubarak shah by her first husband, qara hulagu as khan of the chagatai khanate.", "head_entity": "mubarak shah", "tail_entity": "orghana", "predicted_relation": "mother", "predicted_relation_id": 76}
+```json
+{"index": 5358, "sentence": "for february 1900 to 1909 it did married to inga bjørnson (1871 – 1952); they were the child guri stormoen who became an actress.", "head_entity": "guri stormoen", "tail_entity": "inga bjørnson", "predicted_relation": "mother", "predicted_relation_id": 76}
+```json
+{"index": 5360, "sentence": "the enroll during the majeure sliver describes khenthap because the mamma of king djer. aidan dodson & dyan hilton: \"the complete royal families of ancient egypt\".", "head_entity": "djer", "tail_entity": "khenthap", "predicted_relation": "mother", "predicted_relation_id": 76}
+```json
+{"index": 5372, "sentence": "lepidus nor junia secunda did through weakest one enfant, marcus aemilius lepidus the younger.", "head_entity": "marcus aemilius lepidus the younger", "tail_entity": "junia secunda", "predicted_relation": "mother", "predicted_relation_id": 76}
+```json
+{"index": 5377, "sentence": "she got maria du fresnay 's mother as well as marie - caroline du fresnay 's and ange du fresnay 's grandmother.", "head_entity": "marie-caroline du fresnay", "tail_entity": "maria du fresnay", "predicted_relation": "child", "predicted_relation_id": 78}
+```json
+{"index": 5382, "sentence": "vladimir nor rogneda did five youngsters and the eldest of them, izyaslav, became prince of polotsk (ruled 989 - 1001).", "head_entity": "izyaslav", "tail_entity": "rogneda", "predicted_relation": "mother", "predicted_relation_id": 76}
+```json
+{"index": 5388, "sentence": "to ensure jeopardise between ceres and dis, jove divides the year into halves and commands that proserpina must spend equal parts of the year between her mother and her husband.", "head_entity": "proserpina", "tail_entity": "ceres", "predicted_relation": "mother", "predicted_relation_id": 76}
+```json
+{"index": 5389, "sentence": "lea behaves per proposing his maidservant zilpah to jacob, nor denominations nor raises the two yarns (gad and asher) that zilpah bears.", "head_entity": "gad", "tail_entity": "zilpah", "predicted_relation": "mother", "predicted_relation_id": 76}
+```json
+{"index": 5395, "sentence": "\"toward your eyelids\" makes a ballade realised per onew among boy group shinee.", "head_entity": "onew", "tail_entity": "shinee", "predicted_relation": "member of", "predicted_relation_id": 77}
+```json
+{"index": 5458, "sentence": "her countryside manager like leung chun - ying, the convenor of the unofficial members of the executive council tried to project a more communicative and high - tech image of tung.", "head_entity": "leung chun-ying", "tail_entity": "executive council", "predicted_relation": "member of", "predicted_relation_id": 77}
+```json
+{"index": 5464, "sentence": "her pater was a younger son of malcolm hamilton, and hugh hamilton, 1st viscount of glenawly was his uncle.", "head_entity": "malcolm hamilton", "tail_entity": "hugh hamilton, 1st viscount of glenawly", "predicted_relation": "sibling", "predicted_relation_id": 33}
+```

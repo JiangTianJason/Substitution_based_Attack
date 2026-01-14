@@ -1,0 +1,5 @@
+{"index": 5371, "token": ["Cynidr", "was", "the", "boy", "of", "St.", "Gwladys", ",", "T."], "h": "cynidr", "t": "gwladys"}
+{"index": 5372, "token": ["Lepidus", "and", "Junia", "Secunda", "had", "at", "least", "one", "kid", ",", "Marcus", "Aemilius", "Lepidus", "the", "Younger", "."], "h": "marcus aemilius lepidus the younger", "t": "junia secunda"}
+{"index": 5373, "token": ["Ehle", "is", "spliced", "to", "English", "tragedienne", "Rosemary", "Harris", ",", "and", "is", "the", "begetter", "of", "actress", "Jennifer", "Ehle", "."], "h": "jennifer ehle", "t": "rosemary harris"}
+{"index": 5389, "token": ["Leah", "responds", "by", "underbid", "her", "handmaiden", "Zilpah", "to", "Jacob", ",", "and", "names", "and", "raises", "the", "two", "sons", "(", "Gad", "and", "Asher", ")", "that", "Zilpah", "bears", "."], "h": "gad", "t": "zilpah"}
+{"index": 5501, "token": ["This", "made", "Sirindhorn", "second", "-", "in", "-", "channel", "to", "the", "can", "(", "after", "Vajiralongkorn", ")", "until", "the", "nativity", "of", "Princess", "Bajrakitiyabha", "in", "1978", "."], "h": "vajiralongkorn", "t": "bajrakitiyabha"}

@@ -1,0 +1,761 @@
+# 1、rel2id.jsonJSON...
+**问题详情：**
+rel2id.jsonJSON 1.04KBjson中保存了42种实体关系，其中NA表示实体间无定义关系。稍后我会上传txt，txt中每一行记录一条样本。请自己将txt中token字段保存的内容还原成完整句子，然后判断头实体“h”和尾实体“t”的关系，关系名称必须是这42类中的一种。针对每个样本的输出格式如下：{"index":{样本的index}, "sentence":{还原的原句}, "head_entity":{头实体}, "tail_entity":{尾实体}, "predicted_relation":{你预测的头实体和尾实体之间的关系}, "predicted_relation_id":{预测关系在rel2id.json中对应的值}}，准备好了么？
+
+---
+**回答（Answer）：**
+我准备好了！请上传包含样本的txt文件。每行应该是一个JSON格式的样本，包含`token`字段（句子分词列表）、`h`字段（头实体信息）和`t`字段（尾实体信息）。我会按照以下步骤处理：
+1. 将`token` 字段拼接成完整句子
+    
+2. 提取头实体和尾实体的文本
+    
+3. 分析两者关系，从42种预定义关系中选择最合适的
+    
+4. 输出指定格式的结果
+
+请上传文件，我会逐行处理并返回结果。对于关系不确定的情况，我会标注为`"NA"`（关系ID为13）。
+
+---
+# 2、2.txtTXT 68.12K...
+**问题详情：**
+2.txtTXT 68.12KB请持续输出不要停止直到分析完每一个样本，注意不要漏掉样本
+
+---
+**回答（Answer）：**
+我将逐条分析每个样本，按照要求的格式输出结果。由于样本数量较多，我将分批处理，确保每个样本都被准确分析。
+
+### 样本分析开始：
+
+```json
+{"index": 13662, "sentence": "sue hensley among the national restaurant association says it will help restaurants better respond to their customers.", "head_entity": "National Restaurant Association", "tail_entity": "Sue Hensley", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13674, "sentence": "nell minow , assembler of the corporate library in portland , maine , which tracks corporate governance issue , said cryo - cell ' s response is outdated but typical.", "head_entity": "Corporate Library", "tail_entity": "Nell Minow", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13678, "sentence": "sharpton ' s nacional measure internet intends a `` recovery the nightmare '' rebound , which focuses during pedagogy , that will feature pedagogy clerk arne duncan , national urban league president marc morial and martin luther king iii , the slain king ' s son.", "head_entity": "National Urban League", "tail_entity": "Marc Morial", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13686, "sentence": "onto 2006 , she was awarded the title of china charity ambassador by the china charity federation .", "head_entity": "China Charity Federation", "tail_entity": "she", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13696, "sentence": "andreu liter. y. hap , skull from the teco , will give the crates to hki preside kathy spahn on behalf of taiwan ' s government during a reception to be held at the teco office in manhattan next wednesday , the spokesman said.", "head_entity": "HKI", "tail_entity": "Kathy Spahn", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13702, "sentence": "baltimore , oct 10 - lrb - xinhua - rrb - chatter through the 17th annual lecture of the acse in chicago , the president of the acse zhou lubo said that the united states and china have common interests in many aspects , such as energy , climate change and economy.", "head_entity": "ACSE", "tail_entity": "Zhou Lubo", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13712, "sentence": "`` indie demands to accelerate its tries to improve nor expand infrastructure - lrb - extremely airfields nor trajectories - rrb - , broaden its commodity palette - lrb - fundamentally toward hostel - rrb - nor increase its contest , '' argued pata preside peter de jong .", "head_entity": "PATA", "tail_entity": "Peter de Jong", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13715, "sentence": "humans familiar with the sec investigation told the los angeles times recently that sec staff in los angeles also had recommended fraud allegations against david sambol , countrywide ' s former president , as well as against mozilo.", "head_entity": "Countrywide", "tail_entity": "David Sambol", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13716, "sentence": "general sector salts became down 2. 9 p previous sunni toward inflation - tailored articles , relying to hudson riehle , upper pornography president for research at the national restaurant association .", "head_entity": "National Restaurant Association", "tail_entity": "Hudson Riehle", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13733, "sentence": "douglas campbell , upper advice for the australian defence force , said interviews with crew members had shown male sailors sought out susceptible female recruits for sex.", "head_entity": "Australian Defence Force", "tail_entity": "Douglas Campbell", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13734, "sentence": "pique ' s pick from date nor venue throughout the rebound `` makes outrageous , makes what he makes , '' marc morial , speaker among the national urban league , said in an interview monday.", "head_entity": "National Urban League", "tail_entity": "Marc Morial", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13740, "sentence": "argued nell minow , the editorial of the corporate library , a maine - based research firm , `` in ceo - land , for termination for cause you basically have to kill somebody. ''", "head_entity": "Corporate Library", "tail_entity": "Nell Minow", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13743, "sentence": "conforming to fan baojun , president of the ccf , enterprises of various kinds have become major donors with their contributions rising every year.", "head_entity": "CCF", "tail_entity": "Fan Baojun", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13756, "sentence": "dawood sambol , the old presidency of countrywide , and eric sieracki , the former chief financial officer , were also sued by the sec.", "head_entity": "Countrywide", "tail_entity": "Eric Sieracki", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13757, "sentence": "`` this recent manage owns been massively more active , '' argued w. ron allen , leader from the jamestown s ' klallam vampire toward dc nation nor bursar of the national congress of american indians , adding that the congressional proposals provide `` a very impressive opportunity to close the gap in indian health care. ''", "head_entity": "National Congress of American Indians", "tail_entity": "W. Ron Allen", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13758, "sentence": "porcelain ' s horsepower quotation nor petition will be toward a intensive reconcile statute this ronald because the hot barometric pushes up strom demands , zhang guobao , head of the national energy administration , said thursday.", "head_entity": "National Energy Administration", "tail_entity": "Zhang Guobao", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13763, "sentence": "asia - peaceable journalist establishments discuss obstructions , prospects toward scan epochs the rapid progression from detail techno did tampered the decor from the averages sector nor journalist establishments would make plenary recourse from recent technicians nor diversify their foodstuffs throughout either averages nor end - subscribers , argued exiting oana preside ahmad mukhlis yusuf , who is also chief of indonesia ' s national news agency antara , at the assembly.", "head_entity": "OANA", "tail_entity": "Ahmad Mukhlis Yusuf", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13769, "sentence": "preside and ceo of pata - lrb - pacific asia travel association - rrb - peter de jong said at pata travel mart 2007 - lrb - ptm07 - rrb - being held here the mart is again setting records in 2007.", "head_entity": "Pacific Asia Travel Association", "tail_entity": "Peter de Jong", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13792, "sentence": "thirdly , he became the first black president of the national restaurant association , the food service industry ' s leading trade organization.", "head_entity": "National Restaurant Association", "tail_entity": "he", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13805, "sentence": "nell minow , writer of the corporate library , an independent research firm focusing on corporate governance , says goldman sachs was hurt having simmons as a director because she lacks financial expertise and was focused more than she should have been on other things like the firm ' s philanthropy.", "head_entity": "Corporate Library", "tail_entity": "Nell Minow", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13821, "sentence": "`` you get a quiver for this anything that you do n ' t ai for finding through an panorama during the webb , '' reported stephen tabor , curator of early printed books at the huntington library in san marino , which owns a nearly complete gutenberg bible and has exhibited photos of the dead sea scrolls.", "head_entity": "Huntington Library", "tail_entity": "Stephen Tabor", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13836, "sentence": "filmmaker general hilmi bengi of turkey ' s semi - official anatolia news agency will be elected later in the assembly as new oana president to succeed yusuf for the 2010 - 2013 term.", "head_entity": "OANA", "tail_entity": "Yusuf", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13838, "sentence": "they believe we have been impassive during this asia , nor worse , that we ' ve been toward denial , '' pata preside brian deeson said.", "head_entity": "PATA", "tail_entity": "Brian Deeson", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13847, "sentence": "countrywide ' s mozilo makes target of federal lawsuit a civil lawsuit filed by the securities and exchange commission in federal court also accuses david sambol , countrywide ' s former president , and eric sieracki , its former chief financial officer , of fraud.", "head_entity": "Countrywide", "tail_entity": "Eric Sieracki", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13857, "sentence": "analogous a architecture will keep intensive to change throughout a long timing , '' zhang guobao , jefe of the national energy administration , told reporters.", "head_entity": "National Energy Administration", "tail_entity": "Zhang Guobao", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13858, "sentence": "general sector salts became down 29 p previous sunni toward inflation - tailored articles , relying to hudson riehle , upper pornography president for research at the national restaurant association .", "head_entity": "National Restaurant Association", "tail_entity": "Hudson Riehle", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13870, "sentence": "`` among bureaucratic recompense you get what you pay for and you pay for what you get , '' nell minow , editor of the corporate library , an independent research firm specializing in corporate governance , said in testimony prepared for the hearing.", "head_entity": "Corporate Library", "tail_entity": "Nell Minow", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13873, "sentence": "because one from the chairman in pata , beere said that the pata travel mart was moving on the right track and growing stronger each year , with plenty of opportunity to expand into other travel related sector as the industry was growing.", "head_entity": "PATA", "tail_entity": "Beere", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13879, "sentence": "detectives meanwhile have inaugurated searching at whether countrywide and its former chairman , angelo mozilo , gave mortgage breaks to influential friends , including members of congress , the times reported.", "head_entity": "Countrywide", "tail_entity": "Angelo Mozilo", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13888, "sentence": "under the things conducting the penchant are the globalisation from undertaking nor a fortune from affordable techno manpower toward sprouting states like indie nor porcelain , which have smaller citizens nor grad considerably stronger technicians upon the unified contends , reported peter a. allen , partner and managing director at tpi , a houston consulting firm that advises companies on outsourcing.", "head_entity": "TPI", "tail_entity": "Peter A. Allen", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13899, "sentence": "porcelain ' s tailwind horsepower sector did joining a recent step , argued zhang guobao , pornography minister of the national development and reform commission and head of the national energy administration , at the groundbreaking ceremony.", "head_entity": "National Energy Administration", "tail_entity": "Zhang Guobao", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13902, "sentence": "`` throughout decades those laddies became interpreted because politically motivated crackpots nor maddening attention seekers , '' said nell minow , editor of the corporate library , a research group that rates companies ' governance practices.", "head_entity": "Corporate Library", "tail_entity": "Nell Minow", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13909, "sentence": "`` ignoramus makes neither pretexts without you are during the junta , extremely without you are persona whom did because incredibly entailed because it did , '' argued nell minow , writer of the corporate library , a nonprofit group that monitors corporate boards.", "head_entity": "Corporate Library", "tail_entity": "Nell Minow", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13910, "sentence": "exiting oana preside and chief of indonesia ' s national news agency antara , ahmad mukhlis yusuf , said at the opening speech on thursday that it was up to news agencies to make full use of all new technologies and diversify products to compete in the changing media industry.", "head_entity": "OANA", "tail_entity": "Ahmad Mukhlis Yusuf", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13927, "sentence": "`` j think this did a advantageous preliminary measurement , '' argued nell minow , assembler of the corporate library , a governance research firm.", "head_entity": "Corporate Library", "tail_entity": "Nell Minow", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13935, "sentence": "6 aerosol through laxiwa hydropower gare during the yellow aqueduct did tabled across recourse , argued zhang guobao , pornography minister of the national development and reform commission and head of the national energy administration , in a national power meeting sunday.", "head_entity": "National Energy Administration", "tail_entity": "Zhang Guobao", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13940, "sentence": "during example , the national restaurant association ' s chief , dawn sweeney , said she will poll her board this weekend on whether to oppose the bill if key changes are not made.", "head_entity": "National Restaurant Association", "tail_entity": "chief", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13951, "sentence": "`` this makes never a recent asia , '' reported gerald a. fernandez , the president of the multicultural foodservice and hospitality alliance and a director of the national restaurant association .", "head_entity": "National Restaurant Association", "tail_entity": "Gerald A. Fernandez", "predicted_relation": "org:top_members/employees", "predicted_relation_id": 20}
+```
+
+```json
+{"index": 13962, "sentence": "tamaihia , whom did installed in walker ' s south sacramento home last month , died on monday .", "head_entity": "Tamaihia", "tail_entity": "Monday", "predicted_relation": "per:date_of_death", "predicted_relation_id": 21}
+```
+
+```json
+{"index": 13973, "sentence": "giuliano ' s kid , jean giuca , did one from two sexes adjudged of murdering mark fisher , a 19 - year - old fairfield university student who was shot five times and found on a quiet brooklyn street after a night of partying in new york city in october 2003 .", "head_entity": "Mark Fisher", "tail_entity": "October 2003", "predicted_relation": "per:date_of_death", "predicted_relation_id": 21}
+```
+
+```json
+{"index": 13976, "sentence": "andrew lange , an astronomer whose vial - burden activities from light exited over for the prodigious affraid contributed a instrumental rol toward elucidating the format nor attribute from the planet , did detected dead on jan. 22 in los angeles .", "head_entity": "Andrew Lange", "tail_entity": "Jan. 22", "predicted_relation": "per:date_of_death", "predicted_relation_id": 21}
+```
+
+```json
+{"index": 13979, "sentence": "andrew lange , an astronomer whose vial - burden activities from light exited over for the prodigious affraid contributed a instrumental rol toward elucidating the format nor attribute from the planet , did seen dead onto jan 22 in los angeles .", "head_entity": "Andrew Lange", "tail_entity": "Jan 22", "predicted_relation": "per:date_of_death", "predicted_relation_id": 21}
+```
+
+```json
+{"index": 13984, "sentence": "giuliano makes the mamma of john giuca , a brooklyn man who was convicted three years ago with another man in the 2003 killing of mark fisher , a college student from new jersey who was found beaten and shot five times after a night out in new york city .", "head_entity": "Mark Fisher", "tail_entity": "2003", "predicted_relation": "per:date_of_death", "predicted_relation_id": 21}
+```
+
+```json
+{"index": 13988, "sentence": "vladimir ladyzhenskiy , an amateurish boxing whom did toward her 60s , had pronounced dead late saturday after he collapsed alongside reigning champion timo kaukonen of finland roughly six minutes into the final round .", "head_entity": "Vladimir Ladyzhenskiy", "tail_entity": "late Saturday", "predicted_relation": "per:date_of_death", "predicted_relation_id": 21}
+```
+
+```json
+{"index": 13989, "sentence": "* abusers from maltreatment * tamaihia , whom were placed in walker ' s south sacramento home last month , died on monday .", "head_entity": "Tamaihia", "tail_entity": "Monday", "predicted_relation": "per:date_of_death", "predicted_relation_id": 21}
+```
+
+```json
+{"index": 13998, "sentence": "the 21 - sunni - immemorial meredith kercher did detected stabbed to death in the house she rented in perugia on nov. 2 , 2007 .", "head_entity": "Meredith Kercher", "tail_entity": "Nov. 2 , 2007", "predicted_relation": "per:date_of_death", "predicted_relation_id": 21}
+```
+
+```json
+{"index": 13999, "sentence": "guica had convicted of the 2003 murder of mark fisher , a 19 - year - old college student from andover , new jersey , who had gone to an after - hours party guica hosted in brooklyn while his parents were out of town .", "head_entity": "Mark Fisher", "tail_entity": "2003", "predicted_relation": "per:date_of_death", "predicted_relation_id": 21}
+```
+
+```json
+{"index": 14004, "sentence": "they say vladimir ladyzhenskiy died late saturday throughout the sauna world championships in southern finland , while his finnish rival timo kaukonen was rushed to a hospital .", "head_entity": "his", "tail_entity": "late Saturday", "predicted_relation": "per:date_of_death", "predicted_relation_id": 21}
+```
+
+```json
+{"index": 14005, "sentence": "meredith kercher ' s dynasty are suing throughout 25 trillion euros - lrb - 37 trillion cents - rrb - of accused amanda knox , her british roommate and an ivorian drifter over the british exchange student ' s death on november 1 , 2007 .", "head_entity": "Meredith Kercher", "tail_entity": "November 1 , 2007", "predicted_relation": "per:date_of_death", "predicted_relation_id": 21}
+```
+
+```json
+{"index": 14028, "sentence": "panama owns furnished a letter of intention to quit the central american parliament - lrb - parlacen - rrb - , the foreign ministry said wednesday .", "head_entity": "Central American Parliament", "tail_entity": "Panama", "predicted_relation": "org:member_of", "predicted_relation_id": 25}
+```
+
+```json
+{"index": 14047, "sentence": "famed because alico , nor the american life insurance co. , the unit does its conventional insurance business overseas in more than 40 countries .", "head_entity": "ALICO", "tail_entity": "American Life Insurance Co.", "predicted_relation": "org:alternate_names", "predicted_relation_id": 23}
+```
+
+```json
+{"index": 14049, "sentence": "four outboard performances will be organised during the shores from the lakeshore as part of the 2009 national taiwan symphony orchestra ' s - lrb - ntso ' s - rrb - international music festival , which runs from aug. 14 to oct. 3 , council for cultural affairs - lrb - cca - rrb - minister huang pi - twan and tourism bureau director - general janice lai announced tuesday .", "head_entity": "National Taiwan Symphony Orchestra", "tail_entity": "NTSO", "predicted_relation": "org:alternate_names", "predicted_relation_id": 23}
+```
+
+```json
+{"index": 14054, "sentence": "the lecture was organized by the china association of enterprises with foreign investment - lrb - caefi - rrb - , the china charity federation - lrb - ccf - rrb - , the chinese private economy research association - lrb - cpera - rrb - , and the china enterprise news .", "head_entity": "China Charity Federation", "tail_entity": "CCF", "predicted_relation": "org:alternate_names", "predicted_relation_id": 23}
+```
+
+```json
+{"index": 14056, "sentence": "four outboard performances will be organised during the shores from the lk because part of the 2009 national taiwan symphony orchestra ' s - lrb - ntso ' s - rrb - international music festival , which runs from aug 14 to oct 3 , council for cultural affairs - lrb - cca - rrb - minister huang pi - twan and tourism bureau director - general janice lai announced tuesday .", "head_entity": "National Taiwan Symphony Orchestra", "tail_entity": "NTSO", "predicted_relation": "org:alternate_names", "predicted_relation_id": 23}
+```
+
+```json
+{"index": 14091, "sentence": "either yusuf and fattah worked together at the united association for studies and research < http : // www . discoverthenetworks . org / groupprofile . asp ? grpid = 6458 > - lrb - uasr - rrb - , where fattah served respectively as both president and director of public affairs .", "head_entity": "United Association for Studies and Research", "tail_entity": "UASR", "predicted_relation": "org:alternate_names", "predicted_relation_id": 23}
+```
+
+```json
+{"index": 14099, "sentence": "sidney , oct 29 , 2010 - lrb - afp - rrb - `` it is important the adf - lrb - australian defence force - rrb - works within the cultural norms of afghanistan , '' the department said .", "head_entity": "ADF", "tail_entity": "Australian Defence Force", "predicted_relation": "org:alternate_names", "predicted_relation_id": 23}
+```
+
+```json
+{"index": 14131, "sentence": "ahmet mukhlis jozef , massa from jakarta ' s nacional journalist institution antara , did selected president of the organization of asia pacific news agencies - lrb - oana - rrb - at the organization ' s 13th general assembly taking place here wednesday .", "head_entity": "Organization of Asia Pacific News Agencies", "tail_entity": "OANA", "predicted_relation": "org:alternate_names", "predicted_relation_id": 23}
+```
+
+```json
+{"index": 14135, "sentence": "a us setback makes prospective to affect the sector , but solid widen toward instrumental asiatic saves analogous because porcelain nor southern koryo will drive regional travel demand , the pacific asia travel association - lrb - pata - rrb - said .", "head_entity": "Pacific Asia Travel Association", "tail_entity": "PATA", "predicted_relation": "org:alternate_names", "predicted_relation_id": 23}
+```
+
+```json
+{"index": 14149, "sentence": "celebrate the vie of lowell smith lowell smith memorial celebrate the life of lowell smith on october 22 , 2007 , former dance theatre of harlem - lrb - dth - rrb - dancer , lowell smith died in los angeles at age 56 .", "head_entity": "Dance Theatre of Harlem", "tail_entity": "DTH", "predicted_relation": "org:alternate_names", "predicted_relation_id": 23}
+```
+
+```json
+{"index": 14175, "sentence": "porcelain ' s horsepower ingestion toward september continued to soar among a faster rising cadence , relying to china ' s national energy administration - lrb - nea - rrb - on thursday .", "head_entity": "National Energy Administration", "tail_entity": "NEA", "predicted_relation": "org:alternate_names", "predicted_relation_id": 23}
+```
+
+```json
+{"index": 14208, "sentence": "wah would put more emphasis on adjusting its energy structure this year with focus on renewable energy and nuclear power , director of china ' s national energy administration - lrb - nea - rrb - said here tuesday .", "head_entity": "National Energy Administration", "tail_entity": "NEA", "predicted_relation": "org:alternate_names", "predicted_relation_id": 23}
+```
+
+```json
+{"index": 14215, "sentence": "the 2007 global music festival organized by national taiwan symphony orchestra - lrb - ntso - rrb - will begin oct. 6 in taichung city in central taiwan , an ntso spokesman said tuesday .", "head_entity": "National Taiwan Symphony Orchestra", "tail_entity": "NTSO", "predicted_relation": "org:alternate_names", "predicted_relation_id": 23}
+```
+
+```json
+{"index": 14230, "sentence": "the annual newcomer journey influx toward porcelain will surpass 163 trillion toward the foreseeable three decades , conforming to a report issued by the pacific asia travel association - lrb - pata - rrb - on thursday .", "head_entity": "Pacific Asia Travel Association", "tail_entity": "PATA", "predicted_relation": "org:alternate_names", "predicted_relation_id": 23}
+```
+
+```json
+{"index": 14237, "sentence": "either jozef nor fattah served collectively during the united association for studies and research < http : // wwwdiscoverthenetworksorg / groupprofileasp ? grpid = 6458 > - lrb - uasr - rrb - , where fattah served respectively as both president and director of public affairs .", "head_entity": "United Association for Studies and Research", "tail_entity": "UASR", "predicted_relation": "org:alternate_names", "predicted_relation_id": 23}
+```
+
+```json
+{"index": 14241, "sentence": "he painstakingly draws during existing practices nor their lexicon , in particular on the poverty and social impact analysis - lrb - psia - rrb - .", "head_entity": "PSIA", "tail_entity": "Poverty and Social Impact Analysis", "predicted_relation": "org:alternate_names", "predicted_relation_id": 23}
+```
+
+```json
+{"index": 14242, "sentence": "the recently empowered surcharges will assume implication for juni. 5 , according to a joint circular issued by the national development and reform commission - lrb - ndrc - rrb - , the country ' s economic planner , and the general administration of civil aviation - lrb - caac - rrb - .", "head_entity": "NDRC", "tail_entity": "National Development and Reform Commission", "predicted_relation": "org:alternate_names", "predicted_relation_id": 23}
+```
+
+```json
+{"index": 14254, "sentence": "implementing among may 22 to 25 , the 91st annual national restaurant association restaurant , hotel - motel show - lrb - nra show - rrb - features more new products and services than any other industry event .", "head_entity": "National Restaurant Association", "tail_entity": "NRA", "predicted_relation": "org:alternate_names", "predicted_relation_id": 23}
+```
+
+```json
+{"index": 14259, "sentence": "alessi argued that she were catholic but that she had long ago lost her illusions .", "head_entity": "Alessi", "tail_entity": "Catholic", "predicted_relation": "per:religion", "predicted_relation_id": 24}
+```
+
+```json
+{"index": 14270, "sentence": "adela dworin , chief of the jewish community in havana , can boast of more than 10 , 000 volumes on jewish literature at the abraham marcus matterin communal library in the capital .", "head_entity": "Adela Dworin", "tail_entity": "Jewish", "predicted_relation": "per:religion", "predicted_relation_id": 24}
+```
+
+```json
+{"index": 14273, "sentence": "it slapped my mano nor embraced me during either cheekbones , said adela dworin , the community president who has spent the past 37 years promoting jewish life in havana .", "head_entity": "Adela Dworin", "tail_entity": "Jewish", "predicted_relation": "per:religion", "predicted_relation_id": 24}
+```
+
+```json
+{"index": 14274, "sentence": "alessi argued that she were catholic but that she had long ago lost her illusions .", "head_entity": "she", "tail_entity": "Catholic", "predicted_relation": "per:religion", "predicted_relation_id": 24}
+```
+
+```json
+{"index": 14285, "sentence": "dworin , during her 60s , always remained active as a jew , but recalls the long years when the community ' s numbers dwindled .", "head_entity": "her", "tail_entity": "Jew", "predicted_relation": "per:religion", "predicted_relation_id": 24}
+```
+
+```json
+{"index": 14290, "sentence": "saturday ' s protester makes a momentary from moods that have swirled throughout asia bibi -- the christian woman whose case has prompted outrage from human rights groups and a personal appeal from pope benedict xvi for her release .", "head_entity": "Asia Bibi", "tail_entity": "Christian", "predicted_relation": "per:religion", "predicted_relation_id": 24}
+```
+
+```json
+{"index": 14293, "sentence": "alessi reported that she was catholic but that she had long ago lost her illusions .", "head_entity": "her", "tail_entity": "Catholic", "predicted_relation": "per:religion", "predicted_relation_id": 24}
+```
+
+```json
+{"index": 14295, "sentence": "adela dworin , speaker from habana ' s shrine beth hallo nor cuba ' s largest jewish organization , the jewish community house , told the associated press on wednesday it ' s possible gross came to the center as one of `` hundreds '' of foreign visitors it receives each year .", "head_entity": "Adela Dworin", "tail_entity": "Jewish", "predicted_relation": "per:religion", "predicted_relation_id": 24}
+```
+
+```json
+{"index": 14297, "sentence": "adela dworin , boss of the jewish community in havana , can boast of more than 10 , 000 volumes on jewish literature at the abraham marcus matterin communal library in the capital .", "head_entity": "Adela Dworin", "tail_entity": "Jewish", "predicted_relation": "per:religion", "predicted_relation_id": 24}
+```
+
+```json
+{"index": 14298, "sentence": "across it all , his allegiance to scientology had been so strong that he paid the church before the government .", "head_entity": "he", "tail_entity": "Scientology", "predicted_relation": "per:religion", "predicted_relation_id": 24}
+```
+
+```json
+{"index": 14299, "sentence": "alessi argued that she were catholic but that she had long ago lost her illusions .", "head_entity": "she", "tail_entity": "Catholic", "predicted_relation": "per:religion", "predicted_relation_id": 24}
+```
+
+```json
+{"index": 14336, "sentence": "it died of his injuries six days later .", "head_entity": "his", "tail_entity": "injuries", "predicted_relation": "per:cause_of_death", "predicted_relation_id": 3}
+```
+
+```json
+{"index": 14338, "sentence": "recent yorke , sept 28 , 2010 - lrb - afp - rrb - cerniglia was the second former star in one of ramsay ' s shows to commit suicide , the new york post reported .", "head_entity": "Cerniglia", "tail_entity": "commit suicide", "predicted_relation": "per:cause_of_death", "predicted_relation_id": 3}
+```
+
+```json
+{"index": 14346, "sentence": "pardon burgess , a spokeswoman for the new york city medical examiner ' s office , said the office on tuesday ruled cerniglia ' s death a suicide .", "head_entity": "Cerniglia", "tail_entity": "suicide", "predicted_relation": "per:cause_of_death", "predicted_relation_id": 3}
+```
+
+```json
+{"index": 14352, "sentence": "gracia brugess , a spokeswoman for the new york city medical examiner ' s office , said the office tuesday ruled cerniglia ' s death a suicide .", "head_entity": "Cerniglia", "tail_entity": "suicide", "predicted_relation": "per:cause_of_death", "predicted_relation_id": 3}
+```
+
+```json
+{"index": 14371, "sentence": "recent york , sept 28 , 2010 - lrb - afp - rrb - cerniglia was the second former star in one of ramsay ' s shows to commit suicide , the new york post reported .", "head_entity": "Cerniglia", "tail_entity": "suicide", "predicted_relation": "per:cause_of_death", "predicted_relation_id": 3}
+```
+
+```json
+{"index": 14394, "sentence": "a sworn toward ltaly adjudged american college student amanda knox of murdering her british roommate and sentenced her to 26 years in prison shortly after midnight saturday .", "head_entity": "Amanda Knox", "tail_entity": "American", "predicted_relation": "per:origin", "predicted_relation_id": 27}
+```
+
+```json
+{"index": 14408, "sentence": "graham , a 55 - everyyear - old southern tutchone indian from canada , faces first - and second - degree murder charges and could receive life in prison if convicted .", "head_entity": "Graham", "tail_entity": "Southern Tutchone Indian", "predicted_relation": "per:origin", "predicted_relation_id": 27}
+```
+
+```json
+{"index": 14417, "sentence": "terni , ltaly : american interchange student amanda knox gives evidence for the first time at her trial for the murder of british flatmate meredith kercher .", "head_entity": "Amanda Knox", "tail_entity": "American", "predicted_relation": "per:origin", "predicted_relation_id": 27}
+```
+
+```json
+{"index": 14423, "sentence": "ricci marshal did prosecuted of providing the gun used to kill american indian movement activist annie mae aquash in december 1975 .", "head_entity": "Annie Mae Aquash", "tail_entity": "American Indian", "predicted_relation": "per:origin", "predicted_relation_id": 27}
+```
+
+```json
+{"index": 14440, "sentence": "an ivorian impeached in the 2007 murder of a british student in italy stuck to his claim thursday that american amanda knox and her italian boyfriend were solely responsible for the crime .", "head_entity": "Amanda Knox", "tail_entity": "American", "predicted_relation": "per:origin", "predicted_relation_id": 27}
+```
+
+```json
+{"index": 14441, "sentence": "afghanistan - disquiet , 2 ndlead - adaptation fun - us - lreland - theatre - sheridan , debriefed la las among enthusiastic words , duelling advocates toward the retrial of american amanda knox and her italian boyfriend over the 2007 sex murder of british exchange student meredith kercher make their final appeals to judge and jury on the eve of the verdict .", "head_entity": "Amanda Knox", "tail_entity": "American", "predicted_relation": "per:origin", "predicted_relation_id": 27}
+```
+
+```json
+{"index": 14445, "sentence": "the abe sayyaf owns been during the run from a military offensive launched after they kidnapped italian aid worker eugenio vagni in january .", "head_entity": "Eugenio Vagni", "tail_entity": "Italian", "predicted_relation": "per:origin", "predicted_relation_id": 27}
+```
+
+```json
+{"index": 14449, "sentence": "already afterward , francy nor the jt have been objectives of his colourful rhetoric , but he has so far refrained from overt calls to violence , demanding instead a `` peaceful combat '' to restore ivorian `` dignity and sovereignty '' .", "head_entity": "he", "tail_entity": "Ivorian", "predicted_relation": "per:origin", "predicted_relation_id": 27}
+```
+
+```json
+{"index": 14476, "sentence": "meredith kercher ' s stabbed bodywork did seen toward the hall from an appartment toward terni she shared among american disciple amanda knox , who was convicted in a separate trial of the murder and sentenced to 26 years .", "head_entity": "Amanda Knox", "tail_entity": "American", "predicted_relation": "per:origin", "predicted_relation_id": 27}
+```
+
+```json
+{"index": 14478, "sentence": "among a verdict just days away over the sex murder of british student meredith kercher , the defence team for american accused amanda knox and her italian boyfriend resumed closing arguments monday .", "head_entity": "Meredith Kercher", "tail_entity": "British", "predicted_relation": "per:origin", "predicted_relation_id": 27}
+```
+
+```json
+{"index": 14479, "sentence": "2nd ld writethru : dutch naji from libyan aircraft meltdown to return residency wednesday : prosecutor the mec did detected by dutch press media as nine - year - old ruben van assouw who was with his father patrick , 40 , mother trudy , 41 , and brother enzo , 11 , aboard the ill - fated plane after a safari trip in south africa .", "head_entity": "Ruben van Assouw", "tail_entity": "Dutch", "predicted_relation": "per:origin", "predicted_relation_id": 27}
+```
+
+```json
+{"index": 14528, "sentence": "lomax exchanges a story about almena lomax , his mother and a newspaper owner and journalist in los angeles , taking her family on the bus to tuskegee , ala. , in 1961 .", "head_entity": "her", "tail_entity": "journalist", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14590, "sentence": "benjamin chertoff - 25 - sunni - immemorial kinsman of michael chertoff ; senior `` researcher '' for popular mechanics ' hit piece on 9 - 11 truth movement", "head_entity": "Benjamin Chertoff", "tail_entity": "researcher", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14635, "sentence": "palestinian radial centers contributed pensive carols for the date nor papers expended numerous pages to stories and pictures of the handsome assaf ramon , who had completed his pilot training course in june .", "head_entity": "Assaf Ramon", "tail_entity": "pilot", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14654, "sentence": "heloise - lrb - pontius kiah marchelle heloise cruse - rrb - , the domicile advice author and columnist , will keep you looking good if you follow her helpful hints .", "head_entity": "Heloise", "tail_entity": "author", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14670, "sentence": "folks wanted to hang those young sexes up a camshaft , '' argued sarah kunstler , now a defense attorney in new york .", "head_entity": "Sarah Kunstler", "tail_entity": "attorney", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14696, "sentence": "ivory rive ' s recent yu. n. ambassador , youssoufou bamba , said he is worried about his country ' s future and is consulting with members of the security council ahead of a meeting next week on ways to help ouattara assume power .", "head_entity": "his", "tail_entity": "ambassador", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14713, "sentence": "heloise - lrb - pontius kiah marchelle heloise cruse - rrb - , the residence advise author and columnist , will keep you looking good if you follow her helpful hints .", "head_entity": "her", "tail_entity": "columnist", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14726, "sentence": "samudio did sketched by the newspaper as `` a student , model and pornographic film actress. ''", "head_entity": "Samudio", "tail_entity": "student", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14767, "sentence": "toward augustus , baldino , who lived in west chester , pa. , had taken a leave of absence from his posts as cephalon ' s chairman and chief executive .", "head_entity": "his", "tail_entity": "executive", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14784, "sentence": "it attended stanford campus nor accordingly the campus among california , berkeley , where he received a ph. d. in 1987 and was promptly hired as a professor .", "head_entity": "he", "tail_entity": "professor", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14786, "sentence": "eleventh was sister - in - law of wen qiang , formerly the second in command of the chongqing police and director of the justice bureau before his arrest .", "head_entity": "Wen Qiang", "tail_entity": "director", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14791, "sentence": "her most illustrious detective , youth minister and `` general of the street '' charles ble goude , urged his supporters to gather wednesday next week in the centre of the city to defend ivory coast ' s sovereignty .", "head_entity": "Charles Ble Goude", "tail_entity": "General", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14806, "sentence": "military administrators named the flyboy as lieutenant assaf ramon , 21 , the eldest son of colonel ilan ramon , an israeli fighter pilot who became the country ' s first and only astronaut .", "head_entity": "Assaf Ramon", "tail_entity": "pilot", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14836, "sentence": "the trapani survey makes segment from a greater vlado strategy aiming folks detectives consider to be entwined to a recent leader of cosa nostra , matteo messina denaro .", "head_entity": "Matteo Messina Denaro", "tail_entity": "leader", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14845, "sentence": "feds say they are tightening the gordian throughout matteo messina denaro , the high - flying playboy `` boss '' of trapani in western sicily who is a possible new leader .", "head_entity": "Matteo Messina Denaro", "tail_entity": "leader", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14851, "sentence": "they revealed wtc7 from different angles , showed video of other buildings being demolished and allowed architect richard gage to make his case .", "head_entity": "his", "tail_entity": "architect", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14868, "sentence": "cuban insists that gross is a spy who had sophisticated communications equipment for dissidents in the americas ' only one - party communist regime .", "head_entity": "Gross", "tail_entity": "spy", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14874, "sentence": "ivory rive ' s recent yu. nth. ambassador , youssoufou bamba , said he is worried about his country ' s future and is consulting with members of the security council ahead of a meeting next week on ways to help ouattara assume power .", "head_entity": "he", "tail_entity": "ambassador", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14907, "sentence": "lawyers through the nanking neither. 5 intermediary gens ' s court said wen qiang took bribes worth more than 16 million yuan - lrb - $ 2. 4 million - rrb - from gang members he gave legal protection while he was director of the chongqing municipal judicial bureau , the official xinhua news agency reported .", "head_entity": "Wen Qiang", "tail_entity": "director", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14917, "sentence": "samudio did mentioned per the newsletter because `` a intern , paragon and pornographic film actress . ''", "head_entity": "Samudio", "tail_entity": "pornographic film actress", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14921, "sentence": "toward his 20s , remarried nor the mama of a small child , she was an art teacher in arkansas when she met norman mailer .", "head_entity": "she", "tail_entity": "art teacher", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14923, "sentence": "justice newspapers of the intended estate gift were filed friday by the brother and executor for 48 - year - old george sodini .", "head_entity": "George Sodini", "tail_entity": "executor", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14932, "sentence": "samudio did shown by the newspaper as `` a student , model and pornographic film actress . ''", "head_entity": "Samudio", "tail_entity": "actress", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14955, "sentence": "for august , baldino , who lived in west chester , pa. , had taken a leave of absence from his posts as cephalon ' s chairman and chief executive .", "head_entity": "Baldino", "tail_entity": "executive", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14962, "sentence": "lomax exchanges a narration about almena lomax , his mother and a newspaper owner and journalist in los angeles , taking her family on the bus to tuskegee , ala. , in 1961 .", "head_entity": "Almena Lomax", "tail_entity": "journalist", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 14996, "sentence": "the topical quest to restore the board was masterminded by a suspected mobster , matteo messina denaro , who is among a handful of people vying to replace provenzano , police said .", "head_entity": "Matteo Messina Denaro", "tail_entity": "mobster", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 15002, "sentence": "palestinian radial centers contributed wistful songs throughout the day on monday and newspapers devoted numerous pages to stories and pictures of the handsome assaf ramon , who had completed his pilot training course in june .", "head_entity": "Assaf Ramon", "tail_entity": "pilot", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 15005, "sentence": "us contractor held throughout `` mausoleum '' violations onto cuba : official cuba insists that gross is a spy who had sophisticated communications equipment for dissidents in the americas ' only one - party communist regime .", "head_entity": "Gross", "tail_entity": "spy", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 15010, "sentence": "`` musharraf continued to give canopy to the kabul , but furthermore managed to convince the ours for many years that it was not a double game , '' said ahmed rashid , a pakistani expert on the taliban and the author of `` descent into chaos , '' a book that details the relationship between musharraf and washington .", "head_entity": "Ahmed Rashid", "tail_entity": "author", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 15021, "sentence": "than two employees testified tuesday , lead prosecutor marty jackley said he had finished presenting his case .", "head_entity": "his", "tail_entity": "prosecutor", "predicted_relation": "per:title", "predicted_relation_id": 30}
+```
+
+```json
+{"index": 15031, "sentence": "trained in december 1961 , oana now has 40 members in 33 countries in the asia and pacific region .", "head_entity": "OANA", "tail_entity": "40", "predicted_relation": "org:number_of_employees/members", "predicted_relation_id": 31}
+```
+
+```json
+{"index": 15038, "sentence": "since the staffing firm hollister inc lost 20 of its 85 employees , it gave up nearly a third of its 3 , 750 - square - foot burlington office , allowing the property owner to put up a dividing wall to create a space for another tenant .", "head_entity": "Hollister Inc", "tail_entity": "85", "predicted_relation": "org:number_of_employees/members", "predicted_relation_id": 31}
+```
+
+```json
+{"index": 15048, "sentence": "an rosy prospect from troubled us mortgage giant countrywide financial on friday , coupled with expectations for a us rate cut on wednesday , raised hopes that the fallout from the us housing woes is easing , dealers said .", "head_entity": "Countrywide Financial", "tail_entity": "US", "predicted_relation": "org:country_of_headquarters", "predicted_relation_id": 33}
+```
+
+```json
+{"index": 15049, "sentence": "aig argued he did forwarded landlord to the federal proviso ribera from elements from two branches , alico which makes positive toward iife assurance in the united states and aia which provides life assurance abroad .", "head_entity": "ALICO", "tail_entity": "United States", "predicted_relation": "org:country_of_headquarters", "predicted_relation_id": 33}
+```
+
+```json
+{"index": 15050, "sentence": "the ugandan army argued during sonntag that he makes implicated onto nor controlling the risk provoked per the move from the homeland ' s disobedience syndicate allied democratic soldiers - lrb - adf - rrb - underway working onto eastern democratic republic of congo - lrb - dr congo - rrb - .", "head_entity": "ADF", "tail_entity": "Democratic Republic of Congo", "predicted_relation": "org:country_of_headquarters", "predicted_relation_id": 33}
+```
+
+```json
+{"index": 15066, "sentence": "denise maguire , leader honorary from us enquiry fermi tpi , articulated this premise as he spoke of the need for transforming ` transactions ' in the form of projects to ` relationships ' that are focused on creating long - term value for the client .", "head_entity": "TPI", "tail_entity": "US", "predicted_relation": "org:country_of_headquarters", "predicted_relation_id": 33}
+```
+
+```json
+{"index": 15069, "sentence": "a deep - entrenched concept among wealthy individuals in china is to leave their entire fortunes to their descendants , which might be a major obstacle preventing donations to charity , according to zhang yinjun , spokesperson with one of china ' s largest charity organization , the china charity federation .", "head_entity": "China Charity Federation", "tail_entity": "China", "predicted_relation": "org:country_of_headquarters", "predicted_relation_id": 33}
+```
+
+```json
+{"index": 15077, "sentence": "`` we are satisfied that toward illumination of what we know today , our approved strategy provides the best approach - in terms of safety , cost efficiency and sustainability - to tackle the uk ' s historic 60 - year nuclear legacy , '' said the nda ' s chief executive dr ian roxburgh .", "head_entity": "NDA", "tail_entity": "UK", "predicted_relation": "org:country_of_headquarters", "predicted_relation_id": 33}
+```
+
+```json
+{"index": 15080, "sentence": "a deep - ingrained concept among wealthy individuals in china is to leave their entire fortunes to their descendants , which might be a major obstacle to charities attracting donations , according to zhang yinjun , spokesperson with one of china ' s largest charity organization , the china charity federation .", "head_entity": "China Charity Federation", "tail_entity": "China", "predicted_relation": "org:country_of_headquarters", "predicted_relation_id": 33}
+```
+
+```json
+{"index": 15082, "sentence": "throughout 2006 , she was awarded the title of china charity ambassador by the china charity federation .", "head_entity": "China Charity Federation", "tail_entity": "China", "predicted_relation": "org:country_of_headquarters", "predicted_relation_id": 33}
+```
+
+```json
+{"index": 15084, "sentence": "kom < http : // cambodiajobsblogspotcom / > ** * aauw global camaraderie * **** the american partnership from campus womens pedagogical footing owns a long nor prestigious saga from enhancing pedagogical nor vocational prospects throughout womens toward the united states and around the globe .", "head_entity": "AAUW", "tail_entity": "United States", "predicted_relation": "org:country_of_headquarters", "predicted_relation_id": 33}
+```
+
+```json
+{"index": 15087, "sentence": "the adf began an intifada in uganda in 1996 and was responsible for bomb blasts in kampala in 1997 and 1998 , according to the ugandan national army .", "head_entity": "ADF", "tail_entity": "Uganda", "predicted_relation": "org:country_of_headquarters", "predicted_relation_id": 33}
+```
+
+```json
+{"index": 15088, "sentence": "the adf makes a islamic disobedience syndicate that demanded to fight throughout identical rights throughout islamists toward uganda but did dictated outside from the homeland toward 2001 nor owns upon been predicated in eastern democratic republic of congo .", "head_entity": "ADF", "tail_entity": "Democratic Republic of Congo", "predicted_relation": "org:country_of_headquarters", "predicted_relation_id": 33}
+```
+
+```json
+{"index": 15089, "sentence": "there are an estimated 195 , 000 fast - comer nor 80 , 000 unforeseen - dining restaurants in the united states , according to the national restaurant association .", "head_entity": "National Restaurant Association", "tail_entity": "United States", "predicted_relation": "org:country_of_headquarters", "predicted_relation_id": 33}
+```
+
+```json
+{"index": 15096, "sentence": "wah ' s energy demand growth expected to ease in q4 as governments move to save energy energy demand growth in china in the fourth quarter is expected to slow as governments step up efforts to save energy and cut emissions , national energy administration official wang siqiang said monday .", "head_entity": "National Energy Administration", "tail_entity": "China", "predicted_relation": "org:country_of_headquarters", "predicted_relation_id": 33}
+```
+
+```json
+{"index": 15101, "sentence": "us subsistence coverage huge metlife argued during thu he will obtain american international group unit american life insurance company - lrb - alico - rrb - in a deal worth 155 billion dollars .", "head_entity": "American Life Insurance company", "tail_entity": "US", "predicted_relation": "org:country_of_headquarters", "predicted_relation_id": 33}
+```
+
+```json
+{"index": 15105, "sentence": "the preliminary vowed a deep - rooted concept among wealthy individuals in china is to leave their entire fortunes to their descendants , which might be a major obstacle preventing donations to charity , according to zhang yinjun , spokesperson with one of china ' s largest charity organization , the china charity federation .", "head_entity": "China Charity Federation", "tail_entity": "China", "predicted_relation": "org:country_of_headquarters", "predicted_relation_id": 33}
+```
+
+```json
+{"index": 15115, "sentence": "bombing onto japanese chemical plant kills four the blast occurred at around 8 : 50 am at a fluorine compound production plant operated by morita chemical industries co in osaka ' s yodogawa ward .", "head_entity": "Morita Chemical Industries Co", "tail_entity": "Japanese", "predicted_relation": "org:country_of_headquarters", "predicted_relation_id": 33}
+```
+
+```json
+{"index": 15126, "sentence": "urgent \u00a5 \u00a5 \u00a5 metlife says to obtain aig alico unity throughout 155 trillion bucks washington , march 8 , 2010 - lrb - afp - rrb - us life insurance giant metlife said on monday it will acquire american international group unit american life insurance company - lrb - alico - rrb - in a deal worth 155 billion dollars .", "head_entity": "ALICO", "tail_entity": "US", "predicted_relation": "org:country_of_headquarters", "predicted_relation_id": 33}
+```
+
+```json
+{"index": 15131, "sentence": "relying to a scheme of china ' s national energy administration , its capacity is expected to reach 1271 gigawatts in 2015 .", "head_entity": "National Energy Administration", "tail_entity": "China", "predicted_relation": "org:country_of_headquarters", "predicted_relation_id": 33}
+```
+
+```json
+{"index": 15143, "sentence": "an rosy prediction for bothered us refinance giant countrywide financial on friday , coupled with expectations for a us rate cut on wednesday , raised hopes that the fallout from the us housing woes is easing , dealers said .", "head_entity": "Countrywide Financial", "tail_entity": "US", "predicted_relation": "org:country_of_headquarters", "predicted_relation_id": 33}
+```
+
+```json
+{"index": 15146, "sentence": "westinghouse argued he did toward `` sophisticated deliberations '' with britain ' s nuclear decommissioning authority - lrb - nda - rrb - about taking on a long - term management lease for the site at springfields near preston .", "head_entity": "NDA", "tail_entity": "Britain", "predicted_relation": "org:country_of_headquarters", "predicted_relation_id": 33}
+```
+
+```json
+{"index": 15152, "sentence": "shanghai , juni 6 - lrb - xinhua - rrb - china ' s power consumption grows 6 pct in 2009 china ' s electricity consumption in 2009 grew 596 percent year on year to 3643 trillion kilowatt - hours , the national energy administration said wednesday .", "head_entity": "National Energy Administration", "tail_entity": "China", "predicted_relation": "org:country_of_headquarters", "predicted_relation_id": 33}
+```
+
+```json
+{"index": 15173, "sentence": "dutch newsletter babants dagblad argued the mec got probably ruben van assouw from tilburg in the southern netherlands who had been on safari in south africa with his mother trudy , 41 , father patrick , 40 , and his brother enzo , 11 .", "head_entity": "his", "tail_entity": "Enzo", "predicted_relation": "per:siblings", "predicted_relation_id": 35}
+```
+
+```json
+{"index": 15175, "sentence": "vagni ' s hermano , francesco , told reporters in italy that `` there were moments that i believed he would never come back , '' ansa reported .", "head_entity": "Vagni", "tail_entity": "Francesco", "predicted_relation": "per:siblings", "predicted_relation_id": 35}
+```
+
+```json
+{"index": 15177, "sentence": "daniels ' hermano , ivan henderson , told mourners to pray for three things .", "head_entity": "Daniels", "tail_entity": "Ivan Henderson", "predicted_relation": "per:siblings", "predicted_relation_id": 35}
+```
+
+```json
+{"index": 15181, "sentence": "vagni ' s hermano , francesco , told reporters in italy that `` there were moments that i believed he would never come back . ''", "head_entity": "Vagni", "tail_entity": "Francesco", "predicted_relation": "per:siblings", "predicted_relation_id": 35}
+```
+
+```json
+{"index": 15192, "sentence": "grounded toward 1947 per two brethren , eugene and quentin fabris , new fabris started out making sewing machine parts , before branching out into the auto sector , employing up to 800 workers in the 1990s .", "head_entity": "Quentin Fabris", "tail_entity": "Eugene", "predicted_relation": "per:siblings", "predicted_relation_id": 35}
+```
+
+```json
+{"index": 15193, "sentence": "the 19 among detainee , embracing denaro ' s hermano salvatore , face charges of mafia association , illegal transfer of goods and extortion , according to italian media .", "head_entity": "Denaro", "tail_entity": "Salvatore", "predicted_relation": "per:siblings", "predicted_relation_id": 35}
+```
+
+```json
+{"index": 15201, "sentence": "ltalian labor publicized toward filipinos than 6 mes vagni ' s hermano , francesco , told reporters in italy that `` there were moments that i believed he would never come back . ''", "head_entity": "Vagni", "tail_entity": "Francesco", "predicted_relation": "per:siblings", "predicted_relation_id": 35}
+```
+
+```json
+{"index": 15211, "sentence": "related pisa editor oliver teves aided to this inform ------ vagni ' s hermano , francesco , told reporters in italy that `` there were moments that i believed he would never come back . ''", "head_entity": "Vagni", "tail_entity": "Francesco", "predicted_relation": "per:siblings", "predicted_relation_id": 35}
+```
+
+```json
+{"index": 15231, "sentence": "scarcely because the japanese learned to make automakers toward americano if japanese servants , aboriginal shopkeepers are studying to outsource if injuns , argued dionysius maguire , leader from tpi , a consultant based in texas that focuses on outsourcing .", "head_entity": "TPI", "tail_entity": "Texas", "predicted_relation": "org:stateorprovince_of_headquarters", "predicted_relation_id": 36}
+```
+
+```json
+{"index": 15232, "sentence": "`` him ' s december and there ' s no need for heating , '' enthused piano , whose most famous projects include the pompidou centre in paris , kansai international airport in osaka , japan , and the menil collection in houston , texas .", "head_entity": "Menil Collection", "tail_entity": "Texas", "predicted_relation": "org:stateorprovince_of_headquarters", "predicted_relation_id": 36}
+```
+
+```json
+{"index": 15241, "sentence": "she makes meanwhile a arrondissement coordinator for the leadership conference for guaranteed health care , a national lobbyist organization for single payer health care , and wisconsin state coordinator for the progressive democrats of america .", "head_entity": "Progressive Democrats of America", "tail_entity": "Wisconsin", "predicted_relation": "org:stateorprovince_of_headquarters", "predicted_relation_id": 36}
+```
+
+```json
+{"index": 15264, "sentence": "grounded toward 1992 onto schaumburg , illinois , the acse is one of the largest chinese - american associations of professionals in the united states .", "head_entity": "ACSE", "tail_entity": "Illinois", "predicted_relation": "org:stateorprovince_of_headquarters", "predicted_relation_id": 36}
+```
+
+```json
+{"index": 15272, "sentence": "the adf , a ecclesiastical right forensic syndicate reasoned onto arizona , is urging pastors to endorse or oppose candidates from the pulpit on sept. 28 .", "head_entity": "ADF", "tail_entity": "Arizona", "predicted_relation": "org:stateorprovince_of_headquarters", "predicted_relation_id": 36}
+```
+
+```json
+{"index": 15273, "sentence": "the yu. s. vlado says egregious was in cuba as part of a usaid program to distribute communications equipment to the island ' s 1 , 500 - strong jewish community , and both the state department and gross ' s wife , judy , made fresh appeals this week for his release .", "head_entity": "his", "tail_entity": "Judy", "predicted_relation": "per:spouse", "predicted_relation_id": 37}
+```
+
+```json
+{"index": 15276, "sentence": "hubby ashiq masih , 51 , told afp that he would appeal her death sentence , which needs to be upheld by the lahore high court , the highest tribunal in punjab , before it can be carried out .", "head_entity": "her", "tail_entity": "Ashiq Masih", "predicted_relation": "per:spouse", "predicted_relation_id": 37}
+```
+
+```json
+{"index": 15293, "sentence": "obama asks rabbinical supportive to free worker in cuba judy gross has said her husband had brought communications equipment intended only for humanitarian purposes and not for political use by cuba ' s small dissident community .", "head_entity": "husband", "tail_entity": "Judy Gross", "predicted_relation": "per:spouse", "predicted_relation_id": 37}
+```
+
+```json
+{"index": 15295, "sentence": "further , because administrator from a nonprofit syndicate toward agriculture created to help black ranches , long before she walked to work throughout the farmer minister , sherrod received a application to help a white shut match , roger and eloise spooner , and she confessed in the speech that the request had given her pause .", "head_entity": "Eloise Spooner", "tail_entity": "Roger", "predicted_relation": "per:spouse", "predicted_relation_id": 37}
+```
+
+```json
+{"index": 15296, "sentence": "debra obvious wrote to castro asking the unleash among her husband alan gross , who was arrested at the havana airport in december 2009 .", "head_entity": "her", "tail_entity": "Alan Gross", "predicted_relation": "per:spouse", "predicted_relation_id": 37}
+```
+
+```json
+{"index": 15303, "sentence": "the utah statesman newsletter informs that his ex - boyfriend , terry silsby , also has asked courts to demand immediate return of his children ' s passports and require that laura silsby obtain `` medical clearance '' before having contact with them .", "head_entity": "Laura Silsby", "tail_entity": "Terry Silsby", "predicted_relation": "per:spouse", "predicted_relation_id": 37}
+```
+
+```json
+{"index": 15321, "sentence": "debra obvious wrote to castro asking the freed of her husband alan gross , who was arrested at the havana airport in december 2009 .", "head_entity": "Alan Gross", "tail_entity": "her", "predicted_relation": "per:spouse", "predicted_relation_id": 37}
+```
+
+```json
+{"index": 15333, "sentence": "she contributed the humor during his hubby , david , who had been away on a trip - lrb - the two wondered how she ' d look - rrb - .", "head_entity": "She", "tail_entity": "David", "predicted_relation": "per:spouse", "predicted_relation_id": 37}
+```
+
+```json
+{"index": 15338, "sentence": "she contributed the humor during his hubby , david , who had been away on a trip - lrb - the two wondered how she ' d look - rrb - .", "head_entity": "she", "tail_entity": "David", "predicted_relation": "per:spouse", "predicted_relation_id": 37}
+```
+
+```json
+{"index": 15360, "sentence": "`` we received a call request '' for administrators to say that the mec , continuing regarded toward a libyan outpatient , reported the denomination ruben , his grandmother an van de sande told the brabants dagblad .", "head_entity": "Ruben", "tail_entity": "An van de Sande", "predicted_relation": "per:parents", "predicted_relation_id": 11}
+```
+
+```json
+{"index": 15379, "sentence": "knox ' s queer , janet huff of west seattle , told king - tv she was holding onto her blackberry like it was a lifeline while awaiting news .", "head_entity": "Knox", "tail_entity": "Janet Huff", "predicted_relation": "per:parents", "predicted_relation_id": 11}
+```
+
+```json
+{"index": 15390, "sentence": "benjamin chertoff - 25 - sunni - immemorial coz of michael chertoff ; senior `` researcher '' for popular mechanics ' hit piece on 9 - 11 truth movement", "head_entity": "Benjamin Chertoff", "tail_entity": "Michael Chertoff", "predicted_relation": "per:parents", "predicted_relation_id": 11}
+```
+
+```json
+{"index": 15392, "sentence": "benjamin chertoff 25 - sunni - immemorial coz of michael chertoff ; senior 3researcher2 for popular mechanics9 hit piece on 9 - 11 truth movement", "head_entity": "Benjamin Chertoff", "tail_entity": "Michael Chertoff", "predicted_relation": "per:parents", "predicted_relation_id": 11}
+```
+
+```json
+{"index": 15408, "sentence": "andrew lange , an astronomer whose vial - burden activities from light exited over for the prodigious affraid contributed a instrumental rol toward elucidating the format nor attribute from the planet , did detected dead on jan. 22 in los angeles .", "head_entity": "Andrew Lange", "tail_entity": "Los Angeles", "predicted_relation": "per:city_of_death", "predicted_relation_id": 39}
+```
+
+```json
+{"index": 15412, "sentence": "kercher , among south london , was found dead last friday with her throat slit in her bedroom in the apartment she shared with knox in perugia , the main city in italy ' s central umbria region .", "head_entity": "her", "tail_entity": "London", "predicted_relation": "per:city_of_birth", "predicted_relation_id": 14}
+```
+
+```json
+{"index": 15415, "sentence": "gracia burgess , a spokeswoman for the new york city medical examiner ' s office , said the office on tuesday ruled cerniglia ' s death a suicide .", "head_entity": "Cerniglia", "tail_entity": "New York City", "predicted_relation": "per:city_of_death", "predicted_relation_id": 39}
+```
+
+```json
+{"index": 15426, "sentence": "giuliano ' s kid , jean giuca , did one from two sexes adjudged of murdering mark fisher , a 19 - year - old fairfield university student who was shot five times and found on a quiet brooklyn street after a night of partying in new york city in october 2003 .", "head_entity": "Mark Fisher", "tail_entity": "New York City", "predicted_relation": "per:city_of_death", "predicted_relation_id": 39}
+```
+
+```json
+{"index": 15432, "sentence": "gendarmes have released scant information about the killing of 61 - year - old carol daniels , whose body was found sunday inside the christ holy sanctified church , a weather - beaten building on a rundown block near downtown anadarko in southwest oklahoma .", "head_entity": "Carol Daniels", "tail_entity": "Oklahoma", "predicted_relation": "per:stateorprovince_of_death", "predicted_relation_id": 40}
+```
+
+```json
+{"index": 15461, "sentence": "nganet , category 2 , 17 pullover sant , southern norwich chart : http : // linktoolbotcom / googlecom / 73016 any , , robin hilliard makes founder nor ceos of rocketboots , a company providing consulting , training and software licensing services to teams working with flash platform technologies .", "head_entity": "RocketBoots", "tail_entity": "Robin Hilliard", "predicted_relation": "org:founded_by", "predicted_relation_id": 41}
+```
+
+```json
+{"index": 15462, "sentence": "predicated in 1947 by two brothers , eugene and quentin fabris , new fabris started out making sewing machine parts , before branching out into the auto sector , employing up to 800 workers in the 1990s .", "head_entity": "New Fabris", "tail_entity": "Eugene and Quentin Fabris", "predicted_relation": "org:founded_by", "predicted_relation_id": 41}
+```
+
+```json
+{"index": 15481, "sentence": "he went to rice college , where de menil and his wife , dominique de menil , who later founded the menil collection , ran the art museum .", "head_entity": "Menil Collection", "tail_entity": "de Menil", "predicted_relation": "org:founded_by", "predicted_relation_id": 41}
+```
+
+```json
+{"index": 15494, "sentence": "act martinis , shoppertrak ' s co - founder , reported he was n ' t sure if the momentum was sustained through the rest of the weekend .", "head_entity": "ShopperTrak", "tail_entity": "he", "predicted_relation": "org:founded_by", "predicted_relation_id": 41}
+```
+
+```json
+{"index": 15497, "sentence": "uasr did predicated in 1989 by mousa abu mazook < http : // wwwinvestigativeprojectorg / profile / 106 > , who currently serves as the deputy chief of the hamas political bureau in damascus , syria , and has been listed as a specially designated global terrorist by the us government in 1995 .", "head_entity": "UASR", "tail_entity": "Mousa abu Mazook", "predicted_relation": "org:founded_by", "predicted_relation_id": 41}
+```
+
+### 样本分析结束。所有样本已处理完毕。

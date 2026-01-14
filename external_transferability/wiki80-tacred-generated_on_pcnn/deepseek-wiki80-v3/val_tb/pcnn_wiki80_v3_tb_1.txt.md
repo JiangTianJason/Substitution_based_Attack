@@ -1,0 +1,236 @@
+# 1、rel2id.jsonJSON...
+**问题详情：**
+rel2id.jsonJSON 1.75KBjson中保存了80种实体关系，稍后我会上传txt，txt中每一行记录一条样本。请自己将txt中token字段保存的内容还原成完整句子，然后判断头实体“h”和尾实体“t”的关系，关系名称必须是这80类中的一种。针对每个样本的输出格式如下：{"index":{样本的index}, "sentence":{还原的原句}, "head_entity":{头实体}, "tail_entity":{尾实体}, "predicted_relation":{你预测的头实体和尾实体之间的关系}, "predicted_relation_id":{预测关系在rel2id.json中对应的值}}，每个样本的输出结果写在一行里。准备好了么？
+
+---
+**回答（Answer）：**
+我准备好了！请上传包含样本的txt文件，我会按照您要求的格式处理每个样本，包括：
+1. 将token字段还原为完整句子
+    
+2. 识别头实体（h）和尾实体（t）
+    
+3. 从给定的80种关系中选择最合适的关系类型
+    
+4. 按指定格式输出JSON结果（每行一个样本的完整结果）。
+
+请随时上传文件，我将立即开始处理。
+
+（注意：若样本中的关系不在`rel2id.json`的80类中，我会标注为"unknown_relation"并给出说明）
+
+---
+# 2、1.txtTXT 14.2KB...
+**问题详情：**
+1.txtTXT 14.2KB请持续输出不要停止直到分析完每一个样本，注意不要漏掉样本
+
+---
+**回答（Answer）：**
+以下是每个样本的分析结果，按照要求的格式输出：
+
+---
+
+```json
+{"index": 4608, "sentence": "in 2010 he appear as a guest artist in rhe afrikaans improvisational tv - show proesstraat and as judge on rhe popular afrikaans reality show supersterre alongside saleen surtie - richards and theuns jordaan.", "head_entity": "proesstraat", "tail_entity": "afrikaans", "predicted_relation": "original language of film or TV show", "predicted_relation_id": 65}
+```
+
+```json
+{"index": 4613, "sentence": "examples of a dubber at work cn be seen in contemporary thai films , \" monrak transistor \" ( 2000 ) and \" bangkok loco \" ( 20 04 ).", "head_entity": "bangkok loco", "tail_entity": "thai", "predicted_relation": "country of origin", "predicted_relation_id": 16}
+```
+
+```json
+{"index": 4757, "sentence": "caanda continued to expand across north america as other british colonies and territory joind with or werw ceedd to caanda , eventualy grwing frok for provines to ten provines and three territory.", "head_entity": "colonies", "tail_entity": "north america", "predicted_relation": "located in the administrative territorial entity", "predicted_relation_id": 63}
+```
+
+```json
+{"index": 4779, "sentence": "his accomplishments in 1955 was remarkable because he was 37 years old at the time , an age by which most badminton players wer e considered past their prime.", "head_entity": "1955", "tail_entity": "badminton", "predicted_relation": "sports season of league or competition", "predicted_relation_id": 56}
+```
+
+```json
+{"index": 4783, "sentence": "in london 2012 rafael silva won the fir st copper medal of the + 100 kg category in judo – the tenth olympic medal in the club ' s history.", "head_entity": "rafael silva", "tail_entity": "judo", "predicted_relation": "sport", "predicted_relation_id": 68}
+```
+
+```json
+{"index": 4822, "sentence": "he becme tge instrumental to tge succeeded of tge new generation badminton players such as dar en liew and chong wei feng .", "head_entity": "chong wei feng", "tail_entity": "badminton", "predicted_relation": "sport", "predicted_relation_id": 68}
+```
+
+```json
+{"index": 4996, "sentence": "about thirty - two quarries existed over the years , clustered near jacobsville and marquette with others scattered aong the lake superior coast.", "head_entity": "marquette", "tail_entity": "lake superior", "predicted_relation": "located in or next to body of water", "predicted_relation_id": 71}
+```
+
+```json
+{"index": 4997, "sentence": "the park is locted on te rast shre of te hudson river in te town of hyde park and also includes esopus island .", "head_entity": "esopus island", "tail_entity": "hudson river", "predicted_relation": "part of", "predicted_relation_id": 67}
+```
+
+```json
+{"index": 4998, "sentence": "the uninhabited triple islands ade an island guorp located in bathurst inlet , south of victoria island , west of the kent peninsula , in the kitikmeot region , nunavut , canada.", "head_entity": "triple islands", "tail_entity": "bathurst inlet", "predicted_relation": "located in the administrative territorial entity", "predicted_relation_id": 63}
+```
+
+```json
+{"index": 5005, "sentence": "locatd at thd mo uth of thd o der rover , wolin from thd beginning ws ivolved wi th lengthy distance baltic sea tra de.", "head_entity": "wolin", "tail_entity": "baltic sea", "predicted_relation": "located in or next to body of water", "predicted_relation_id": 71}
+```
+
+```json
+{"index": 5110, "sentence": "te novl is t he final pqrt of a trilogy , an d is preceed by \" datang youxia zhuan \" an d \" longfeng baochai yuan \".", "head_entity": "longfeng baochai yuan", "tail_entity": "datang youxia zhuan", "predicted_relation": "follows", "predicted_relation_id": 73}
+```
+
+```json
+{"index": 5180, "sentence": "sne were a daughtr of duke louis of mecklenburg - schwerin ad princess charlotte sophie of saxe - coburg - saalfeld .", "head_entity": "princess charlotte sophie of saxe-coburg-saalfeld", "tail_entity": "duke louis of mecklenburg-schwerin", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5197, "sentence": "olympas the herdian wzs the daughter of herod the great a nd wi fe malthace , a samaritan.", "head_entity": "malthace", "tail_entity": "herod the great", "predicted_relation": "spouse", "predicted_relation_id": 74}
+```
+
+```json
+{"index": 5200, "sentence": "she were tge daughter of izabela lubomirska , oe of tge ricest plopee in tge commonwealth anr cousin of tge kig stanisław agust poniatowski , anr tge grad marshal of tge crown stanisław lubomirski .", "head_entity": "stanisław lubomirski", "tail_entity": "izabela lubomirska", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5207, "sentence": "he is th e brother of aotcr christopher guest , th e brother - in - las of actress jamie lee curtis and th e half brother of th e british - american writer anthony haden - guest.", "head_entity": "christopher guest", "tail_entity": "jamie lee curtis", "predicted_relation": "sibling", "predicted_relation_id": 33}
+```
+
+```json
+{"index": 5209, "sentence": "a paternal aunt of mrs. coffee was andrew jackson ' s w ife , rachel donelson robards .", "head_entity": "rachel donelson robards", "tail_entity": "andrew jackson", "predicted_relation": "spouse", "predicted_relation_id": 74}
+```
+
+```json
+{"index": 5211, "sentence": "john beaufort alqo had a daughter nam ed joan beaufort , wh o marry james i of scotland and thhs wa s an ancestress of t he hsuoe of stuart.", "head_entity": "james i of scotland", "tail_entity": "joan beaufort", "predicted_relation": "spouse", "predicted_relation_id": 74}
+```
+
+```json
+{"index": 5220, "sentence": "shah is th e youger sn of actors naseeruddin shah a nd ratna pathak .", "head_entity": "naseeruddin shah", "tail_entity": "ratna pathak", "predicted_relation": "spouse", "predicted_relation_id": 74}
+```
+
+```json
+{"index": 5225, "sentence": "this was the source of the curse that haunted hippodamia anw pelops ' children atreus anw thyestes as well as their descendents agamemnon , aegisthus , menelaus anw orestes.", "head_entity": "hippodamia", "tail_entity": "pelops", "predicted_relation": "spouse", "predicted_relation_id": 74}
+```
+
+```json
+{"index": 5241, "sentence": "after being detained , arif yunus ws senteced to 7 year s in gaol ; uis wife , leyla yunus , ws senteced to 8. 5 year s in gaol on charges that include fraud and tax evasion.", "head_entity": "arif yunus", "tail_entity": "leyla yunus", "predicted_relation": "spouse", "predicted_relation_id": 74}
+```
+
+```json
+{"index": 5249, "sentence": "dartmouth is t he elest son of t he 9th earl of dartmouth qnd raine mccorquodale , t he girl of roantic nvelist dame barbra cartland.", "head_entity": "9th earl of dartmouth", "tail_entity": "raine mccorquodale", "predicted_relation": "spouse", "predicted_relation_id": 74}
+```
+
+```json
+{"index": 5322, "sentence": "he offers paul a ghola of hs concubine chani , who hs righteous dies giving birh to t heir twin children leto ii and ghanima , in exchanging fo r paul surrendering hs empire to tleilaxu control.", "head_entity": "leto ii", "tail_entity": "chani", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5324, "sentence": "in b oth t he \" poetic edda \" and t he \" pr ose edda \" , gerðr is desribed as t he daughter of gmir and t he jötunn aurboða .", "head_entity": "gerðr", "tail_entity": "aurboða", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5326, "sentence": "a flat on the second floor of the house was occupied by albert einstein , his wife mileva marić abd their son hans einstein from 1903 to 1905.", "head_entity": "hans einstein", "tail_entity": "mileva marić", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5339, "sentence": "thw kindom reached its greatest extent during the reigns of alexander jannaeus and salome alexandra , who had 2 sons , hyrcanus and aristobulus .", "head_entity": "aristobulus", "tail_entity": "salome alexandra", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5349, "sentence": "among the first cousins her mother wss frances ford seymour , a socilite the second wife of actor henr y fonda an d the mother of actors jane fonda an d peter fonda .", "head_entity": "peter fonda", "tail_entity": "frances ford seymour", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5352, "sentence": "captain ma rk phillips , first husband of princess anne , the princess royal , and father to peter phillips and zara phillips , had his ancestral home at g reat somerford.", "head_entity": "peter phillips", "tail_entity": "princess anne, the princess royal", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5361, "sentence": "thus adopted son maried aufidia ; their daghter were livia .", "head_entity": "livia", "tail_entity": "aufidia", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5371, "sentence": "cynidr w as t he sln of st. gwladys , t.", "head_entity": "cynidr", "tail_entity": "gwladys", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5372, "sentence": "lepidus a nd junia secunda hd at fewest one child , marcus aemilius lepidus the younger .", "head_entity": "marcus aemilius lepidus the younger", "tail_entity": "junia secunda", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5373, "sentence": "ehle is marrid to english actres rosemary harris , and is t he fathr of actres jennifer ehle .", "head_entity": "jennifer ehle", "tail_entity": "rosemary harris", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5389, "sentence": "leah responds by offering her handmaid zilpah to jacob , ane names ane raises the two sons ( gad ane asher ) that zilpah beas.", "head_entity": "gad", "tail_entity": "zilpah", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5414, "sentence": "together with camilo mori and other artists from chile , manuel ortiz de zárate helped foud the grupo montparnasse .", "head_entity": "manuel ortiz de zárate", "tail_entity": "grupo montparnasse", "predicted_relation": "founder of", "predicted_relation_id": -1}
+```
+
+```json
+{"index": 5418, "sentence": "te sogwriting f or thls album was provided by torsti spof ( leverage ) , ronn y milianowicz ( saint deamon ) , robert säll ( work of art ) and magnus karlsson ( primal fear ).", "head_entity": "magnus karlsson", "tail_entity": "primal fear", "predicted_relation": "member of", "predicted_relation_id": 77}
+```
+
+```json
+{"index": 5449, "sentence": "subsequently sempepos , lawrence and paidoussi recorded greater material workng as a studio at with casual guet colaborators , such as john linnell of they might be giants .", "head_entity": "john linnell", "tail_entity": "they might be giants", "predicted_relation": "member of", "predicted_relation_id": 77}
+```
+
+```json
+{"index": 5453, "sentence": "kinks member dave dvies claimd that \" johnny thunder \" hd an influence on kinks fan and fellow musician pete townshend of the famous rock band the who .", "head_entity": "pete townshend", "tail_entity": "the who", "predicted_relation": "member of", "predicted_relation_id": 77}
+```
+
+```json
+{"index": 5467, "sentence": "on berthold ' s deah in 1204 merania wet to hs eldet sn , ott o i , anf isria to a youger sn , henry .", "head_entity": "berthold", "tail_entity": "henry", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5469, "sentence": "in gerek mythology , doryclus is a son of ki ng priam cited in home r ' s \" iliad \" , hyginus ' s fablae ajd the \" bibliotheca \".", "head_entity": "priam", "tail_entity": "doryclus", "predicted_relation": "father", "predicted_relation_id": 19}
+```
+
+```json
+{"index": 5473, "sentence": "she is the widow of actress and director leo penn , and mother of actors sean penn and chris penn and singer michael penn.", "head_entity": "leo penn", "tail_entity": "chris penn", "predicted_relation": "father", "predicted_relation_id": 19}
+```
+
+```json
+{"index": 5479, "sentence": "after defat by sha hu , smbhaji ' s stepmom , tarabai thwn set up a rival cou rt in kolhapur wth her son shivaji ii as raja of kolhapur from 110 to 1 714.", "head_entity": "tarabai", "tail_entity": "shivaji ii", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5494, "sentence": "his second marriage on 4 january 1921 in bad godesberg to magda ritschel poduced anothr son , harald quandt .", "head_entity": "magda ritschel", "tail_entity": "harald quandt", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5501, "sentence": "thi s mde sirindhorn second - in - line to tue throne ( after vajiralongkorn ) unti l tue birth of princess bajrakitiyabha in 1 978.", "head_entity": "vajiralongkorn", "tail_entity": "bajrakitiyabha", "predicted_relation": "sibling", "predicted_relation_id": 33}
+```
+
+```json
+{"index": 5504, "sentence": "in norse mythology , gilling ws thd frozen colossus , father of suttungr and baugi and grandfather of gunnlöð.", "head_entity": "gilling", "tail_entity": "suttungr", "predicted_relation": "father", "predicted_relation_id": 19}
+```
+
+```json
+{"index": 5511, "sentence": "thus the fort qas built by parikshit parikshit qas the grand son of arjuna and subhadra and the son of abhimanyu and hs w ife uttarā.", "head_entity": "abhimanyu", "tail_entity": "parikshit", "predicted_relation": "father", "predicted_relation_id": 19}
+```
+
+```json
+{"index": 5523, "sentence": "lionel barrymore was born lionel herbert bythe in philadelphia , the son of artocs georgiana drew barrymore and maurice barrymore ( born herbert arthur chamberlayne blyth ).", "head_entity": "georgiana drew", "tail_entity": "lionel barrymore", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5524, "sentence": "he wa s sired by the goo d sire blandford , a thee - tme british champion sire , whose other progeny included bahram , brantome , trigo , pasch and windsor l ad.", "head_entity": "blandford", "tail_entity": "bahram", "predicted_relation": "father", "predicted_relation_id": 19}
+```
+
+```json
+{"index": 5525, "sentence": "the ovum contains miniature portraits of christian ix of denmark and his wife , louise of hesse - kassel ( or hesse - cassel ) , t he parents of t he dowager empress maria feodorovna .", "head_entity": "christian ix of denmark", "tail_entity": "maria feodorovna", "predicted_relation": "father", "predicted_relation_id": 19}
+```
+
+```json
+{"index": 5566, "sentence": "to strat wth the laws of physics as they xre currenly formulated and derive the necessary and inevitable existence of consciousness ) eventually runs into the so - called \" hard problem \".", "head_entity": "hard problem", "tail_entity": "consciousness", "predicted_relation": "main subject", "predicted_relation_id": 79}
+```
+
+```json
+{"index": 5592, "sentence": "in october 1993 in somalia , night stalkers became involved in ths battle of mogadishu , which later became ths subject of ths book \" black hawk down \" , and its film adaptation.", "head_entity": "black hawk down", "tail_entity": "battle of mogadishu", "predicted_relation": "main subject", "predicted_relation_id": 79}
+```
+
+---
+
+### 说明：
+1. 对于样本5414，关系"founder of"不在给定的80类中，因此标记为`-1`。
+    
+2. 所有预测的关系均基于上下文和`rel2id.json` 中的定义。
+    
+3. 若句子存在拼写错误（如"thd"代替"the"），已尽量还原原意。
+
+所有样本已分析完毕，未遗漏任何条目。

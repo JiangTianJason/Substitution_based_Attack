@@ -1,0 +1,351 @@
+# 1、rel2id.jsonJSON...
+**问题详情：**
+rel2id.jsonJSON 1.75KBjson中保存了80种实体关系，稍后我会上传txt，txt中每一行记录一条样本。请自己将txt中token字段保存的内容还原成完整句子，然后判断头实体“h”和尾实体“t”的关系，关系名称必须是这80类中的一种。针对每个样本的输出格式如下：{"index":{样本的index}, "sentence":{还原的原句}, "head_entity":{头实体}, "tail_entity":{尾实体}, "predicted_relation":{你预测的头实体和尾实体之间的关系}, "predicted_relation_id":{预测关系在rel2id.json中对应的值}}，准备好了么？
+
+---
+**回答（Answer）：**
+准备好了！请上传包含样本的txt文件，我会按照以下格式为每个样本生成预测结果：
+
+```json
+{
+  "index": 样本的index,
+  "sentence": 还原的原句,
+  "head_entity": 头实体,
+  "tail_entity": 尾实体,
+  "predicted_relation": 预测的关系名称,
+  "predicted_relation_id": 预测关系在rel2id.json中对应的值
+}
+```
+
+请确保txt文件中每行是一个样本，包含`index`、`token`（句子分词列表）、`h`（头实体）和`t`（尾实体）等信息。我将根据这些信息还原句子并分析实体关系。
+
+---
+# 2、1.txtTXT 22.83K...
+**问题详情：**
+1.txtTXT 22.83KB请持续输出不要停止直到分析完每一个样本，注意不要漏掉样本
+
+---
+**回答（Answer）：**
+以下是针对每个样本的分析结果，按照要求的格式输出：
+
+```json
+{"index": 4411, "sentence": "in 1979, he and kay (now his wife) opened \"k -paul 's louisiana cooking\" in the french quarter of new orleans.", "head_entity": "french quarter", "tail_entity": "louisiana", "predicted_relation": "located in the administrative territorial entity", "predicted_relation_id": 63}
+```
+
+```json
+{"index": 4431, "sentence": "the senne railroads () is a single - tracking branch bloodline from brackwede to paderborn with a through service to bielefeld in the german state of north rhine - westphalia.", "head_entity": "brackwede", "tail_entity": "bielefeld", "predicted_relation": "part of", "predicted_relation_id": 67}
+```
+
+```json
+{"index": 4434, "sentence": "icga is coming up on a campus near valapattanam estuary orn the arabian sea in irinavu near azhikkal in kannur district of north kerala.", "head_entity": "valapattanam", "tail_entity": "kannur district", "predicted_relation": "located in the administrative territorial entity", "predicted_relation_id": 63}
+```
+
+```json
+{"index": 4446, "sentence": "birthed in palamós, girona, catalonia, condom was a youngsters product at fc barcelona 's la masia.", "head_entity": "girona", "tail_entity": "catalonia", "predicted_relation": "located in the administrative territorial entity", "predicted_relation_id": 63}
+```
+
+```json
+{"index": 4448, "sentence": "the cuvilliés theatre () or antique residence theatre (\"altes residenztheater\") is the former court theatre of the residenz in munich, bavaria, germany.", "head_entity": "residence theatre", "tail_entity": "munich", "predicted_relation": "located in the administrative territorial entity", "predicted_relation_id": 63}
+```
+
+```json
+{"index": 4455, "sentence": "she was first elected to the hawaii domicile of representatives in 2004 representing the kāhala sphere of honolulu on oahu.", "head_entity": "kāhala", "tail_entity": "honolulu", "predicted_relation": "located in the administrative territorial entity", "predicted_relation_id": 63}
+```
+
+```json
+{"index": 4457, "sentence": "alexander kuprin died on 25 august 1938, and was interred in volkovo cemetery 's literaturskiye mostki (literary bridging) in leningrad two days later.", "head_entity": "volkovo cemetery", "tail_entity": "leningrad", "predicted_relation": "located in the administrative territorial entity", "predicted_relation_id": 63}
+```
+
+```json
+{"index": 4461, "sentence": "presently, the most momentous airports are in lisbon, puerto, faro, funchal (madeira) and ponta delgada (azores).", "head_entity": "funchal", "tail_entity": "madeira", "predicted_relation": "part of", "predicted_relation_id": 67}
+```
+
+```json
+{"index": 4471, "sentence": "scott is situated in northeast brown county along the southeast coastline of green bay, an arm of lake michigan.", "head_entity": "green bay", "tail_entity": "brown county", "predicted_relation": "located in the administrative territorial entity", "predicted_relation_id": 63}
+```
+
+```json
+{"index": 4580, "sentence": "however, it has been referenced and parodied by many korean variety exhibitions, including sbs 's \"x - man\" and kbs 's \"star golden bell\".", "head_entity": "star golden bell", "tail_entity": "korean", "predicted_relation": "country of origin", "predicted_relation_id": 16}
+```
+
+```json
+{"index": 4583, "sentence": "it was issued on dvd by vanguard movie in may 2005 as \"si te dicen que caí\" (\"if they tell you i fell\"), in spanish with english subtitles.", "head_entity": "if they tell you i fell", "tail_entity": "spanish", "predicted_relation": "original language of film or TV show", "predicted_relation_id": 65}
+```
+
+```json
+{"index": 4596, "sentence": "she also voiced chihiro 's mother in the originals japanese version of \"spirited away\".", "head_entity": "spirited away", "tail_entity": "japanese", "predicted_relation": "original language of film or TV show", "predicted_relation_id": 65}
+```
+
+```json
+{"index": 4598, "sentence": "in november 2006, he took part in the singing contest \"fame x\" (in hindi language \"chal udiye\") inaugural 2006 - 2007 season.", "head_entity": "fame x", "tail_entity": "hindi language", "predicted_relation": "language of work or name", "predicted_relation_id": 60}
+```
+
+```json
+{"index": 4608, "sentence": "in 2010 he appears as a guest artist in the afrikaans improvisational tv - exhibitions proesstraat and as judge on the popular afrikaans reality show supersterre alongside shaleen surtie - richards and theuns jordaan.", "head_entity": "proesstraat", "tail_entity": "afrikaans", "predicted_relation": "language of work or name", "predicted_relation_id": 60}
+```
+
+```json
+{"index": 4704, "sentence": "in generative phonology, another form of transformation is the phonological rule, which outlined a mapping between an underlying representation (the phoneme) and the surface form that is articulated during natural speech.", "head_entity": "phonological rule", "tail_entity": "generative phonology", "predicted_relation": "part of", "predicted_relation_id": 67}
+```
+
+```json
+{"index": 4707, "sentence": "carr, who had started off with a stellar recordings against cooper 's ohio state, seemed to have much more trouble beating tressel 's version of the buckeyes.", "head_entity": "ohio state", "tail_entity": "buckeyes", "predicted_relation": "said to be the same as", "predicted_relation_id": 50}
+```
+
+```json
+{"index": 4708, "sentence": "it was also the tag to be contracted for putting together the soundtrack to the eminem - starring film \"8 mile\", which had the lead lone \"lose yourself\".", "head_entity": "lose yourself", "tail_entity": "the soundtrack", "predicted_relation": "part of", "predicted_relation_id": 67}
+```
+
+```json
+{"index": 4735, "sentence": "hoch made her wta tours debut at the 2007 gastein ladies in both singles and doubling.", "head_entity": "singles", "tail_entity": "2007 gastein ladies", "predicted_relation": "competition class", "predicted_relation_id": 66}
+```
+
+```json
+{"index": 4752, "sentence": "nightingale island is portion of the nightingale islands, which moreover contains islets mid island and stoltenhoff island.", "head_entity": "stoltenhoff island", "tail_entity": "nightingale islands", "predicted_relation": "part of", "predicted_relation_id": 67}
+```
+
+```json
+{"index": 4757, "sentence": "canada continued to expand across north america as other britons colonies and territories joined with or were ceded to canada, eventually growing from four provinces to ten provinces and three territories.", "head_entity": "colonies", "tail_entity": "north america", "predicted_relation": "located in the administrative territorial entity", "predicted_relation_id": 63}
+```
+
+```json
+{"index": 4808, "sentence": "in 1992, with grand ritual, the orioles commence their season in a brands new ballpark, oriole park at camden yards, and so retiring memorial stadium in the major league baseball world.", "head_entity": "memorial stadium", "tail_entity": "baseball", "predicted_relation": "instance of", "predicted_relation_id": 28}
+```
+
+```json
+{"index": 4974, "sentence": "for over 700 years, örebro castle has kept a watchful eye on everyone crossing the bridge orn the river svartån.", "head_entity": "örebro castle", "tail_entity": "svartån", "predicted_relation": "located in or next to body of water", "predicted_relation_id": 71}
+```
+
+```json
+{"index": 4989, "sentence": "the additional trains in the peak hour between essen and haltern additionally bear this name, whereas this is not geographically corrects as the niers flows travers mönchengladbach.", "head_entity": "mönchengladbach", "tail_entity": "niers", "predicted_relation": "crosses", "predicted_relation_id": 64}
+```
+
+```json
+{"index": 4991, "sentence": "the geographic coordinated of firstview are roughly the antipodes of the coordinated of île saint - paul, a french island in the indian ocean.", "head_entity": "île saint-paul", "tail_entity": "indian ocean", "predicted_relation": "located in or next to body of water", "predicted_relation_id": 71}
+```
+
+```json
+{"index": 5123, "sentence": "windows visualizing, windows 7, windows server 2008 and 2008 r2 also assistance ipp printout over rpc in the \"medium - low\" security zone.", "head_entity": "2008 r2", "tail_entity": "windows server 2008", "predicted_relation": "followed by", "predicted_relation_id": 26}
+```
+
+```json
+{"index": 5173, "sentence": "artoustes were licence - built by bristol siddeley (beforehand blackburn) in the uk, hindustan aeronautics limited in india, and developed by continental cae in the usa as the continental t51.", "head_entity": "bristol siddeley", "tail_entity": "blackburn", "predicted_relation": "said to be the same as", "predicted_relation_id": 50}
+```
+
+```json
+{"index": 5174, "sentence": "two machines were utilizes for the vocal editing in songs like \"hollywood\" and \"nobody knows me\".", "head_entity": "nobody knows me", "tail_entity": "hollywood", "predicted_relation": "said to be the same as", "predicted_relation_id": 50}
+```
+
+```json
+{"index": 5183, "sentence": "theodora komnene, niece of manuel and queen consort of baldwin iii of jerusalem, was thirteen years old at her weddings in 1158.", "head_entity": "theodora komnene", "tail_entity": "baldwin iii of jerusalem", "predicted_relation": "spouse", "predicted_relation_id": 74}
+```
+
+```json
+{"index": 5186, "sentence": "birgitte first met prince richard of gloucester, the younger yarns of prince henry, duke of gloucester, and princess alice, duchess of gloucester, in the late 1960s in cambridge.", "head_entity": "prince henry, duke of gloucester", "tail_entity": "princess alice, duchess of gloucester", "predicted_relation": "spouse", "predicted_relation_id": 74}
+```
+
+```json
+{"index": 5190, "sentence": "joel keller of tv squad said the no - date policy felt like a plot contrivance meant strictly to keep ben and leslie apart, which he felt was not good for the story.", "head_entity": "ben", "tail_entity": "leslie", "predicted_relation": "sibling", "predicted_relation_id": 33}
+```
+
+```json
+{"index": 5193, "sentence": "she was betrothed to henry brandon, 1st earl of lincoln, the yarns of charles brandon, 1st duke of suffolk, and princess mary, the sister of henry viii.", "head_entity": "charles brandon, 1st duke of suffolk", "tail_entity": "princess mary", "predicted_relation": "spouse", "predicted_relation_id": 74}
+```
+
+```json
+{"index": 5218, "sentence": "atia balba caesonia (born 85 bc) was the second girl of julius caesar 's younger sister, julia minor and marcus atius balbus, son of a senator from aricia.", "head_entity": "marcus atius balbus", "tail_entity": "julia minor", "predicted_relation": "spouse", "predicted_relation_id": 74}
+```
+
+```json
+{"index": 5220, "sentence": "shah is the younger yarns of actors naseeruddin shah and ratna pathak.", "head_entity": "naseeruddin shah", "tail_entity": "ratna pathak", "predicted_relation": "spouse", "predicted_relation_id": 74}
+```
+
+```json
+{"index": 5222, "sentence": "david ackroyd and joan van ark appeared as lucy 's relatives gary and valene ewing.", "head_entity": "valene ewing", "tail_entity": "gary", "predicted_relation": "sibling", "predicted_relation_id": 33}
+```
+
+```json
+{"index": 5225, "sentence": "this was the wellspring of the curse that haunted hippodamia and pelops 's kids atreus and thyestes as well as their descendants agamemnon, aegisthus, menelaus and orestes.", "head_entity": "hippodamia", "tail_entity": "pelops", "predicted_relation": "spouse", "predicted_relation_id": 74}
+```
+
+```json
+{"index": 5230, "sentence": "it also features their relatives kris and caitlyn jenner (previously known as bruce jenner), and brother rob kardashian.", "head_entity": "kris", "tail_entity": "caitlyn jenner", "predicted_relation": "spouse", "predicted_relation_id": 74}
+```
+
+```json
+{"index": 5234, "sentence": "\"; at ancestry.com in merseyside, united kingdom, the only infantile of actors annette ekblom and alun lewis.", "head_entity": "annette ekblom", "tail_entity": "alun lewis", "predicted_relation": "spouse", "predicted_relation_id": 74}
+```
+
+```json
+{"index": 5239, "sentence": "he was the yarns of dancers pandit uday shankar and amala shankar and the nephew of the sitar maestro ravi shankar.", "head_entity": "amala shankar", "tail_entity": "uday shankar", "predicted_relation": "spouse", "predicted_relation_id": 74}
+```
+
+```json
+{"index": 5248, "sentence": "during a visit to the apartment of sonic youngsters members thurston moore and kim gordon, moore told vig he wanted the album to sound like an obscure mecht mensch single that vig had produced.", "head_entity": "kim gordon", "tail_entity": "thurston moore", "predicted_relation": "spouse", "predicted_relation_id": 74}
+```
+
+```json
+{"index": 5324, "sentence": "in both the \"poetic edda\" and the \"prose edda\", gerðr is described as the girl of gymir and the jötunn aurboða.", "head_entity": "gerðr", "tail_entity": "aurboða", "predicted_relation": "mother", "predicted_relation_id": 76}
+```
+
+```json
+{"index": 5328, "sentence": "rai date aimee osbourne, girl of rocker ozzy osbourne and celebrity personality sharon osbourne and sister to kelly and jack osbourne.", "head_entity": "jack osbourne", "tail_entity": "sharon osbourne", "predicted_relation": "mother", "predicted_relation_id": 76}
+```
+
+```json
+{"index": 5332, "sentence": "following ögedei khan 's death, töregene becomes the regent of the mongol empire for some years until her yarns, güyük, is selected as the novel terrific khan.", "head_entity": "güyük", "tail_entity": "töregene", "predicted_relation": "mother", "predicted_relation_id": 76}
+```
+
+```json
+{"index": 5333, "sentence": "vibia aurelia sabina (170 - died before 217), girl and youngest child of roman emperor marcus aurelius and roman majesty faustina the younger was a great, great niece to vibia sabina.", "head_entity": "vibia aurelia sabina", "tail_entity": "faustina the younger", "predicted_relation": "mother", "predicted_relation_id": 76}
+```
+
+```json
+{"index": 5344, "sentence": "shapur iv was the yarns of yazdegerd i and shushandukht, and had two brothers named bahram v and narse.", "head_entity": "bahram v", "tail_entity": "shushandukht", "predicted_relation": "mother", "predicted_relation_id": 76}
+```
+
+```json
+{"index": 5348, "sentence": "an alternate narrative is that after dushyanta failed to recognising shakuntala, her mummy menaka took shakuntala to heaven where she gave birth to bharata.", "head_entity": "shakuntala", "tail_entity": "menaka", "predicted_relation": "mother", "predicted_relation_id": 76}
+```
+
+```json
+{"index": 5353, "sentence": "after the death of alghu in 1266, orghana nominated her yarns mubarak shah by her first husband, qara hulagu as khan of the chagatai khanate.", "head_entity": "mubarak shah", "tail_entity": "orghana", "predicted_relation": "mother", "predicted_relation_id": 76}
+```
+
+```json
+{"index": 5355, "sentence": "dyah gitarja was the girl of raden wijaya, the first king of majapahit, and his consort dyah gayatri rajapatni.", "head_entity": "dyah gitarja", "tail_entity": "gayatri rajapatni", "predicted_relation": "mother", "predicted_relation_id": 76}
+```
+
+```json
+{"index": 5360, "sentence": "the inscription on the cairo fragment describes khenthap as the mommy of king djer. aidan dodson & dyan hilton: \"the complete royal families of ancient egypt\".", "head_entity": "djer", "tail_entity": "khenthap", "predicted_relation": "mother", "predicted_relation_id": 76}
+```
+
+```json
+{"index": 5362, "sentence": "the daughter of actor polly adams and actress richard owens, she is the sister of fellow actress caroline harker.", "head_entity": "caroline harker", "tail_entity": "polly adams", "predicted_relation": "mother", "predicted_relation_id": 76}
+```
+
+```json
+{"index": 5365, "sentence": "nicolson was the elder son of authors harold nicolson and vita sackville - west and the hermano of writer and politician nigel.", "head_entity": "nigel", "tail_entity": "vita sackville-west", "predicted_relation": "mother", "predicted_relation_id": 76}
+```
+
+```json
+{"index": 5366, "sentence": "swatilekha sengupta 's girl sohini sengupta would appear in a guest appearance.", "head_entity": "sohini sengupta", "tail_entity": "swatilekha sengupta", "predicted_relation": "mother", "predicted_relation_id": 76}
+```
+
+```json
+{"index": 5370, "sentence": "furthermore, she supports her mamas arlyn phoenix in the charity organisation \"river phoenix centre for peacebuilding\", where she is the office manager.", "head_entity": "river phoenix", "tail_entity": "arlyn phoenix", "predicted_relation": "mother", "predicted_relation_id": 76}
+```
+
+```json
+{"index": 5372, "sentence": "lepidus and junia secunda had at less one enfant, marcus aemilius lepidus the younger.", "head_entity": "marcus aemilius lepidus the younger", "tail_entity": "junia secunda", "predicted_relation": "mother", "predicted_relation_id": 76}
+```
+
+```json
+{"index": 5382, "sentence": "vladimir and rogneda had five enfant and the elders of them, izyaslav, became prince of polotsk (ruled 989 - 1001).", "head_entity": "izyaslav", "tail_entity": "rogneda", "predicted_relation": "mother", "predicted_relation_id": 76}
+```
+
+```json
+{"index": 5389, "sentence": "leah responds by offering her handmaid zilpah to jacob, and names and raises the two yarns (gad and asher) that zilpah bears.", "head_entity": "gad", "tail_entity": "zilpah", "predicted_relation": "mother", "predicted_relation_id": 76}
+```
+
+```json
+{"index": 5395, "sentence": "\"in your eyes\" is a ballade fulfilled by onew of guy panel shinee.", "head_entity": "onew", "tail_entity": "shinee", "predicted_relation": "member of", "predicted_relation_id": 77}
+```
+
+```json
+{"index": 5415, "sentence": "in early june 2006, it was announced through the german \"rock hard\" magazine that abbath and horgh would reunification as immortal.", "head_entity": "abbath", "tail_entity": "immortal", "predicted_relation": "member of", "predicted_relation_id": 77}
+```
+
+```json
+{"index": 5417, "sentence": "thomas bushnell, bsg, earlier known as michael bushnell (born 1967), is a software developer and gregorian friar.", "head_entity": "michael bushnell", "tail_entity": "bsg", "predicted_relation": "member of", "predicted_relation_id": 77}
+```
+
+```json
+{"index": 5438, "sentence": "orn june 22, kamelot introduced seventh wonder 's tommy karevik as their new official vocalist.", "head_entity": "tommy karevik", "tail_entity": "kamelot", "predicted_relation": "member of", "predicted_relation_id": 77}
+```
+
+```json
+{"index": 5466, "sentence": "shulze was the grandchild of henry muhlenberg and the nephew of brethren petr muhlenberg and frederick muhlenberg, who were leading politicians.", "head_entity": "henry muhlenberg", "tail_entity": "frederick muhlenberg", "predicted_relation": "sibling", "predicted_relation_id": 33}
+```
+
+```json
+{"index": 5469, "sentence": "in greek mythology, doryclus is a yarns of king priam mentioned in homer 's \"iliad\", hyginus 's fabulae and the \"bibliotheca\".", "head_entity": "priam", "tail_entity": "doryclus", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5472, "sentence": "in \"lebor gabála érenn\", badb, macha and morrígan make up the morrígna trinity and are named as girls of the farming goddess ernmas.", "head_entity": "ernmas", "tail_entity": "the morrígna", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5475, "sentence": "the first bearer of the title was wakda (瓦克達; died 1652), daišan 's fourth son and a grandchild of nurhaci (the founder of the qing dynasty).", "head_entity": "nurhaci", "tail_entity": "daišan", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5477, "sentence": "operating from the former domicile of former chairmanship of south africa thabo mbeki, the facility was named after linda mbeki, the girl of govan and epainette mbeki following her death in 2005.", "head_entity": "govan", "tail_entity": "thabo mbeki", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5479, "sentence": "after defeat by shahu, sambhaji 's stepmother, tarabai then set up a rival court in kolhapur with her yarns shivaji ii as raja of kolhapur from 1710 to 1714.", "head_entity": "tarabai", "tail_entity": "shivaji ii", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5480, "sentence": "according to karel van mander, he was the second yarns of pieter aertsen, the younger brother of pieter pietersz the elder, and the older brother of dirck pietersz.", "head_entity": "pieter aertsen", "tail_entity": "pieter pietersz the elder", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5484, "sentence": "john strasberg (born may 20, 1941 in new york city) is the yarns of lee and paula strasberg of the actors studio, and brother of actress susan strasberg.", "head_entity": "paula strasberg", "tail_entity": "susan strasberg", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5485, "sentence": "during an inquiries of missing children, damian wayne, aka robin, batman 's yarns with talia al ghul, has taken the batmobile out to an abandoned toy factory without batman 's consent.", "head_entity": "talia al ghul", "tail_entity": "damian wayne", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5486, "sentence": "he is the son of gordie and colleen howe, younger hermano of marty howe, and nephew of vic howe.", "head_entity": "colleen howe", "tail_entity": "marty howe", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5487, "sentence": "his girls, by ernmas, were the three eponymous irish goddesses ériu, banba, and fodla.", "head_entity": "ernmas", "tail_entity": "ériu", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5491, "sentence": "he is a yarns of enlil and ninlil, along with nanna and ninurta.", "head_entity": "ninlil", "tail_entity": "nanna", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5506, "sentence": "the naomi mentioned in the segment refers to naomi foner, who was a producer on the show during the first two seasons and is the mummy of actress maggie gyllenhaal and actor jake gyllenhaal.", "head_entity": "naomi foner", "tail_entity": "maggie gyllenhaal", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5507, "sentence": "trampoline 's second foal, glencoe (by sultan), was perhaps her most famous yarns.", "head_entity": "sultan", "tail_entity": "glencoe", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5508, "sentence": "on the death of yesugei, temujin, his mummy hoelun, his siblings and two half - brothers (including behter) were abandoned by their tribe and left to fend for themselves.", "head_entity": "hoelun", "tail_entity": "temujin", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5516, "sentence": "\"astronomica book 2.12.1\" pierus, the fathers of hyacinth by the muse clio, was also called a yarns of magnes. apollodorus \".", "head_entity": "pierus", "tail_entity": "hyacinth", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5523, "sentence": "lionel barrymore was born lionel herbert blythe in philadelphia, the yarns of protagonists georgiana drew barrymore and maurice barrymore (born herbert arthur chamberlayne blyth).", "head_entity": "georgiana drew", "tail_entity": "lionel barrymore", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5527, "sentence": "three ships of the royal norwegian navy have borne the name hnoms \"vale\", after váli, yarns of the god odin and the giantess rindr:", "head_entity": "rindr", "tail_entity": "váli", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5570, "sentence": "he is portrayed in the jackie robinson biopic \"42\" as one of robinson 's earliest backers.)", "head_entity": "\"42\"", "tail_entity": "jackie robinson", "predicted_relation": "main subject", "predicted_relation_id": 79}
+```
+
+```json
+{"index": 5581, "sentence": "the building is trait prominently in the negotiator (1998) where it serves as the location of offices for the internal affairs division of the chicago police department.", "head_entity": "the negotiator", "tail_entity": "chicago police department", "predicted_relation": "applies to jurisdiction", "predicted_relation_id": 61}
+```
+
+```json
+{"index": 5584, "sentence": "in 1628, cornelius jansen, a professor at leuven, begun writing \"augustinus\", a three volume treatise on augustine of hippo which conflated jesuits with pelagianism by emphasized agustin 's suggestion.", "head_entity": "augustinus", "tail_entity": "pelagianism", "predicted_relation": "instance of", "predicted_relation_id": 28}
+```
+
+所有样本已分析完毕。

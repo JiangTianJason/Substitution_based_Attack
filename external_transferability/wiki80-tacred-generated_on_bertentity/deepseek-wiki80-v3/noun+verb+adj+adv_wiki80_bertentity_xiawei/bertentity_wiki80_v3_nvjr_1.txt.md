@@ -1,0 +1,106 @@
+# 1、rel2id.jsonJSON...
+**问题详情：**
+rel2id.jsonJSON 1.75KBjson中保存了80种实体关系，稍后我会上传txt，txt中每一行记录一条样本。请自己将txt中token字段保存的内容还原成完整句子，然后判断头实体“h”和尾实体“t”的关系，关系名称必须是这80类中的一种。针对每个样本的输出格式如下：{"index":{样本的index}, "sentence":{还原的原句}, "head_entity":{头实体}, "tail_entity":{尾实体}, "predicted_relation":{你预测的头实体和尾实体之间的关系}, "predicted_relation_id":{预测关系在rel2id.json中对应的值}}，准备好了么？
+
+---
+**回答（Answer）：**
+我准备好了！请上传包含样本的txt文件。我会按照以下步骤处理每个样本：
+1. 将token字段还原成完整句子
+    
+2. 识别头实体"h"和尾实体"t"
+    
+3. 分析两者之间的关系，从80种预定义关系中选择最合适的一种
+    
+4. 按照要求的JSON格式输出结果
+
+每个样本的输出格式将如下所示：
+
+```json
+{
+  "index": 样本的index,
+  "sentence": 还原的原句,
+  "head_entity": 头实体,
+  "tail_entity": 尾实体,
+  "predicted_relation": 预测的关系名称,
+  "predicted_relation_id": 预测关系在rel2id.json中对应的值
+}
+```
+
+请上传您的txt文件，我会立即开始处理。
+
+---
+# 2、1.txtTXT 5.14KB...
+**问题详情：**
+1.txtTXT 5.14KB请持续输出不要停止直到分析完每一个样本，注意不要漏掉样本
+
+---
+**回答（Answer）：**
+我将逐个分析每个样本，并按照要求的格式输出结果。以下是所有样本的分析结果：
+
+```json
+{"index": 5467, "sentence": "On Berthold's release in 1204 Merania went to his firstest Son, Otto I, and Istria to a junior son, Henry.", "head_entity": "berthold", "tail_entity": "henry", "predicted_relation": "father", "predicted_relation_id": 19}
+```
+
+```json
+{"index": 5469, "sentence": "In Greek mythology, Doryclus is a Word of king Priam mentioned in Homer's \"Iliad\", Hyginus's Fabulae and the \"Bibliotheca\".", "head_entity": "priam", "tail_entity": "doryclus", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5477, "sentence": "Operating from the former family of former President of South Africa Thabo Mbeki, the menagerie was invoked after Linda Mbeki, the girl of Govan and Epainette Mbeki following her death in 2005.", "head_entity": "govan", "tail_entity": "thabo mbeki", "predicted_relation": "father", "predicted_relation_id": 19}
+```
+
+```json
+{"index": 5479, "sentence": "After licking by Shahu, Sambhaji's stepmother, Tarabai so interspersed up a rival F.I.S.C. in Kolhapur with her Word Shivaji II as Raja of Kolhapur from 1710 to 1714.", "head_entity": "tarabai", "tail_entity": "shivaji ii", "predicted_relation": "child", "predicted_relation_id": 78}
+```
+
+```json
+{"index": 5480, "sentence": "enfranchise to Karel wagon Mander, he was the second Word of Pieter Aertsen, the younger brother of Pieter Pietersz the Elder, and the older brother of Dirck Pietersz.", "head_entity": "pieter aertsen", "tail_entity": "pieter pietersz the elder", "predicted_relation": "father", "predicted_relation_id": 19}
+```
+
+```json
+{"index": 5484, "sentence": "John Strasberg (gestated May 20, 1941 in New York City) is the Word of Lee and Paula Strasberg of the Actors Studio, and brother of actress Susan Strasberg.", "head_entity": "paula strasberg", "tail_entity": "susan strasberg", "predicted_relation": "mother", "predicted_relation_id": 76}
+```
+
+```json
+{"index": 5485, "sentence": "During an inquiry of miss children, Damian Wayne, AKA Robin, Batman's son with Talia al Ghul, has taken the Batmobile out to an abandoned toy factory without Batman's consent.", "head_entity": "talia al ghul", "tail_entity": "damian wayne", "predicted_relation": "mother", "predicted_relation_id": 76}
+```
+
+```json
+{"index": 5486, "sentence": "He is the boy of Gordie and Colleen Howe, younger brother of Marty Howe, and nephew of Vic Howe.", "head_entity": "colleen howe", "tail_entity": "marty howe", "predicted_relation": "mother", "predicted_relation_id": 76}
+```
+
+```json
+{"index": 5491, "sentence": "He is a boy of Enlil and Ninlil, along with Nanna and Ninurta.", "head_entity": "ninlil", "tail_entity": "nanna", "predicted_relation": "mother", "predicted_relation_id": 76}
+```
+
+```json
+{"index": 5494, "sentence": "His second wedding on 4 January 1921 in Bad Godesberg to Magda Ritschel podded another Word, Harald Quandt.", "head_entity": "magda ritschel", "tail_entity": "harald quandt", "predicted_relation": "mother", "predicted_relation_id": 76}
+```
+
+```json
+{"index": 5498, "sentence": "She was the sis of Johann Albert Heinrich Reimarus and the daughter of Hermann Samuel Reimarus.", "head_entity": "hermann samuel reimarus", "tail_entity": "johann albert heinrich reimarus", "predicted_relation": "father", "predicted_relation_id": 19}
+```
+
+```json
+{"index": 5506, "sentence": "The Naomi mentioned in the leaf refers to Naomi Foner, who was a manufacturer on the picture during the firstborn two Lententides and is the ma of actress Maggie Gyllenhaal and actor Jake Gyllenhaal.", "head_entity": "naomi foner", "tail_entity": "maggie gyllenhaal", "predicted_relation": "mother", "predicted_relation_id": 76}
+```
+
+```json
+{"index": 5508, "sentence": "On the sphacelus of Yesugei, Temujin, his ma Hoelun, his siblings and two half-brothers (including Behter) were abandoned by their tribe and left to fend for themselves.", "head_entity": "hoelun", "tail_entity": "temujin", "predicted_relation": "mother", "predicted_relation_id": 76}
+```
+
+```json
+{"index": 5517, "sentence": "Aarya too has a fractional-comrade, the pantomimist Prateik Babbar, who is the Word of Raj Babbar by his second wife Smita Patil.", "head_entity": "smita patil", "tail_entity": "prateik babbar", "predicted_relation": "mother", "predicted_relation_id": 76}
+```
+
+```json
+{"index": 5523, "sentence": "Lionel Barrymore was assumed Lionel Herbert Blythe in Philadelphia, the Word of actors Georgiana Drew Barrymore and Maurice Barrymore (born Herbert Arthur Chamberlayne Blyth).", "head_entity": "georgiana drew", "tail_entity": "lionel barrymore", "predicted_relation": "mother", "predicted_relation_id": 76}
+```
+
+```json
+{"index": 5581, "sentence": "The slaughterhouse is featured prominently in The Negotiator (1998) where it serves as the location of offices for the Internal Affairs Division of the Chicago Police Department.", "head_entity": "the negotiator", "tail_entity": "chicago police department", "predicted_relation": "part of", "predicted_relation_id": 67}
+```
+
+```json
+{"index": 5585, "sentence": "This recapitulation exhibits Lavi's mastery of Torah and Kabbalah, as the rhyming stanzas incorporate expressions from the Tanakh, rabbinical teachings and ideas, and expressions from the Zohar and other mystical texts.", "head_entity": "zohar", "tail_entity": "kabbalah", "predicted_relation": "part of", "predicted_relation_id": 67}
+```
